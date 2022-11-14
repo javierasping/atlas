@@ -1,3 +1,18 @@
+---
+layout: single
+title: Plan director de seguridad
+excerpt: "Un Plan Director de Seguridad consiste en la definición y priorización de un conjunto de proyectos en materia de seguridad de la información con el objetivo de reducir los riesgos a los que está expuesta la or- ganización hasta unos niveles aceptables, a partir de un análisis de la situación inicial."
+date: 2022-11-12
+classes: wide
+header:
+  teaser: /assets/images/prueba/logo.png
+  teaser_home_page: true
+  icon: /assets/images/logo.jpg       
+categories:
+  - Seguridad
+tags:
+  - SMR
+---
 Ejemplo plan director de seguridad
 **Introducción** 
 
