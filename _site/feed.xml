@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-12T13:09:57+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Scripts administracion usuarios y grupos locales active directory</title><link href="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/" rel="alternate" type="text/html" title="Scripts administracion usuarios y grupos locales active directory" /><published>2022-11-12T00:00:00+01:00</published><updated>2022-11-12T00:00:00+01:00</updated><id>http://localhost:4000/ADMINISTRAR%20USUARIOS%20Y%20GRUPOS%20LOCALES%20%20DE%20DOMINIO%20CON%20POWERSHELL</id><content type="html" xml:base="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/">&lt;p&gt;&lt;strong&gt;Usuarios y grupos locales&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-14T15:43:35+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Scripts administracion usuarios y grupos locales active directory</title><link href="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/" rel="alternate" type="text/html" title="Scripts administracion usuarios y grupos locales active directory" /><published>2022-11-12T00:00:00+01:00</published><updated>2022-11-12T00:00:00+01:00</updated><id>http://localhost:4000/ADMINISTRAR%20USUARIOS%20Y%20GRUPOS%20LOCALES%20%20DE%20DOMINIO%20CON%20POWERSHELL</id><content type="html" xml:base="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/">&lt;p&gt;&lt;strong&gt;Usuarios y grupos locales&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Crear un script de PowerShell que realice las siguientes tareas (script1.ps1)&lt;/li&gt;
@@ -61,7 +61,1283 @@
 
 &lt;p&gt;4.Realizar un script que cree la siguiente estructura en Directorio Activo:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/sistemas/Aspose.Words.43b37f75-4741-4aa3-b896-5df7106b447f.005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Sisteamas" /><category term="SMR" /><summary type="html">Scripts basicos de ejemplo para administrar usuarios y grupos locales de active directory en Windows Server 2019</summary></entry><entry><title type="html">Servicios DHCP - DNS - ISS -FTP - RDP -FTP en Windows Server 2019</title><link href="http://localhost:4000/servicios-win-server-dhcp-dns-iss-rdp-ftp/" rel="alternate" type="text/html" title="Servicios DHCP - DNS - ISS -FTP - RDP -FTP en Windows Server 2019" /><published>2021-05-22T00:00:00+02:00</published><updated>2021-05-22T00:00:00+02:00</updated><id>http://localhost:4000/servicios%20win%20server%20dhcp-dns-iss-rdp-ftp</id><content type="html" xml:base="http://localhost:4000/servicios-win-server-dhcp-dns-iss-rdp-ftp/">&lt;p&gt;&lt;strong&gt;Esquema de red&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/sistemas/Aspose.Words.43b37f75-4741-4aa3-b896-5df7106b447f.005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Sisteamas" /><category term="SMR" /><summary type="html">Scripts basicos de ejemplo para administrar usuarios y grupos locales de active directory en Windows Server 2019</summary></entry><entry><title type="html">Politica_pyme</title><link href="http://localhost:4000/politica_pyme/" rel="alternate" type="text/html" title="Politica_pyme" /><published>2021-10-14T00:00:00+02:00</published><updated>2021-10-14T00:00:00+02:00</updated><id>http://localhost:4000/politica_pyme</id><content type="html" xml:base="http://localhost:4000/politica_pyme/">&lt;p&gt;Ejemplo plan director de seguridad
+&lt;strong&gt;Introducción&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;El sector de la educación engloba todo tipo de organizaciones que se dedican a la enseñanza . La implantación de nuevas tecnologías es importante en este tipo de instituciones y empresas . En las cuales se hace un uso intensivo de equipos informáticos en las cuales se almacenan datos de las personas que se matriculan para aprender y en ocasiones estos datos pueden ser especialmente protegidos como es el caso de menores de edad o de salud&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Selección de la empresa&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Este plan estará dirigido a un centro educativo como puede ser nuestro centro el IES Gonzalo Nazareno . El cual tiene una gran cantidad de usuarios , maquinas y servidores . He elegido este para tener una referencia real .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Objetivos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Evaluar la situación para identificar los riesgos sobre la seguridad en el centro&lt;/li&gt;
+  &lt;li&gt;Identificar que áreas del centro  son las mas expuestas a estos riesgos en función del impacto y la probabilidad de que ocurra&lt;/li&gt;
+  &lt;li&gt;Adoptar las medidas necesarias para minimizar estos riesgos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Fases del documento&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Definición de los activos&lt;/li&gt;
+  &lt;li&gt;Valoración de los activos&lt;/li&gt;
+  &lt;li&gt;Amenazas de los activos&lt;/li&gt;
+  &lt;li&gt;Impacto de las amenazas en los  activos&lt;/li&gt;
+  &lt;li&gt;Plan de prevención  de riesgos&lt;/li&gt;
+  &lt;li&gt;Plan de contingencia&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;1.Definición de los activos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Activos son los conocimientos o datos que tiene valor para una organización , mientras que en la misma norma , los sistemas de información comprenden a las aplicaciones , servicios , activos de las tecnologías de información u otros componentes que permiten el manejo de la misma .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Equipos informáticos (Hardware)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Aquellos que se encargan de realizar una función a los distintos usuarios del centro :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Servidores
+    &lt;ul&gt;
+      &lt;li&gt;Conjunto de servidores en  varios formatos tanto como en armarios rack como en torres de sobremesa los cuales se utilizan para albergar servicios utilizados por los usuarios del centro así como también  para formar a los alumnos de grado superior (ASIR)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ordenadores personales
+    &lt;ul&gt;
+      &lt;li&gt;Dispositivos los cuales utilizan alumnado y profesorado para desempeñar  diversas tareas&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Router
+    &lt;ul&gt;
+      &lt;li&gt;Equipo encargado de suministrar al centro conexión a internet&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Switch
+    &lt;ul&gt;
+      &lt;li&gt;Encargado de dar conexión a  los distintos dispositivos de forma cableada&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Puntos de acceso
+    &lt;ul&gt;
+      &lt;li&gt;Encargado de dar conexión a internet a los distintos dispositivos de manera inalámbrica&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Impresoras
+    &lt;ul&gt;
+      &lt;li&gt;Encargadas de imprimir los distintos documentos que el profesorado necesita .&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Escáneres
+    &lt;ul&gt;
+      &lt;li&gt;Encargados de digitalizar los distintos documentos que el profesorado quiere conservar de manera digital&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;SAI
+    &lt;ul&gt;
+      &lt;li&gt;Equipo auxiliar para apagar correctamente los servidores ante caída del suministro eléctrico&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cables
+    &lt;ul&gt;
+      &lt;li&gt;Medio de transmisión cableado se usa fibra y utp cat 6&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Almacenamiento de la  información&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Son los distintos dispositivos o archivos donde se guarda la información :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unidades USB
+    &lt;ul&gt;
+      &lt;li&gt;Dispositivos los cuales pueden albergar documentos tanto del profesorado como del alumnado&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Discos duros internos
+    &lt;ul&gt;
+      &lt;li&gt;Guardan información importante como documentos confidenciales , trabajos del alumnado …&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Discos duros externos
+    &lt;ul&gt;
+      &lt;li&gt;Utilizado por los usuarios del centro para transportar información&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Documentos impresos
+    &lt;ul&gt;
+      &lt;li&gt;Información almacenada de forma física que pude contener datos confidenciales&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Usuarios del centro&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Personas o grupo de personas  las cuales utilizan los equipos informáticos del centro :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Equipo directivo
+    &lt;ul&gt;
+      &lt;li&gt;Es el máximo régimen administrativo del centro el cual puede acceder a cualquier información o lugar .&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Jefes de departamento
+    &lt;ul&gt;
+      &lt;li&gt;Es el que lidera a un grupo de profesores , este acceder a toda la información de los alumnos de los profesores que lidera .&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Profesorado
+    &lt;ul&gt;
+      &lt;li&gt;Encargados de formar a los alumnos , estos solo pueden acceder a la información a los cuales les da clase .&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Conserjes y Secretarias
+    &lt;ul&gt;
+      &lt;li&gt;Encargados de dar servicio tanto a profesores como a alumnado , pueden tratar con datos confidenciales  puntualmente .&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Alumnado
+    &lt;ul&gt;
+      &lt;li&gt;Usuario con privilegios  mas bajo del centro el cual solo puede acceder a determinados lugares y equipos determinados .&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Personal de limpieza
+    &lt;ul&gt;
+      &lt;li&gt;Equipo de personas encargadas de mantener limpio el centro las cuales acceden a todas las instalaciones .&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Aplicaciones&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Software utilizado por los usuarios del centro&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Moodle
+    &lt;ul&gt;
+      &lt;li&gt;Plataforma educativa del centro&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Navegadores web
+    &lt;ul&gt;
+      &lt;li&gt;Utilizados para navegar por la red&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Telegram
+    &lt;ul&gt;
+      &lt;li&gt;Medio de comunicación de los profesores&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Windows 10
+    &lt;ul&gt;
+      &lt;li&gt;Sistema operativo utilizado principalmente&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Debian 10-11
+    &lt;ul&gt;
+      &lt;li&gt;Sistema operativo utilizado principalmente&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Programas de ofimática :
+    &lt;ul&gt;
+      &lt;li&gt;Aplicaciones de edición de fotografiá&lt;/li&gt;
+      &lt;li&gt;Aplicaciones de edición de video&lt;/li&gt;
+      &lt;li&gt;Sistemas gestiones de base de datos&lt;/li&gt;
+      &lt;li&gt;Editores de texto&lt;/li&gt;
+      &lt;li&gt;Editores de presentaciones&lt;/li&gt;
+      &lt;li&gt;Hojas de calculo&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Nube
+    &lt;ul&gt;
+      &lt;li&gt;Servicio Online que permite acceder a los archivos teniendo conexión a internet&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Datos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Información valiosa y en varios casos confidencial&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Evaluaciones de los alumnos
+    &lt;ul&gt;
+      &lt;li&gt;Informes que generan los profesores sobre los alumnos&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Matriculas de los alumnos
+    &lt;ul&gt;
+      &lt;li&gt;Inscripción de los alumnos en el centro&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Listado de los alumnos
+    &lt;ul&gt;
+      &lt;li&gt;Serie ordenada de nombre&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Exámenes
+    &lt;ul&gt;
+      &lt;li&gt;Prueba evaluable   de los alumnos&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fichas del profesorado
+    &lt;ul&gt;
+      &lt;li&gt;Datos personales del profesorado&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Facturas
+    &lt;ul&gt;
+      &lt;li&gt;Compras y gatos realizados  por el centro&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Servicios&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Aquellos que satisfacen las necesidades del usuario&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Internet
+    &lt;ul&gt;
+      &lt;li&gt;Conexión contratada con movistar&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;DHCP
+    &lt;ul&gt;
+      &lt;li&gt;Asignación de ips dinámica&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;DNS
+    &lt;ul&gt;
+      &lt;li&gt;Servicio de resolución de nombres propio que tiene el centro llamado macaco&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;FTP
+    &lt;ul&gt;
+      &lt;li&gt;Servidor nas para compartir archivos en el centro&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Servidor de correo electrónico
+    &lt;ul&gt;
+      &lt;li&gt;Para gestionar los diferentes servicios del centro&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2.Valoración de los activos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Para tener en cuenta los activos mas valiosos hay que clasificarlos en función de su importancia , esta calificación se le da en función de la repercusión que un  daño  puede causar  al centro .&lt;/p&gt;
+
+&lt;p&gt;Se calificara las siguientes características :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Disponibilidad (D) :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Garantiza que el sistema y los datos estarán disponible para los usuarios .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Integridad (I):&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Garantiza que la información no ha sido modificada sin autorización .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Confidencialidad (C):&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Garantiza que el acceso a la información no se produce de forma no autorizada .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;No repudio (R) :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Impide que el emisor niegue haber estado involucrado en una interacción .&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;`  `&lt;strong&gt;Valoración&lt;/strong&gt; &lt;strong&gt;estimada numérica&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Activo&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;(D)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;(I)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;(C)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;(R)&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Servidores&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ordenadores personales&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Router&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Switches&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Puntos de acceso&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Impresoras&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Escáneres&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SAI&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Cables&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Unidades USB&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Discos duros internos&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Discos duros externos&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Documentos impresos&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Moodle&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Navegadores web&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Telegram&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Windows 10&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Debian 10-11&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Programas de ofimática&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;|Nube |5|7|9||
+| - | - | - | - | :- |
+|Evaluaciones de los alumnos |5|8|9||
+|Matriculas de los alumnos |2|5|9||
+|Listado de los alumnos |5|5|9||
+|Exámenes |6|9|9||
+|Fichas del profesorado |5|5|9||
+|Facturas |3|8|9||
+|Internet |10|-|-||
+|DHCP |7|-|-||
+|DNS |7|-|-||
+|FTP |4|-|-||
+|Servidor de correo electrónico |4|-|-||
+&lt;strong&gt;Escala de valores&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Valor&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;Gravedad&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;Nulo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1-4&lt;/td&gt;
+      &lt;td&gt;Daño leve&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5-7&lt;/td&gt;
+      &lt;td&gt;Daño medio&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;8-10&lt;/td&gt;
+      &lt;td&gt;Daño alto&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;No evaluable&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;3.Amenazas de los  activos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Una amenaza es la posible aparición de daños a cualquier activo del centro&lt;/p&gt;
+
+&lt;p&gt;Ambientales&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Incendios&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;El fuego puede acabar calcinando nuestros recursos total o parcialmente , impidiendo el acceso temporalmente a nuestros recursos .&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Inundaciones&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;El agua puede acabar rompiendo nuestros recursos total o parcialmente , impidiendo el acceso temporalmente a nuestros recursos .&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Terremotos&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Los seísmos pueden causar daños en la estructura del edificio , derribandolo en casos graves .&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;|&lt;strong&gt;Suciedad&lt;/strong&gt;|
+| - |
+|&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;|&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;|
+|El polvo acumulado puede provocar el aumento de las temperaturas en nuestros equipos o dañar componentes como un disco duro |
+&lt;strong&gt;Tecnológico&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Corte del suministro eléctrico&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Disponibilidad&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;El corte de alimentación puede ser provocado por la averiá de un transformador o generador eléctrico . Ademas puede hacer que se estropeen componentes&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Temperaturas muy altas o bajas&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Disponibilidad&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;La mala aclimatación puede provocar que nuestros equipos no rindan .&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Averiás&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad &amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Fallos en los equipos debido al uso . Puede ser debido a un defecto de fabrica o por el uso del dispositivo .&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Infecciones por código malicioso&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A través de equipos de trabajo o dispositivos móviles , en su mayoría a través del correo electrónico .Una vez infectados pasamos a entrar en una botnet.&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Intrusiones&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Se provocan a través de vulnerabilidades de nuestro software , se realizan a través de exploits&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Ataques DDoS&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;` `Afectan a varios recursos de la organización y impiden el normal funcionamiento de los mismos&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;|&lt;strong&gt;Ransomware&lt;/strong&gt;|
+| - |
+|&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;|&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;|
+|Es un software que pueden borrar , modificar o encriptar nuestros datos y pueden estar provocados de forma intencionada para sacar rédito económico . |
+&lt;strong&gt;Humanos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Hurto&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;El robo de hardware por parte de un tercero.&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Adulteración&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Usuario que al usar un determinado servicio  , modifica o elimina un archivo por error&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Fraude&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Datos &amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Modificar programas o archivos a los cual el usuario no esta autorizado a hacer&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Modificación&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Disponibilidad&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Los seísmos pueden causar daños en la estructura del edificio , derribandolo en casos graves .&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Errores del administrador&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Un administrador puede cometer graves errores que pongan en peligro gran cantidad de servicios&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Revelación&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;La revelación de  información confidencial a personas no autorizadas&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Perdida de la información&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Perdida de información voluntaria o involuntariamente&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Sabotaje&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Daño o destrucción que se hace intencionadamente en un servicio como forma de lucha o protesta contra el organismo que los dirige o bien como método para beneficiar a una persona o grupo que es contrario a dicho organismo.&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Vandalismo&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;El vandalismo destruye o profana bienes de la empresa . Generalmente para atacar a su imagen&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Craker / Hacker&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Persona con grandes conocimientos en informática que accede de forma fraudulenta a sistemas informáticos con fines de manipularlo .&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Falsificación&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Falsificación de documentos , paginas web …&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Robo de contraseñas&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt; &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;` `Obtención de credenciales de los usuarios .&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;|&lt;strong&gt;Phishing&lt;/strong&gt;|
+| - |
+|&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;|&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt;|
+|Un ataque para engañarle y hacer que comparta contraseñas, números de tarjeta de crédito, y otra información confidencial haciéndose pasar por una institución de confianza en un mensaje de correo electrónico o llamada telefónica .|
+&lt;strong&gt;4.Impacto de las amenazas en los  activos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;|&lt;strong&gt;Valor&lt;/strong&gt;|&lt;strong&gt;Gravedad&lt;/strong&gt;|
+| - | - |
+|0|Nulo|
+|1-4|Asumible|
+|5-7|Importante|
+|8-10|Intolerable|
+|-|No evaluable|
+&lt;strong&gt;Ambientales&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;|&lt;strong&gt;Amenaza&lt;/strong&gt; |&lt;strong&gt;Gravedad&lt;/strong&gt; |&lt;strong&gt;Probabilidad&lt;/strong&gt;|&lt;strong&gt;Impacto&lt;/strong&gt;|
+| - | - | - | - |
+|Incendios |9|20%|9|
+|Inundaciones|7|10%|7|
+|Terremotos |7|10%|6|
+|Suciedad |2|35%|2|
+&lt;strong&gt;Tecnológico&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;|&lt;strong&gt;Amenaza&lt;/strong&gt; |&lt;strong&gt;Gravedad&lt;/strong&gt; |&lt;strong&gt;Probabilidad&lt;/strong&gt;|&lt;strong&gt;Impacto&lt;/strong&gt;|
+| - | - | - | - |
+|Corte del suministro eléctrico |10|80%|10|
+|&amp;lt;p&amp;gt;Temperaturas muy altas &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;o bajas &amp;lt;/p&amp;gt;|4|10%|3|
+|Averiás |5|30%|4|
+|Infecciones por código malicioso |10|60%|9|
+|Intrusiones|7|25%|7|
+|Ataques DDos|8|80%|6|
+|Ransomware|10|60%|9|
+&lt;strong&gt;Humanos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;|&lt;strong&gt;Amenaza&lt;/strong&gt; |&lt;strong&gt;Gravedad&lt;/strong&gt; |&lt;strong&gt;Probabilidad&lt;/strong&gt;|&lt;strong&gt;Impacto&lt;/strong&gt;|
+| - | - | - | - |
+|Hurto |4|20%|3|
+|Adulteración |8|30%|7|
+|Fraude |9|20%|8|
+|Modificación |7|30%|6|
+|Errores del administrador |8|10%|7|
+|Revelación |6|20%|5|
+|Perdida de información|7|40%|6|
+|Sabotaje |4|1%|3|
+|Vandalismo |1|1%|1|
+|Craker / Hacker |5|1%|5|
+|Falsificación |9|40%|8|
+|Robo de contraseñas |9|50%|8|
+&lt;strong&gt;5.Plan de prevención de riesgos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A continuación  se detallan las medidas de protección que se implementaran para prevenir riesgos.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ambientales&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Incendios – Inundaciones – Terremotos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Habrá que crear un documento en el cual se detalle normas y procedimientos sobre seguridad  así como asignar responsable para la actualización y comprobación del mismo .&lt;/li&gt;
+  &lt;li&gt;Habrá que crear procedimientos detallados a seguir para los usuarios del centro en el caso de emergencia indicando responsables a personas capacitadas .&lt;/li&gt;
+  &lt;li&gt;El centro debe contar con medidas de extinción y control .&lt;/li&gt;
+  &lt;li&gt;Se tendrán copias de seguridad de los servidores y datos relevantes en un edificio diferente al nuestro&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Suciedad&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Se realizaran periódicamente limpiezas de los equipos aprovechando los mantenimientos .&lt;/li&gt;
+  &lt;li&gt;Deberá de haber un registro de las limpiezas de cada equipo.&lt;/li&gt;
+  &lt;li&gt;Deberá asignarse un responsable que se encargue de generar documentación para la correcta limpieza y impedir posibles daños en esta .&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Tecnológico&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cortes del suministro eléctrico&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Habrá  que  revisar  periódicamente  los  sistemas  de  alimentación  ininterrumpida  y mantenimiento en el caso de que lo necesiten .&lt;/li&gt;
+  &lt;li&gt;Deben usarse estabilizadores de voltaje para prevenir daños en los equipos .&lt;/li&gt;
+  &lt;li&gt;Habrá que crear un documento en el cual se detalle normas y procedimientos  así como asignar responsable para la actualización y comprobación del mismo .&lt;/li&gt;
+  &lt;li&gt;Se deberá llevar un registro de las revisiones ,  piezas sustituidas , equipos defectuosos …&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Temperaturas muy altas o bajas&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Los equipos deben estar en ubicaciones donde el ambiente sea adecuado para su correcto funcionamiento .&lt;/li&gt;
+  &lt;li&gt;Para bajar o subir temperaturas de las maquinas podemos utilizar los aires acondicionados o las calderas .&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Averiás&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Los  usuarios  de  cada  equipo  deben  ser  responsables  y  mandar  una  incidencia  al administrador de los equipos.&lt;/li&gt;
+  &lt;li&gt;Se debe realizar periódicamente mantenimiento de hardware y software actualizando los equipos&lt;/li&gt;
+  &lt;li&gt;Deberá generarse un registro sobre los mantenimientos así como documentación técnica de como se ha resuelto la incidencia .&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Infecciones por código malicioso&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;En todos los equipos debernos tener un antivirus ejecutándose siempre y en su ultima versión , castigando a aquellos que lo deshabiliten .&lt;/li&gt;
+  &lt;li&gt;El centro es responsable de formar a los usuarios sobre los elementos de seguridad&lt;/li&gt;
+  &lt;li&gt;Se escanear los equipos periódicamente en busca de vulnerabilidades y se corregirán las mismas&lt;/li&gt;
+  &lt;li&gt;Se generaran reportes de las amenazas detectadas y la solución implantada .&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Intrusiones&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Implantaremos un sistema de detección de intrusos&lt;/li&gt;
+  &lt;li&gt;Llevaremos controles de las acciones de los equipos&lt;/li&gt;
+  &lt;li&gt;La información de los equipos estará cifrada&lt;/li&gt;
+  &lt;li&gt;Definir roles y niveles de acceso a la información&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;AtaquesDDos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Implantaremos firewall contra peticiones ilegitimas .&lt;/li&gt;
+  &lt;li&gt;Tendremos un seguimiento del trafico de nuestra red periódicamente  para conocer la cantidad media de usuarios y su ubicación geográfica .&lt;/li&gt;
+  &lt;li&gt;Valoraremos la implantación de redes de distribución de contenido o balanceadores de carga&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Ransomware&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Mantendremos los pc actualizados  .&lt;/li&gt;
+  &lt;li&gt;Tendremos un antivirus que   tenga incorporado herramientas Anti Ransom.&lt;/li&gt;
+  &lt;li&gt;No abriremos archivos o enlaces sospechosos .&lt;/li&gt;
+  &lt;li&gt;No proporcionaremos información por teléfono .&lt;/li&gt;
+  &lt;li&gt;Evitaremos el uso de memorias usb , si se utilizan deberán de estar cifradas .&lt;/li&gt;
+  &lt;li&gt;Realizaremos copias de seguridad periódicamente para evitar la perdida de información en caso de sufrir el ataque .&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Humanos Hurto&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Se mantendrán las puertas  donde hayan equipos cerradas siempre y cuando no haya personas dentro .&lt;/li&gt;
+  &lt;li&gt;Se tendrá un inventario de todos los equipos informáticos así como de sus periféricos .&lt;/li&gt;
+  &lt;li&gt;Se llevara un control de entrada y salida de personas .&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Adulteración , fraude , modificación e falsificación&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Solo se permitirá el acceso a la información a  personal autorizado .&lt;/li&gt;
+  &lt;li&gt;Se harán revisiones periódicas para verificar la integridad , exactitud y validez de la misma .&lt;/li&gt;
+  &lt;li&gt;Queda totalmente prohibido sacar información del centro .&lt;/li&gt;
+  &lt;li&gt;En caso de que haya que transmitir información se hará de forma cifrada y solo entre personas autorizadas&lt;/li&gt;
+  &lt;li&gt;Se deberá comunicar cualquier anomalía a los responsables&lt;/li&gt;
+  &lt;li&gt;Se sancionara a las personas que se salten estas normas&lt;/li&gt;
+  &lt;li&gt;Se tendrán copias de seguridad de los servidores y datos relevantes en un edificio diferente al nuestro y la restauraremos en caso de perder información&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Errores del administrador&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;El administrador evaluara los incidentes y se encargara de actuar en consecuencia .&lt;/li&gt;
+  &lt;li&gt;Contara siempre con copias de seguridad tanto de la configuración como de los datos .&lt;/li&gt;
+  &lt;li&gt;Revisara exhaustivamente los cambios o implementaciones en maquinas virtuales antes de aplicarlo a las maquinas reales .&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Revelación&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;La información se guardara cifrada y con contraseña para evitar que cualquiera sin autorización pueda leerla .&lt;/li&gt;
+  &lt;li&gt;Se deberá informar al administrador en el caso de conocer la posible posesión de esta por un usuario .&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Perdida de la información&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Se harán regularmente copias de la información .&lt;/li&gt;
+  &lt;li&gt;Se configuraran los programas para guardar el progreso cada 1 minuto&lt;/li&gt;
+  &lt;li&gt;Se avisara inmediatamente al administrador para recuperar la información con mayor probabilidades&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Sabotaje y Vandalismo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Utilizar un antivirus que analice todas las descargas.&lt;/li&gt;
+  &lt;li&gt;Mantener el sistema operativo y el navegador actualizados.&lt;/li&gt;
+  &lt;li&gt;Cuidar las contraseñas y cambiarlas periódicamente.&lt;/li&gt;
+  &lt;li&gt;No hacer clic en enlaces que resulten sospechosos.&lt;/li&gt;
+  &lt;li&gt;Desconfiar de los correos de remitentes desconocidos.&lt;/li&gt;
+  &lt;li&gt;No abrir ficheros adjuntos sospechosos.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Phishing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Verificaremos la fuente de los correos electrónicos , mensajes , ect.&lt;/li&gt;
+  &lt;li&gt;No introduciremos información el las webs que accedamos a través de enlaces proveniente de los mismo&lt;/li&gt;
+  &lt;li&gt;Tendremos un antivirus en los equipos .&lt;/li&gt;
+  &lt;li&gt;Revisaremos periódicamente los inicios de sesión de nuestras cuentas&lt;/li&gt;
+  &lt;li&gt;Pondremos en todos los sitios posibles la verificación a dos pasos&lt;/li&gt;
+  &lt;li&gt;Ante cualquier duda avisaremos al administrador .&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;6.Responsables de los activos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;El centro tiene la deferencia de nombrar responsables cualificados en los siguientes ámbitos :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;-Responsable de seguridad&lt;/strong&gt; :con la finalidad de hacer un seguimiento y coordinar todas las iniciativas puestas en marcha por la organización en materia de Seguridad de la Información.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;-Responsable de Información:&lt;/strong&gt; especialmente cuando tratamos con información específica que es gestionada a través de diferentes entornos.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;-Responsables de ámbito:&lt;/strong&gt; en el caso de que pongamos en marcha iniciativas en el ámbito lógico, físico, legal y organizativo.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Plan de contingencia&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Un plan de contingencia detalla las medidas que se deben tomar para garantizar que una empresa pueda continuar operando en caso de alguna crisis o emergencia .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ambientales&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Incendios&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Si un miembro detecta fuego y sabe como utilizar los medios de extinción lo utilizara de no ser así dará la voz de alarma  .&lt;/li&gt;
+  &lt;li&gt;Si el fuego no puede ser controlado en sus comienzos se desalojara el centro .&lt;/li&gt;
+  &lt;li&gt;Los maestros llevarán a todos los estudiantes de su grupo a su área de agrupación asignada&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Inundaciones&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Apertura de puertas para que el agua salga, y cierre de puertas y ventanas para que el agua no entre.&lt;/li&gt;
+  &lt;li&gt;Se elevaran los dispositivos electrónicos para evitar el alcance&lt;/li&gt;
+  &lt;li&gt;Se desalojaran las instalaciones&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Terremotos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Refugiarse debajo de un escritorio, mesa de madera u otro mueble fuerte.&lt;/li&gt;
+  &lt;li&gt;Colocarse en cuclillas o sentado, agarrado del mueble y cubriéndose la cabeza y el rostro.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Tecnológico&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cortes del suministro eléctrico&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Se activaran los sais y se apagaran los servidores correctamente .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Temperaturas muy altas o bajas&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;En el caso de que las temperaturas sean altas porque los sistemas de refrigeración no cumplan su función tendremos que prescindir temporalmente de algunos servicios para bajar las temperaturas .&lt;/li&gt;
+  &lt;li&gt;En el caso de que las temperaturas sean extremadamente bajas se encenderá la calefacción .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Averiás&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sustituir los equipos afectados por unos listos para instalar .&lt;/li&gt;
+  &lt;li&gt;Se restablecerán las copias de seguridad de los afectados .&lt;/li&gt;
+  &lt;li&gt;Se destruirá los dispositivos de almacenamiento que vayan a desecharse .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Infecciones por código malicioso&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Se aislara el equipo .&lt;/li&gt;
+  &lt;li&gt;Se comprobara todos los medios de almacenamiento que han interactuado con el equipo y se formatearan completamente .&lt;/li&gt;
+  &lt;li&gt;Se hará un formateo completo de los discos .&lt;/li&gt;
+  &lt;li&gt;Se restauraran las copias de seguridad .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Intrusiones&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Se aislara el equipo .&lt;/li&gt;
+  &lt;li&gt;Se comprobara los datos  que han interactuado con el equipo y se haran un seguimiento para comprobar su integridad .&lt;/li&gt;
+  &lt;li&gt;Se hará un formateo completo de los discos&lt;/li&gt;
+  &lt;li&gt;Se restauraran las copias de seguridad&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;AtaquesDDos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Haremos un seguimiento de las peticiones y modificaremos el firewall para eliminar los países donde no es común acceder , incluso dejando solo el nuestro .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Ransomware&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;No pagaremos el rescate&lt;/li&gt;
+  &lt;li&gt;Se usaran medios de desencriptacion para recuperar el equipo&lt;/li&gt;
+  &lt;li&gt;En caso de no funcione el punto anterior se formateara el equipo y se restauraran las copias de seguridad&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Humanos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hurto&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Se interpondrá  una denuncia antes los cuerpos y fuerzas  de seguridad del estado&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Adulteración , fraude , modificación e falsificación&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Si el que lo produce es un alumno , se le sancionara con respecto a las normas de convivencia del centro y la decisión del profesorado .&lt;/li&gt;
+  &lt;li&gt;Si el que lo produce es un profesional del centro , se interpondrá una denuncia antes los cuerpos y fuerzas de seguridad del estado&lt;/li&gt;
+  &lt;li&gt;Si viene de un externo , se interpondrá una denuncia antes los cuerpos y fuerzas de seguridad del estado&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Errores del administrador&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Este ha de corregir lo antes posible su error .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Revelación&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Buscaremos resguardo en la legislación vigente y denunciaremos los echos  sobre dicha situación ante las autoridades policiales .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Perdida de la información&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Se utilizaran herramientas de recuperación de información .&lt;/li&gt;
+  &lt;li&gt;En caso de que no lo consigamos restauraremos las copias de seguridad&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Sabotaje y Vandalismo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Se identificara al culpable y se le sancionara&lt;/li&gt;
+  &lt;li&gt;Se procurara restaurar los daños a un estado previo&lt;/li&gt;
+  &lt;li&gt;El responsable se hará cargo de los daños  económicas&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Phishing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Controlaremos los inicios de sesión&lt;/li&gt;
+  &lt;li&gt;Comprobaremos los registros de actividad&lt;/li&gt;
+  &lt;li&gt;Comprobaremos los envíos realizados a través de comunicaciones&lt;/li&gt;
+  &lt;li&gt;Cambiaremos todas las contraseñas y habilitaremos la autentificación en dos pasos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;8.Implantación de medidas y costes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;|&lt;strong&gt;Medidas&lt;/strong&gt; |&lt;strong&gt;Coste&lt;/strong&gt; |
+| - | - |
+|Copias de seguridad |Medio|
+|Instalación de extintores|Medio|
+|Elevación de dispositivos electrónicos |Bajo|
+|Compra de SAIS|Medio |
+|Compra de generadores eléctricos|Medio|
+|Sistemas de control de clima auxiliares  |Alto |
+|Destrucción de dispositivos de almacenamiento dañado |Bajo|
+|Implantación redes distribuidoras de trafico|Medio|
+|Implantación balanceadores de carga |Medio |
+|Implantación de antivirus |Medio |
+|Cifrar memorias USB |Bajo|
+|Implantación controles de acceso|Alto|
+|Medios de desencriptacion|Alto|
+&lt;strong&gt;9.Bibliografía&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1- &lt;a href=&quot;https://www.incibe.es/protege-tu-empresa/que-te-interesa/plan-director-seguridad&quot;&gt;https://www.incibe.es/protege-tu-empresa/que-te-interesa/plan-director-seguridad&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2- &lt;a href=&quot;https://www.incibe.es/protege-tu-empresa/que-te-interesa/plan-contingencia-continuidad-negocio&quot;&gt;https://www.incibe.es/protege-tu-empresa/que-te-interesa/plan-contingencia- continuidad-negocio&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;3- &lt;a href=&quot;https://www.incibe.es/protege-tu-empresa/herramientas/servicio-antibotnet&quot;&gt;https://www.incibe.es/protege-tu-empresa/herramientas/servicio-antibotnet&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;4- &lt;a href=&quot;https://www.incibe.es/protege-tu-empresa/blog/medidas-prevencion-ataques-denegacion-servicio&quot;&gt;https://www.incibe.es/protege-tu-empresa/blog/medidas-prevencion-ataques- denegacion-servicio&lt;/a&gt;
+28&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><summary type="html">Ejemplo plan director de seguridad Introducción El sector de la educación engloba todo tipo de organizaciones que se dedican a la enseñanza . La implantación de nuevas tecnologías es importante en este tipo de instituciones y empresas . En las cuales se hace un uso intensivo de equipos informáticos en las cuales se almacenan datos de las personas que se matriculan para aprender y en ocasiones estos datos pueden ser especialmente protegidos como es el caso de menores de edad o de salud Selección de la empresa Este plan estará dirigido a un centro educativo como puede ser nuestro centro el IES Gonzalo Nazareno . El cual tiene una gran cantidad de usuarios , maquinas y servidores . He elegido este para tener una referencia real . Objetivos Evaluar la situación para identificar los riesgos sobre la seguridad en el centro Identificar que áreas del centro son las mas expuestas a estos riesgos en función del impacto y la probabilidad de que ocurra Adoptar las medidas necesarias para minimizar estos riesgos Fases del documento Definición de los activos Valoración de los activos Amenazas de los activos Impacto de las amenazas en los activos Plan de prevención de riesgos Plan de contingencia 1.Definición de los activos Activos son los conocimientos o datos que tiene valor para una organización , mientras que en la misma norma , los sistemas de información comprenden a las aplicaciones , servicios , activos de las tecnologías de información u otros componentes que permiten el manejo de la misma . Equipos informáticos (Hardware) Aquellos que se encargan de realizar una función a los distintos usuarios del centro : Servidores Conjunto de servidores en varios formatos tanto como en armarios rack como en torres de sobremesa los cuales se utilizan para albergar servicios utilizados por los usuarios del centro así como también para formar a los alumnos de grado superior (ASIR) Ordenadores personales Dispositivos los cuales utilizan alumnado y profesorado para desempeñar diversas tareas Router Equipo encargado de suministrar al centro conexión a internet Switch Encargado de dar conexión a los distintos dispositivos de forma cableada Puntos de acceso Encargado de dar conexión a internet a los distintos dispositivos de manera inalámbrica Impresoras Encargadas de imprimir los distintos documentos que el profesorado necesita . Escáneres Encargados de digitalizar los distintos documentos que el profesorado quiere conservar de manera digital SAI Equipo auxiliar para apagar correctamente los servidores ante caída del suministro eléctrico Cables Medio de transmisión cableado se usa fibra y utp cat 6 Almacenamiento de la información Son los distintos dispositivos o archivos donde se guarda la información : Unidades USB Dispositivos los cuales pueden albergar documentos tanto del profesorado como del alumnado Discos duros internos Guardan información importante como documentos confidenciales , trabajos del alumnado … Discos duros externos Utilizado por los usuarios del centro para transportar información Documentos impresos Información almacenada de forma física que pude contener datos confidenciales Usuarios del centro Personas o grupo de personas las cuales utilizan los equipos informáticos del centro : Equipo directivo Es el máximo régimen administrativo del centro el cual puede acceder a cualquier información o lugar . Jefes de departamento Es el que lidera a un grupo de profesores , este acceder a toda la información de los alumnos de los profesores que lidera . Profesorado Encargados de formar a los alumnos , estos solo pueden acceder a la información a los cuales les da clase . Conserjes y Secretarias Encargados de dar servicio tanto a profesores como a alumnado , pueden tratar con datos confidenciales puntualmente . Alumnado Usuario con privilegios mas bajo del centro el cual solo puede acceder a determinados lugares y equipos determinados . Personal de limpieza Equipo de personas encargadas de mantener limpio el centro las cuales acceden a todas las instalaciones . Aplicaciones Software utilizado por los usuarios del centro Moodle Plataforma educativa del centro Navegadores web Utilizados para navegar por la red Telegram Medio de comunicación de los profesores Windows 10 Sistema operativo utilizado principalmente Debian 10-11 Sistema operativo utilizado principalmente Programas de ofimática : Aplicaciones de edición de fotografiá Aplicaciones de edición de video Sistemas gestiones de base de datos Editores de texto Editores de presentaciones Hojas de calculo Nube Servicio Online que permite acceder a los archivos teniendo conexión a internet Datos Información valiosa y en varios casos confidencial Evaluaciones de los alumnos Informes que generan los profesores sobre los alumnos Matriculas de los alumnos Inscripción de los alumnos en el centro Listado de los alumnos Serie ordenada de nombre Exámenes Prueba evaluable de los alumnos Fichas del profesorado Datos personales del profesorado Facturas Compras y gatos realizados por el centro Servicios Aquellos que satisfacen las necesidades del usuario Internet Conexión contratada con movistar DHCP Asignación de ips dinámica DNS Servicio de resolución de nombres propio que tiene el centro llamado macaco FTP Servidor nas para compartir archivos en el centro Servidor de correo electrónico Para gestionar los diferentes servicios del centro 2.Valoración de los activos Para tener en cuenta los activos mas valiosos hay que clasificarlos en función de su importancia , esta calificación se le da en función de la repercusión que un daño puede causar al centro . Se calificara las siguientes características : Disponibilidad (D) : Garantiza que el sistema y los datos estarán disponible para los usuarios . Integridad (I): Garantiza que la información no ha sido modificada sin autorización . Confidencialidad (C): Garantiza que el acceso a la información no se produce de forma no autorizada . No repudio (R) : Impide que el emisor niegue haber estado involucrado en una interacción . ` `Valoración estimada numérica         Activo (D) (I) (C) (R) Servidores 10 10 -   Ordenadores personales 9 10 -   Router 9 6 -   Switches 9 - -   Puntos de acceso 9 - -   Impresoras 2 - -   Escáneres 2 - -   SAI 7 - -   Cables 9 - -   Unidades USB 4 2 7   Discos duros internos 8 8 9   Discos duros externos 8 8 9   Documentos impresos 8 8 9   Moodle 9 10 -   Navegadores web 7 - -   Telegram 6 7 9   Windows 10 10 - -   Debian 10-11 10 - -   Programas de ofimática 6 - -   |Nube |5|7|9|| | - | - | - | - | :- | |Evaluaciones de los alumnos |5|8|9|| |Matriculas de los alumnos |2|5|9|| |Listado de los alumnos |5|5|9|| |Exámenes |6|9|9|| |Fichas del profesorado |5|5|9|| |Facturas |3|8|9|| |Internet |10|-|-|| |DHCP |7|-|-|| |DNS |7|-|-|| |FTP |4|-|-|| |Servidor de correo electrónico |4|-|-|| Escala de valores Valor Gravedad 0 Nulo 1-4 Daño leve 5-7 Daño medio 8-10 Daño alto - No evaluable 3.Amenazas de los activos Una amenaza es la posible aparición de daños a cualquier activo del centro Ambientales Incendios   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt; El fuego puede acabar calcinando nuestros recursos total o parcialmente , impidiendo el acceso temporalmente a nuestros recursos .   Inundaciones   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt; El agua puede acabar rompiendo nuestros recursos total o parcialmente , impidiendo el acceso temporalmente a nuestros recursos .   Terremotos   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt; Los seísmos pueden causar daños en la estructura del edificio , derribandolo en casos graves .   |Suciedad| | - | |&amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;|&amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;| |El polvo acumulado puede provocar el aumento de las temperaturas en nuestros equipos o dañar componentes como un disco duro | Tecnológico Corte del suministro eléctrico   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Disponibilidad&amp;lt;/p&amp;gt; El corte de alimentación puede ser provocado por la averiá de un transformador o generador eléctrico . Ademas puede hacer que se estropeen componentes   Temperaturas muy altas o bajas   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Disponibilidad&amp;lt;/p&amp;gt; La mala aclimatación puede provocar que nuestros equipos no rindan .   Averiás   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad &amp;lt;/p&amp;gt; Fallos en los equipos debido al uso . Puede ser debido a un defecto de fabrica o por el uso del dispositivo .   Infecciones por código malicioso   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt; A través de equipos de trabajo o dispositivos móviles , en su mayoría a través del correo electrónico .Una vez infectados pasamos a entrar en una botnet.   Intrusiones   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt; Se provocan a través de vulnerabilidades de nuestro software , se realizan a través de exploits   Ataques DDoS   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt; ` `Afectan a varios recursos de la organización y impiden el normal funcionamiento de los mismos   |Ransomware| | - | |&amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;|&amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;| |Es un software que pueden borrar , modificar o encriptar nuestros datos y pueden estar provocados de forma intencionada para sacar rédito económico . | Humanos Hurto   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt; El robo de hardware por parte de un tercero.   Adulteración   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt; Usuario que al usar un determinado servicio , modifica o elimina un archivo por error   Fraude   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Datos &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad&amp;lt;/p&amp;gt; Modificar programas o archivos a los cual el usuario no esta autorizado a hacer   Modificación   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Disponibilidad&amp;lt;/p&amp;gt; Los seísmos pueden causar daños en la estructura del edificio , derribandolo en casos graves .   Errores del administrador   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt; Un administrador puede cometer graves errores que pongan en peligro gran cantidad de servicios   Revelación   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt; La revelación de información confidencial a personas no autorizadas   Perdida de la información   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt; Perdida de información voluntaria o involuntariamente   Sabotaje   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt; Daño o destrucción que se hace intencionadamente en un servicio como forma de lucha o protesta contra el organismo que los dirige o bien como método para beneficiar a una persona o grupo que es contrario a dicho organismo.   Vandalismo   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt; El vandalismo destruye o profana bienes de la empresa . Generalmente para atacar a su imagen   Craker / Hacker   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt; Persona con grandes conocimientos en informática que accede de forma fraudulenta a sistemas informáticos con fines de manipularlo .   Falsificación   &amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt; Falsificación de documentos , paginas web …   Robo de contraseñas   &amp;lt;p&amp;gt;Activos afectados: &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt; ` `Obtención de credenciales de los usuarios .   |Phishing| | - | |&amp;lt;p&amp;gt;Activos afectados:&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;|&amp;lt;p&amp;gt;Características afectadas :&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt;| |Un ataque para engañarle y hacer que comparta contraseñas, números de tarjeta de crédito, y otra información confidencial haciéndose pasar por una institución de confianza en un mensaje de correo electrónico o llamada telefónica .| 4.Impacto de las amenazas en los activos |Valor|Gravedad| | - | - | |0|Nulo| |1-4|Asumible| |5-7|Importante| |8-10|Intolerable| |-|No evaluable| Ambientales |Amenaza |Gravedad |Probabilidad|Impacto| | - | - | - | - | |Incendios |9|20%|9| |Inundaciones|7|10%|7| |Terremotos |7|10%|6| |Suciedad |2|35%|2| Tecnológico |Amenaza |Gravedad |Probabilidad|Impacto| | - | - | - | - | |Corte del suministro eléctrico |10|80%|10| |&amp;lt;p&amp;gt;Temperaturas muy altas &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;o bajas &amp;lt;/p&amp;gt;|4|10%|3| |Averiás |5|30%|4| |Infecciones por código malicioso |10|60%|9| |Intrusiones|7|25%|7| |Ataques DDos|8|80%|6| |Ransomware|10|60%|9| Humanos |Amenaza |Gravedad |Probabilidad|Impacto| | - | - | - | - | |Hurto |4|20%|3| |Adulteración |8|30%|7| |Fraude |9|20%|8| |Modificación |7|30%|6| |Errores del administrador |8|10%|7| |Revelación |6|20%|5| |Perdida de información|7|40%|6| |Sabotaje |4|1%|3| |Vandalismo |1|1%|1| |Craker / Hacker |5|1%|5| |Falsificación |9|40%|8| |Robo de contraseñas |9|50%|8| 5.Plan de prevención de riesgos A continuación se detallan las medidas de protección que se implementaran para prevenir riesgos. Ambientales Incendios – Inundaciones – Terremotos Habrá que crear un documento en el cual se detalle normas y procedimientos sobre seguridad así como asignar responsable para la actualización y comprobación del mismo . Habrá que crear procedimientos detallados a seguir para los usuarios del centro en el caso de emergencia indicando responsables a personas capacitadas . El centro debe contar con medidas de extinción y control . Se tendrán copias de seguridad de los servidores y datos relevantes en un edificio diferente al nuestro Suciedad Se realizaran periódicamente limpiezas de los equipos aprovechando los mantenimientos . Deberá de haber un registro de las limpiezas de cada equipo. Deberá asignarse un responsable que se encargue de generar documentación para la correcta limpieza y impedir posibles daños en esta . Tecnológico Cortes del suministro eléctrico Habrá que revisar periódicamente los sistemas de alimentación ininterrumpida y mantenimiento en el caso de que lo necesiten . Deben usarse estabilizadores de voltaje para prevenir daños en los equipos . Habrá que crear un documento en el cual se detalle normas y procedimientos así como asignar responsable para la actualización y comprobación del mismo . Se deberá llevar un registro de las revisiones , piezas sustituidas , equipos defectuosos … Temperaturas muy altas o bajas Los equipos deben estar en ubicaciones donde el ambiente sea adecuado para su correcto funcionamiento . Para bajar o subir temperaturas de las maquinas podemos utilizar los aires acondicionados o las calderas . Averiás Los usuarios de cada equipo deben ser responsables y mandar una incidencia al administrador de los equipos. Se debe realizar periódicamente mantenimiento de hardware y software actualizando los equipos Deberá generarse un registro sobre los mantenimientos así como documentación técnica de como se ha resuelto la incidencia . Infecciones por código malicioso En todos los equipos debernos tener un antivirus ejecutándose siempre y en su ultima versión , castigando a aquellos que lo deshabiliten . El centro es responsable de formar a los usuarios sobre los elementos de seguridad Se escanear los equipos periódicamente en busca de vulnerabilidades y se corregirán las mismas Se generaran reportes de las amenazas detectadas y la solución implantada . Intrusiones Implantaremos un sistema de detección de intrusos Llevaremos controles de las acciones de los equipos La información de los equipos estará cifrada Definir roles y niveles de acceso a la información AtaquesDDos Implantaremos firewall contra peticiones ilegitimas . Tendremos un seguimiento del trafico de nuestra red periódicamente para conocer la cantidad media de usuarios y su ubicación geográfica . Valoraremos la implantación de redes de distribución de contenido o balanceadores de carga Ransomware Mantendremos los pc actualizados . Tendremos un antivirus que tenga incorporado herramientas Anti Ransom. No abriremos archivos o enlaces sospechosos . No proporcionaremos información por teléfono . Evitaremos el uso de memorias usb , si se utilizan deberán de estar cifradas . Realizaremos copias de seguridad periódicamente para evitar la perdida de información en caso de sufrir el ataque . Humanos Hurto Se mantendrán las puertas donde hayan equipos cerradas siempre y cuando no haya personas dentro . Se tendrá un inventario de todos los equipos informáticos así como de sus periféricos . Se llevara un control de entrada y salida de personas . Adulteración , fraude , modificación e falsificación Solo se permitirá el acceso a la información a personal autorizado . Se harán revisiones periódicas para verificar la integridad , exactitud y validez de la misma . Queda totalmente prohibido sacar información del centro . En caso de que haya que transmitir información se hará de forma cifrada y solo entre personas autorizadas Se deberá comunicar cualquier anomalía a los responsables Se sancionara a las personas que se salten estas normas Se tendrán copias de seguridad de los servidores y datos relevantes en un edificio diferente al nuestro y la restauraremos en caso de perder información Errores del administrador El administrador evaluara los incidentes y se encargara de actuar en consecuencia . Contara siempre con copias de seguridad tanto de la configuración como de los datos . Revisara exhaustivamente los cambios o implementaciones en maquinas virtuales antes de aplicarlo a las maquinas reales . Revelación La información se guardara cifrada y con contraseña para evitar que cualquiera sin autorización pueda leerla . Se deberá informar al administrador en el caso de conocer la posible posesión de esta por un usuario . Perdida de la información Se harán regularmente copias de la información . Se configuraran los programas para guardar el progreso cada 1 minuto Se avisara inmediatamente al administrador para recuperar la información con mayor probabilidades Sabotaje y Vandalismo Utilizar un antivirus que analice todas las descargas. Mantener el sistema operativo y el navegador actualizados. Cuidar las contraseñas y cambiarlas periódicamente. No hacer clic en enlaces que resulten sospechosos. Desconfiar de los correos de remitentes desconocidos. No abrir ficheros adjuntos sospechosos. Phishing Verificaremos la fuente de los correos electrónicos , mensajes , ect. No introduciremos información el las webs que accedamos a través de enlaces proveniente de los mismo Tendremos un antivirus en los equipos . Revisaremos periódicamente los inicios de sesión de nuestras cuentas Pondremos en todos los sitios posibles la verificación a dos pasos Ante cualquier duda avisaremos al administrador . 6.Responsables de los activos El centro tiene la deferencia de nombrar responsables cualificados en los siguientes ámbitos : -Responsable de seguridad :con la finalidad de hacer un seguimiento y coordinar todas las iniciativas puestas en marcha por la organización en materia de Seguridad de la Información. -Responsable de Información: especialmente cuando tratamos con información específica que es gestionada a través de diferentes entornos. -Responsables de ámbito: en el caso de que pongamos en marcha iniciativas en el ámbito lógico, físico, legal y organizativo. Plan de contingencia Un plan de contingencia detalla las medidas que se deben tomar para garantizar que una empresa pueda continuar operando en caso de alguna crisis o emergencia . Ambientales Incendios Si un miembro detecta fuego y sabe como utilizar los medios de extinción lo utilizara de no ser así dará la voz de alarma . Si el fuego no puede ser controlado en sus comienzos se desalojara el centro . Los maestros llevarán a todos los estudiantes de su grupo a su área de agrupación asignada Inundaciones Apertura de puertas para que el agua salga, y cierre de puertas y ventanas para que el agua no entre. Se elevaran los dispositivos electrónicos para evitar el alcance Se desalojaran las instalaciones Terremotos Refugiarse debajo de un escritorio, mesa de madera u otro mueble fuerte. Colocarse en cuclillas o sentado, agarrado del mueble y cubriéndose la cabeza y el rostro. Tecnológico Cortes del suministro eléctrico Se activaran los sais y se apagaran los servidores correctamente . Temperaturas muy altas o bajas En el caso de que las temperaturas sean altas porque los sistemas de refrigeración no cumplan su función tendremos que prescindir temporalmente de algunos servicios para bajar las temperaturas . En el caso de que las temperaturas sean extremadamente bajas se encenderá la calefacción . Averiás Sustituir los equipos afectados por unos listos para instalar . Se restablecerán las copias de seguridad de los afectados . Se destruirá los dispositivos de almacenamiento que vayan a desecharse . Infecciones por código malicioso Se aislara el equipo . Se comprobara todos los medios de almacenamiento que han interactuado con el equipo y se formatearan completamente . Se hará un formateo completo de los discos . Se restauraran las copias de seguridad . Intrusiones Se aislara el equipo . Se comprobara los datos que han interactuado con el equipo y se haran un seguimiento para comprobar su integridad . Se hará un formateo completo de los discos Se restauraran las copias de seguridad AtaquesDDos Haremos un seguimiento de las peticiones y modificaremos el firewall para eliminar los países donde no es común acceder , incluso dejando solo el nuestro . Ransomware No pagaremos el rescate Se usaran medios de desencriptacion para recuperar el equipo En caso de no funcione el punto anterior se formateara el equipo y se restauraran las copias de seguridad Humanos Hurto Se interpondrá una denuncia antes los cuerpos y fuerzas de seguridad del estado Adulteración , fraude , modificación e falsificación Si el que lo produce es un alumno , se le sancionara con respecto a las normas de convivencia del centro y la decisión del profesorado . Si el que lo produce es un profesional del centro , se interpondrá una denuncia antes los cuerpos y fuerzas de seguridad del estado Si viene de un externo , se interpondrá una denuncia antes los cuerpos y fuerzas de seguridad del estado Errores del administrador Este ha de corregir lo antes posible su error . Revelación Buscaremos resguardo en la legislación vigente y denunciaremos los echos sobre dicha situación ante las autoridades policiales . Perdida de la información Se utilizaran herramientas de recuperación de información . En caso de que no lo consigamos restauraremos las copias de seguridad Sabotaje y Vandalismo Se identificara al culpable y se le sancionara Se procurara restaurar los daños a un estado previo El responsable se hará cargo de los daños económicas Phishing Controlaremos los inicios de sesión Comprobaremos los registros de actividad Comprobaremos los envíos realizados a través de comunicaciones Cambiaremos todas las contraseñas y habilitaremos la autentificación en dos pasos 8.Implantación de medidas y costes |Medidas |Coste | | - | - | |Copias de seguridad |Medio| |Instalación de extintores|Medio| |Elevación de dispositivos electrónicos |Bajo| |Compra de SAIS|Medio | |Compra de generadores eléctricos|Medio| |Sistemas de control de clima auxiliares |Alto | |Destrucción de dispositivos de almacenamiento dañado |Bajo| |Implantación redes distribuidoras de trafico|Medio| |Implantación balanceadores de carga |Medio | |Implantación de antivirus |Medio | |Cifrar memorias USB |Bajo| |Implantación controles de acceso|Alto| |Medios de desencriptacion|Alto| 9.Bibliografía 1- https://www.incibe.es/protege-tu-empresa/que-te-interesa/plan-director-seguridad 2- https://www.incibe.es/protege-tu-empresa/que-te-interesa/plan-contingencia- continuidad-negocio 3- https://www.incibe.es/protege-tu-empresa/herramientas/servicio-antibotnet 4- https://www.incibe.es/protege-tu-empresa/blog/medidas-prevencion-ataques- denegacion-servicio 28</summary></entry><entry><title type="html">Servicios DHCP - DNS - ISS -FTP - RDP -FTP en Windows Server 2019</title><link href="http://localhost:4000/servicios-win-server-dhcp-dns-iss-rdp-ftp/" rel="alternate" type="text/html" title="Servicios DHCP - DNS - ISS -FTP - RDP -FTP en Windows Server 2019" /><published>2021-05-22T00:00:00+02:00</published><updated>2021-05-22T00:00:00+02:00</updated><id>http://localhost:4000/servicios%20win%20server%20dhcp-dns-iss-rdp-ftp</id><content type="html" xml:base="http://localhost:4000/servicios-win-server-dhcp-dns-iss-rdp-ftp/">&lt;p&gt;&lt;strong&gt;Esquema de red&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.001.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
