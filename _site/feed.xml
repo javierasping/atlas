@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-21T20:29:10+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Plan director de seguridad</title><link href="http://localhost:4000/politica_pyme/" rel="alternate" type="text/html" title="Plan director de seguridad" /><published>2022-11-12T00:00:00+01:00</published><updated>2022-11-12T00:00:00+01:00</updated><id>http://localhost:4000/politica_pyme</id><content type="html" xml:base="http://localhost:4000/politica_pyme/">&lt;p&gt;Ejemplo plan director de seguridad
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-21T20:41:07+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Plan director de seguridad</title><link href="http://localhost:4000/politica_pyme/" rel="alternate" type="text/html" title="Plan director de seguridad" /><published>2022-11-12T00:00:00+01:00</published><updated>2022-11-12T00:00:00+01:00</updated><id>http://localhost:4000/politica_pyme</id><content type="html" xml:base="http://localhost:4000/politica_pyme/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GVDYVWJLRH');
+&lt;/script&gt;
+
+&lt;p&gt;Ejemplo plan director de seguridad
 &lt;strong&gt;Introducción&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;El sector de la educación engloba todo tipo de organizaciones que se dedican a la enseñanza . La implantación de nuevas tecnologías es importante en este tipo de instituciones y empresas . En las cuales se hace un uso intensivo de equipos informáticos en las cuales se almacenan datos de las personas que se matriculan para aprender y en ocasiones estos datos pueden ser especialmente protegidos como es el caso de menores de edad o de salud&lt;/p&gt;
@@ -1274,7 +1285,18 @@
 &lt;p&gt;3- &lt;a href=&quot;https://www.incibe.es/protege-tu-empresa/herramientas/servicio-antibotnet&quot;&gt;https://www.incibe.es/protege-tu-empresa/herramientas/servicio-antibotnet&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;4- &lt;a href=&quot;https://www.incibe.es/protege-tu-empresa/blog/medidas-prevencion-ataques-denegacion-servicio&quot;&gt;https://www.incibe.es/protege-tu-empresa/blog/medidas-prevencion-ataques- denegacion-servicio&lt;/a&gt;
-28&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Seguridad" /><category term="SMR" /><summary type="html">Un Plan Director de Seguridad consiste en la definición y priorización de un conjunto de proyectos en materia de seguridad de la información con el objetivo de reducir los riesgos a los que está expuesta la or- ganización hasta unos niveles aceptables, a partir de un análisis de la situación inicial.</summary></entry><entry><title type="html">Scripts administracion usuarios y grupos locales active directory</title><link href="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/" rel="alternate" type="text/html" title="Scripts administracion usuarios y grupos locales active directory" /><published>2022-11-12T00:00:00+01:00</published><updated>2022-11-12T00:00:00+01:00</updated><id>http://localhost:4000/ADMINISTRAR%20USUARIOS%20Y%20GRUPOS%20LOCALES%20%20DE%20DOMINIO%20CON%20POWERSHELL</id><content type="html" xml:base="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/">&lt;p&gt;&lt;strong&gt;Usuarios y grupos locales&lt;/strong&gt;&lt;/p&gt;
+28&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Seguridad" /><category term="SMR" /><summary type="html">Un Plan Director de Seguridad consiste en la definición y priorización de un conjunto de proyectos en materia de seguridad de la información con el objetivo de reducir los riesgos a los que está expuesta la or- ganización hasta unos niveles aceptables, a partir de un análisis de la situación inicial.</summary></entry><entry><title type="html">Scripts administracion usuarios y grupos locales active directory</title><link href="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/" rel="alternate" type="text/html" title="Scripts administracion usuarios y grupos locales active directory" /><published>2022-11-12T00:00:00+01:00</published><updated>2022-11-12T00:00:00+01:00</updated><id>http://localhost:4000/ADMINISTRAR%20USUARIOS%20Y%20GRUPOS%20LOCALES%20%20DE%20DOMINIO%20CON%20POWERSHELL</id><content type="html" xml:base="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GVDYVWJLRH');
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Usuarios y grupos locales&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Crear un script de PowerShell que realice las siguientes tareas (script1.ps1)&lt;/li&gt;
