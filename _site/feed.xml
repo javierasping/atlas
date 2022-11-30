@@ -1,1291 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-21T20:41:07+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Plan director de seguridad</title><link href="http://localhost:4000/politica_pyme/" rel="alternate" type="text/html" title="Plan director de seguridad" /><published>2022-11-12T00:00:00+01:00</published><updated>2022-11-12T00:00:00+01:00</updated><id>http://localhost:4000/politica_pyme</id><content type="html" xml:base="http://localhost:4000/politica_pyme/">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
-
-&lt;script&gt;
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GVDYVWJLRH');
-&lt;/script&gt;
-
-&lt;p&gt;Ejemplo plan director de seguridad
-&lt;strong&gt;Introducción&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;El sector de la educación engloba todo tipo de organizaciones que se dedican a la enseñanza . La implantación de nuevas tecnologías es importante en este tipo de instituciones y empresas . En las cuales se hace un uso intensivo de equipos informáticos en las cuales se almacenan datos de las personas que se matriculan para aprender y en ocasiones estos datos pueden ser especialmente protegidos como es el caso de menores de edad o de salud&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Selección de la empresa&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Este plan estará dirigido a un centro educativo como puede ser nuestro centro el IES Gonzalo Nazareno . El cual tiene una gran cantidad de usuarios , maquinas y servidores . He elegido este para tener una referencia real .&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Objetivos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Evaluar la situación para identificar los riesgos sobre la seguridad en el centro&lt;/li&gt;
-  &lt;li&gt;Identificar que áreas del centro  son las mas expuestas a estos riesgos en función del impacto y la probabilidad de que ocurra&lt;/li&gt;
-  &lt;li&gt;Adoptar las medidas necesarias para minimizar estos riesgos&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Fases del documento&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Definición de los activos&lt;/li&gt;
-  &lt;li&gt;Valoración de los activos&lt;/li&gt;
-  &lt;li&gt;Amenazas de los activos&lt;/li&gt;
-  &lt;li&gt;Impacto de las amenazas en los  activos&lt;/li&gt;
-  &lt;li&gt;Plan de prevención  de riesgos&lt;/li&gt;
-  &lt;li&gt;Plan de contingencia&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;1.Definición de los activos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Activos son los conocimientos o datos que tiene valor para una organización , mientras que en la misma norma , los sistemas de información comprenden a las aplicaciones , servicios , activos de las tecnologías de información u otros componentes que permiten el manejo de la misma .&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Equipos informáticos (Hardware)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Aquellos que se encargan de realizar una función a los distintos usuarios del centro :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Servidores
-    &lt;ul&gt;
-      &lt;li&gt;Conjunto de servidores en  varios formatos tanto como en armarios rack como en torres de sobremesa los cuales se utilizan para albergar servicios utilizados por los usuarios del centro así como también  para formar a los alumnos de grado superior (ASIR)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Ordenadores personales
-    &lt;ul&gt;
-      &lt;li&gt;Dispositivos los cuales utilizan alumnado y profesorado para desempeñar  diversas tareas&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Router
-    &lt;ul&gt;
-      &lt;li&gt;Equipo encargado de suministrar al centro conexión a internet&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Switch
-    &lt;ul&gt;
-      &lt;li&gt;Encargado de dar conexión a  los distintos dispositivos de forma cableada&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Puntos de acceso
-    &lt;ul&gt;
-      &lt;li&gt;Encargado de dar conexión a internet a los distintos dispositivos de manera inalámbrica&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Impresoras
-    &lt;ul&gt;
-      &lt;li&gt;Encargadas de imprimir los distintos documentos que el profesorado necesita .&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Escáneres
-    &lt;ul&gt;
-      &lt;li&gt;Encargados de digitalizar los distintos documentos que el profesorado quiere conservar de manera digital&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;SAI
-    &lt;ul&gt;
-      &lt;li&gt;Equipo auxiliar para apagar correctamente los servidores ante caída del suministro eléctrico&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Cables
-    &lt;ul&gt;
-      &lt;li&gt;Medio de transmisión cableado se usa fibra y utp cat 6&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Almacenamiento de la  información&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Son los distintos dispositivos o archivos donde se guarda la información :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Unidades USB
-    &lt;ul&gt;
-      &lt;li&gt;Dispositivos los cuales pueden albergar documentos tanto del profesorado como del alumnado&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Discos duros internos
-    &lt;ul&gt;
-      &lt;li&gt;Guardan información importante como documentos confidenciales , trabajos del alumnado …&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Discos duros externos
-    &lt;ul&gt;
-      &lt;li&gt;Utilizado por los usuarios del centro para transportar información&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Documentos impresos
-    &lt;ul&gt;
-      &lt;li&gt;Información almacenada de forma física que pude contener datos confidenciales&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Usuarios del centro&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Personas o grupo de personas  las cuales utilizan los equipos informáticos del centro :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Equipo directivo
-    &lt;ul&gt;
-      &lt;li&gt;Es el máximo régimen administrativo del centro el cual puede acceder a cualquier información o lugar .&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Jefes de departamento
-    &lt;ul&gt;
-      &lt;li&gt;Es el que lidera a un grupo de profesores , este acceder a toda la información de los alumnos de los profesores que lidera .&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Profesorado
-    &lt;ul&gt;
-      &lt;li&gt;Encargados de formar a los alumnos , estos solo pueden acceder a la información a los cuales les da clase .&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Conserjes y Secretarias
-    &lt;ul&gt;
-      &lt;li&gt;Encargados de dar servicio tanto a profesores como a alumnado , pueden tratar con datos confidenciales  puntualmente .&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Alumnado
-    &lt;ul&gt;
-      &lt;li&gt;Usuario con privilegios  mas bajo del centro el cual solo puede acceder a determinados lugares y equipos determinados .&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Personal de limpieza
-    &lt;ul&gt;
-      &lt;li&gt;Equipo de personas encargadas de mantener limpio el centro las cuales acceden a todas las instalaciones .&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Aplicaciones&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Software utilizado por los usuarios del centro&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Moodle
-    &lt;ul&gt;
-      &lt;li&gt;Plataforma educativa del centro&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Navegadores web
-    &lt;ul&gt;
-      &lt;li&gt;Utilizados para navegar por la red&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Telegram
-    &lt;ul&gt;
-      &lt;li&gt;Medio de comunicación de los profesores&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Windows 10
-    &lt;ul&gt;
-      &lt;li&gt;Sistema operativo utilizado principalmente&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Debian 10-11
-    &lt;ul&gt;
-      &lt;li&gt;Sistema operativo utilizado principalmente&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Programas de ofimática :
-    &lt;ul&gt;
-      &lt;li&gt;Aplicaciones de edición de fotografiá&lt;/li&gt;
-      &lt;li&gt;Aplicaciones de edición de video&lt;/li&gt;
-      &lt;li&gt;Sistemas gestiones de base de datos&lt;/li&gt;
-      &lt;li&gt;Editores de texto&lt;/li&gt;
-      &lt;li&gt;Editores de presentaciones&lt;/li&gt;
-      &lt;li&gt;Hojas de calculo&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Nube
-    &lt;ul&gt;
-      &lt;li&gt;Servicio Online que permite acceder a los archivos teniendo conexión a internet&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Datos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Información valiosa y en varios casos confidencial&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Evaluaciones de los alumnos
-    &lt;ul&gt;
-      &lt;li&gt;Informes que generan los profesores sobre los alumnos&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Matriculas de los alumnos
-    &lt;ul&gt;
-      &lt;li&gt;Inscripción de los alumnos en el centro&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Listado de los alumnos
-    &lt;ul&gt;
-      &lt;li&gt;Serie ordenada de nombre&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Exámenes
-    &lt;ul&gt;
-      &lt;li&gt;Prueba evaluable   de los alumnos&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Fichas del profesorado
-    &lt;ul&gt;
-      &lt;li&gt;Datos personales del profesorado&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Facturas
-    &lt;ul&gt;
-      &lt;li&gt;Compras y gatos realizados  por el centro&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Servicios&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Aquellos que satisfacen las necesidades del usuario&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Internet
-    &lt;ul&gt;
-      &lt;li&gt;Conexión contratada con movistar&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;DHCP
-    &lt;ul&gt;
-      &lt;li&gt;Asignación de ips dinámica&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;DNS
-    &lt;ul&gt;
-      &lt;li&gt;Servicio de resolución de nombres propio que tiene el centro llamado macaco&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;FTP
-    &lt;ul&gt;
-      &lt;li&gt;Servidor nas para compartir archivos en el centro&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Servidor de correo electrónico
-    &lt;ul&gt;
-      &lt;li&gt;Para gestionar los diferentes servicios del centro&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;2.Valoración de los activos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Para tener en cuenta los activos mas valiosos hay que clasificarlos en función de su importancia , esta calificación se le da en función de la repercusión que un  daño  puede causar  al centro .&lt;/p&gt;
-
-&lt;p&gt;Se calificara las siguientes características :&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Disponibilidad (D) :&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Garantiza que el sistema y los datos estarán disponible para los usuarios .&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Integridad (I):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Garantiza que la información no ha sido modificada sin autorización .&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Confidencialidad (C):&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Garantiza que el acceso a la información no se produce de forma no autorizada .&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;No repudio (R) :&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Impide que el emisor niegue haber estado involucrado en una interacción .&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;`  `&lt;strong&gt;Valoración&lt;/strong&gt; &lt;strong&gt;estimada numérica&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Activo&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;(D)&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;(I)&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;(C)&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;(R)&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Servidores&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Ordenadores personales&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Router&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt;6&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Switches&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Puntos de acceso&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Impresoras&lt;/td&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Escáneres&lt;/td&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;SAI&lt;/td&gt;
-      &lt;td&gt;7&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Cables&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Unidades USB&lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;7&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Discos duros internos&lt;/td&gt;
-      &lt;td&gt;8&lt;/td&gt;
-      &lt;td&gt;8&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Discos duros externos&lt;/td&gt;
-      &lt;td&gt;8&lt;/td&gt;
-      &lt;td&gt;8&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Documentos impresos&lt;/td&gt;
-      &lt;td&gt;8&lt;/td&gt;
-      &lt;td&gt;8&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Moodle&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Navegadores web&lt;/td&gt;
-      &lt;td&gt;7&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Telegram&lt;/td&gt;
-      &lt;td&gt;6&lt;/td&gt;
-      &lt;td&gt;7&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Windows 10&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Debian 10-11&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Programas de ofimática&lt;/td&gt;
-      &lt;td&gt;6&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;|Nube |5|7|9||
-| - | - | - | - | :- |
-|Evaluaciones de los alumnos |5|8|9||
-|Matriculas de los alumnos |2|5|9||
-|Listado de los alumnos |5|5|9||
-|Exámenes |6|9|9||
-|Fichas del profesorado |5|5|9||
-|Facturas |3|8|9||
-|Internet |10|-|-||
-|DHCP |7|-|-||
-|DNS |7|-|-||
-|FTP |4|-|-||
-|Servidor de correo electrónico |4|-|-||
-&lt;strong&gt;Escala de valores&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Valor&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;strong&gt;Gravedad&lt;/strong&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;0&lt;/td&gt;
-      &lt;td&gt;Nulo&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1-4&lt;/td&gt;
-      &lt;td&gt;Daño leve&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;5-7&lt;/td&gt;
-      &lt;td&gt;Daño medio&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;8-10&lt;/td&gt;
-      &lt;td&gt;Daño alto&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;-&lt;/td&gt;
-      &lt;td&gt;No evaluable&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;strong&gt;3.Amenazas de los  activos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Una amenaza es la posible aparición de daños a cualquier activo del centro&lt;/p&gt;
-
-&lt;p&gt;Ambientales&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Incendios&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;El fuego puede acabar calcinando nuestros recursos total o parcialmente , impidiendo el acceso temporalmente a nuestros recursos .&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Inundaciones&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;El agua puede acabar rompiendo nuestros recursos total o parcialmente , impidiendo el acceso temporalmente a nuestros recursos .&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Terremotos&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Los seísmos pueden causar daños en la estructura del edificio , derribandolo en casos graves .&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;|&lt;strong&gt;Suciedad&lt;/strong&gt;|
-| - |
-|&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;|&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;|
-|El polvo acumulado puede provocar el aumento de las temperaturas en nuestros equipos o dañar componentes como un disco duro |
-&lt;strong&gt;Tecnológico&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Corte del suministro eléctrico&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Disponibilidad&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;El corte de alimentación puede ser provocado por la averiá de un transformador o generador eléctrico . Ademas puede hacer que se estropeen componentes&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Temperaturas muy altas o bajas&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Disponibilidad&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;La mala aclimatación puede provocar que nuestros equipos no rindan .&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Averiás&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad &amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Fallos en los equipos debido al uso . Puede ser debido a un defecto de fabrica o por el uso del dispositivo .&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Infecciones por código malicioso&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;A través de equipos de trabajo o dispositivos móviles , en su mayoría a través del correo electrónico .Una vez infectados pasamos a entrar en una botnet.&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Intrusiones&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Se provocan a través de vulnerabilidades de nuestro software , se realizan a través de exploits&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Ataques DDoS&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;` `Afectan a varios recursos de la organización y impiden el normal funcionamiento de los mismos&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;|&lt;strong&gt;Ransomware&lt;/strong&gt;|
-| - |
-|&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;|&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;|
-|Es un software que pueden borrar , modificar o encriptar nuestros datos y pueden estar provocados de forma intencionada para sacar rédito económico . |
-&lt;strong&gt;Humanos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Hurto&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;El robo de hardware por parte de un tercero.&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Adulteración&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Usuario que al usar un determinado servicio  , modifica o elimina un archivo por error&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Fraude&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Datos &amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Modificar programas o archivos a los cual el usuario no esta autorizado a hacer&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Modificación&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Disponibilidad&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Los seísmos pueden causar daños en la estructura del edificio , derribandolo en casos graves .&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Errores del administrador&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Un administrador puede cometer graves errores que pongan en peligro gran cantidad de servicios&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Revelación&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;La revelación de  información confidencial a personas no autorizadas&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Perdida de la información&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Perdida de información voluntaria o involuntariamente&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Sabotaje&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Daño o destrucción que se hace intencionadamente en un servicio como forma de lucha o protesta contra el organismo que los dirige o bien como método para beneficiar a una persona o grupo que es contrario a dicho organismo.&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Vandalismo&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;El vandalismo destruye o profana bienes de la empresa . Generalmente para atacar a su imagen&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Craker / Hacker&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Persona con grandes conocimientos en informática que accede de forma fraudulenta a sistemas informáticos con fines de manipularlo .&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Falsificación&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Falsificación de documentos , paginas web …&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;&lt;strong&gt;Robo de contraseñas&lt;/strong&gt;&lt;/th&gt;
-      &lt;th&gt; &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt; &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Aplicaciones &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Servicios&amp;lt;/p&amp;gt;&lt;/td&gt;
-      &lt;td&gt;&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio&amp;lt;/p&amp;gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;` `Obtención de credenciales de los usuarios .&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;|&lt;strong&gt;Phishing&lt;/strong&gt;|
-| - |
-|&amp;lt;p&amp;gt;&lt;strong&gt;Activos afectados:&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Equipos informáticos (Hardware)&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Almacenamiento de la  información &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Datos &amp;lt;/p&amp;gt;|&amp;lt;p&amp;gt;&lt;strong&gt;Características afectadas :&lt;/strong&gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Disponibilidad&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Integridad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- Confidencialidad &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;- No repudio &amp;lt;/p&amp;gt;|
-|Un ataque para engañarle y hacer que comparta contraseñas, números de tarjeta de crédito, y otra información confidencial haciéndose pasar por una institución de confianza en un mensaje de correo electrónico o llamada telefónica .|
-&lt;strong&gt;4.Impacto de las amenazas en los  activos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;|&lt;strong&gt;Valor&lt;/strong&gt;|&lt;strong&gt;Gravedad&lt;/strong&gt;|
-| - | - |
-|0|Nulo|
-|1-4|Asumible|
-|5-7|Importante|
-|8-10|Intolerable|
-|-|No evaluable|
-&lt;strong&gt;Ambientales&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;|&lt;strong&gt;Amenaza&lt;/strong&gt; |&lt;strong&gt;Gravedad&lt;/strong&gt; |&lt;strong&gt;Probabilidad&lt;/strong&gt;|&lt;strong&gt;Impacto&lt;/strong&gt;|
-| - | - | - | - |
-|Incendios |9|20%|9|
-|Inundaciones|7|10%|7|
-|Terremotos |7|10%|6|
-|Suciedad |2|35%|2|
-&lt;strong&gt;Tecnológico&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;|&lt;strong&gt;Amenaza&lt;/strong&gt; |&lt;strong&gt;Gravedad&lt;/strong&gt; |&lt;strong&gt;Probabilidad&lt;/strong&gt;|&lt;strong&gt;Impacto&lt;/strong&gt;|
-| - | - | - | - |
-|Corte del suministro eléctrico |10|80%|10|
-|&amp;lt;p&amp;gt;Temperaturas muy altas &amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;o bajas &amp;lt;/p&amp;gt;|4|10%|3|
-|Averiás |5|30%|4|
-|Infecciones por código malicioso |10|60%|9|
-|Intrusiones|7|25%|7|
-|Ataques DDos|8|80%|6|
-|Ransomware|10|60%|9|
-&lt;strong&gt;Humanos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;|&lt;strong&gt;Amenaza&lt;/strong&gt; |&lt;strong&gt;Gravedad&lt;/strong&gt; |&lt;strong&gt;Probabilidad&lt;/strong&gt;|&lt;strong&gt;Impacto&lt;/strong&gt;|
-| - | - | - | - |
-|Hurto |4|20%|3|
-|Adulteración |8|30%|7|
-|Fraude |9|20%|8|
-|Modificación |7|30%|6|
-|Errores del administrador |8|10%|7|
-|Revelación |6|20%|5|
-|Perdida de información|7|40%|6|
-|Sabotaje |4|1%|3|
-|Vandalismo |1|1%|1|
-|Craker / Hacker |5|1%|5|
-|Falsificación |9|40%|8|
-|Robo de contraseñas |9|50%|8|
-&lt;strong&gt;5.Plan de prevención de riesgos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A continuación  se detallan las medidas de protección que se implementaran para prevenir riesgos.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Ambientales&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Incendios – Inundaciones – Terremotos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Habrá que crear un documento en el cual se detalle normas y procedimientos sobre seguridad  así como asignar responsable para la actualización y comprobación del mismo .&lt;/li&gt;
-  &lt;li&gt;Habrá que crear procedimientos detallados a seguir para los usuarios del centro en el caso de emergencia indicando responsables a personas capacitadas .&lt;/li&gt;
-  &lt;li&gt;El centro debe contar con medidas de extinción y control .&lt;/li&gt;
-  &lt;li&gt;Se tendrán copias de seguridad de los servidores y datos relevantes en un edificio diferente al nuestro&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Suciedad&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Se realizaran periódicamente limpiezas de los equipos aprovechando los mantenimientos .&lt;/li&gt;
-  &lt;li&gt;Deberá de haber un registro de las limpiezas de cada equipo.&lt;/li&gt;
-  &lt;li&gt;Deberá asignarse un responsable que se encargue de generar documentación para la correcta limpieza y impedir posibles daños en esta .&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Tecnológico&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Cortes del suministro eléctrico&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Habrá  que  revisar  periódicamente  los  sistemas  de  alimentación  ininterrumpida  y mantenimiento en el caso de que lo necesiten .&lt;/li&gt;
-  &lt;li&gt;Deben usarse estabilizadores de voltaje para prevenir daños en los equipos .&lt;/li&gt;
-  &lt;li&gt;Habrá que crear un documento en el cual se detalle normas y procedimientos  así como asignar responsable para la actualización y comprobación del mismo .&lt;/li&gt;
-  &lt;li&gt;Se deberá llevar un registro de las revisiones ,  piezas sustituidas , equipos defectuosos …&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Temperaturas muy altas o bajas&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Los equipos deben estar en ubicaciones donde el ambiente sea adecuado para su correcto funcionamiento .&lt;/li&gt;
-  &lt;li&gt;Para bajar o subir temperaturas de las maquinas podemos utilizar los aires acondicionados o las calderas .&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Averiás&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Los  usuarios  de  cada  equipo  deben  ser  responsables  y  mandar  una  incidencia  al administrador de los equipos.&lt;/li&gt;
-  &lt;li&gt;Se debe realizar periódicamente mantenimiento de hardware y software actualizando los equipos&lt;/li&gt;
-  &lt;li&gt;Deberá generarse un registro sobre los mantenimientos así como documentación técnica de como se ha resuelto la incidencia .&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Infecciones por código malicioso&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;En todos los equipos debernos tener un antivirus ejecutándose siempre y en su ultima versión , castigando a aquellos que lo deshabiliten .&lt;/li&gt;
-  &lt;li&gt;El centro es responsable de formar a los usuarios sobre los elementos de seguridad&lt;/li&gt;
-  &lt;li&gt;Se escanear los equipos periódicamente en busca de vulnerabilidades y se corregirán las mismas&lt;/li&gt;
-  &lt;li&gt;Se generaran reportes de las amenazas detectadas y la solución implantada .&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Intrusiones&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Implantaremos un sistema de detección de intrusos&lt;/li&gt;
-  &lt;li&gt;Llevaremos controles de las acciones de los equipos&lt;/li&gt;
-  &lt;li&gt;La información de los equipos estará cifrada&lt;/li&gt;
-  &lt;li&gt;Definir roles y niveles de acceso a la información&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;AtaquesDDos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Implantaremos firewall contra peticiones ilegitimas .&lt;/li&gt;
-  &lt;li&gt;Tendremos un seguimiento del trafico de nuestra red periódicamente  para conocer la cantidad media de usuarios y su ubicación geográfica .&lt;/li&gt;
-  &lt;li&gt;Valoraremos la implantación de redes de distribución de contenido o balanceadores de carga&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Ransomware&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Mantendremos los pc actualizados  .&lt;/li&gt;
-  &lt;li&gt;Tendremos un antivirus que   tenga incorporado herramientas Anti Ransom.&lt;/li&gt;
-  &lt;li&gt;No abriremos archivos o enlaces sospechosos .&lt;/li&gt;
-  &lt;li&gt;No proporcionaremos información por teléfono .&lt;/li&gt;
-  &lt;li&gt;Evitaremos el uso de memorias usb , si se utilizan deberán de estar cifradas .&lt;/li&gt;
-  &lt;li&gt;Realizaremos copias de seguridad periódicamente para evitar la perdida de información en caso de sufrir el ataque .&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Humanos Hurto&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Se mantendrán las puertas  donde hayan equipos cerradas siempre y cuando no haya personas dentro .&lt;/li&gt;
-  &lt;li&gt;Se tendrá un inventario de todos los equipos informáticos así como de sus periféricos .&lt;/li&gt;
-  &lt;li&gt;Se llevara un control de entrada y salida de personas .&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Adulteración , fraude , modificación e falsificación&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Solo se permitirá el acceso a la información a  personal autorizado .&lt;/li&gt;
-  &lt;li&gt;Se harán revisiones periódicas para verificar la integridad , exactitud y validez de la misma .&lt;/li&gt;
-  &lt;li&gt;Queda totalmente prohibido sacar información del centro .&lt;/li&gt;
-  &lt;li&gt;En caso de que haya que transmitir información se hará de forma cifrada y solo entre personas autorizadas&lt;/li&gt;
-  &lt;li&gt;Se deberá comunicar cualquier anomalía a los responsables&lt;/li&gt;
-  &lt;li&gt;Se sancionara a las personas que se salten estas normas&lt;/li&gt;
-  &lt;li&gt;Se tendrán copias de seguridad de los servidores y datos relevantes en un edificio diferente al nuestro y la restauraremos en caso de perder información&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Errores del administrador&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;El administrador evaluara los incidentes y se encargara de actuar en consecuencia .&lt;/li&gt;
-  &lt;li&gt;Contara siempre con copias de seguridad tanto de la configuración como de los datos .&lt;/li&gt;
-  &lt;li&gt;Revisara exhaustivamente los cambios o implementaciones en maquinas virtuales antes de aplicarlo a las maquinas reales .&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Revelación&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;La información se guardara cifrada y con contraseña para evitar que cualquiera sin autorización pueda leerla .&lt;/li&gt;
-  &lt;li&gt;Se deberá informar al administrador en el caso de conocer la posible posesión de esta por un usuario .&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Perdida de la información&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Se harán regularmente copias de la información .&lt;/li&gt;
-  &lt;li&gt;Se configuraran los programas para guardar el progreso cada 1 minuto&lt;/li&gt;
-  &lt;li&gt;Se avisara inmediatamente al administrador para recuperar la información con mayor probabilidades&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Sabotaje y Vandalismo&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Utilizar un antivirus que analice todas las descargas.&lt;/li&gt;
-  &lt;li&gt;Mantener el sistema operativo y el navegador actualizados.&lt;/li&gt;
-  &lt;li&gt;Cuidar las contraseñas y cambiarlas periódicamente.&lt;/li&gt;
-  &lt;li&gt;No hacer clic en enlaces que resulten sospechosos.&lt;/li&gt;
-  &lt;li&gt;Desconfiar de los correos de remitentes desconocidos.&lt;/li&gt;
-  &lt;li&gt;No abrir ficheros adjuntos sospechosos.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Phishing&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Verificaremos la fuente de los correos electrónicos , mensajes , ect.&lt;/li&gt;
-  &lt;li&gt;No introduciremos información el las webs que accedamos a través de enlaces proveniente de los mismo&lt;/li&gt;
-  &lt;li&gt;Tendremos un antivirus en los equipos .&lt;/li&gt;
-  &lt;li&gt;Revisaremos periódicamente los inicios de sesión de nuestras cuentas&lt;/li&gt;
-  &lt;li&gt;Pondremos en todos los sitios posibles la verificación a dos pasos&lt;/li&gt;
-  &lt;li&gt;Ante cualquier duda avisaremos al administrador .&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;6.Responsables de los activos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;El centro tiene la deferencia de nombrar responsables cualificados en los siguientes ámbitos :&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;-Responsable de seguridad&lt;/strong&gt; :con la finalidad de hacer un seguimiento y coordinar todas las iniciativas puestas en marcha por la organización en materia de Seguridad de la Información.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;-Responsable de Información:&lt;/strong&gt; especialmente cuando tratamos con información específica que es gestionada a través de diferentes entornos.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;-Responsables de ámbito:&lt;/strong&gt; en el caso de que pongamos en marcha iniciativas en el ámbito lógico, físico, legal y organizativo.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Plan de contingencia&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Un plan de contingencia detalla las medidas que se deben tomar para garantizar que una empresa pueda continuar operando en caso de alguna crisis o emergencia .&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Ambientales&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Incendios&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Si un miembro detecta fuego y sabe como utilizar los medios de extinción lo utilizara de no ser así dará la voz de alarma  .&lt;/li&gt;
-  &lt;li&gt;Si el fuego no puede ser controlado en sus comienzos se desalojara el centro .&lt;/li&gt;
-  &lt;li&gt;Los maestros llevarán a todos los estudiantes de su grupo a su área de agrupación asignada&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Inundaciones&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Apertura de puertas para que el agua salga, y cierre de puertas y ventanas para que el agua no entre.&lt;/li&gt;
-  &lt;li&gt;Se elevaran los dispositivos electrónicos para evitar el alcance&lt;/li&gt;
-  &lt;li&gt;Se desalojaran las instalaciones&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Terremotos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Refugiarse debajo de un escritorio, mesa de madera u otro mueble fuerte.&lt;/li&gt;
-  &lt;li&gt;Colocarse en cuclillas o sentado, agarrado del mueble y cubriéndose la cabeza y el rostro.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Tecnológico&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Cortes del suministro eléctrico&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Se activaran los sais y se apagaran los servidores correctamente .&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Temperaturas muy altas o bajas&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;En el caso de que las temperaturas sean altas porque los sistemas de refrigeración no cumplan su función tendremos que prescindir temporalmente de algunos servicios para bajar las temperaturas .&lt;/li&gt;
-  &lt;li&gt;En el caso de que las temperaturas sean extremadamente bajas se encenderá la calefacción .&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Averiás&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sustituir los equipos afectados por unos listos para instalar .&lt;/li&gt;
-  &lt;li&gt;Se restablecerán las copias de seguridad de los afectados .&lt;/li&gt;
-  &lt;li&gt;Se destruirá los dispositivos de almacenamiento que vayan a desecharse .&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Infecciones por código malicioso&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Se aislara el equipo .&lt;/li&gt;
-  &lt;li&gt;Se comprobara todos los medios de almacenamiento que han interactuado con el equipo y se formatearan completamente .&lt;/li&gt;
-  &lt;li&gt;Se hará un formateo completo de los discos .&lt;/li&gt;
-  &lt;li&gt;Se restauraran las copias de seguridad .&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Intrusiones&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Se aislara el equipo .&lt;/li&gt;
-  &lt;li&gt;Se comprobara los datos  que han interactuado con el equipo y se haran un seguimiento para comprobar su integridad .&lt;/li&gt;
-  &lt;li&gt;Se hará un formateo completo de los discos&lt;/li&gt;
-  &lt;li&gt;Se restauraran las copias de seguridad&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;AtaquesDDos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Haremos un seguimiento de las peticiones y modificaremos el firewall para eliminar los países donde no es común acceder , incluso dejando solo el nuestro .&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Ransomware&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;No pagaremos el rescate&lt;/li&gt;
-  &lt;li&gt;Se usaran medios de desencriptacion para recuperar el equipo&lt;/li&gt;
-  &lt;li&gt;En caso de no funcione el punto anterior se formateara el equipo y se restauraran las copias de seguridad&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Humanos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Hurto&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Se interpondrá  una denuncia antes los cuerpos y fuerzas  de seguridad del estado&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Adulteración , fraude , modificación e falsificación&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Si el que lo produce es un alumno , se le sancionara con respecto a las normas de convivencia del centro y la decisión del profesorado .&lt;/li&gt;
-  &lt;li&gt;Si el que lo produce es un profesional del centro , se interpondrá una denuncia antes los cuerpos y fuerzas de seguridad del estado&lt;/li&gt;
-  &lt;li&gt;Si viene de un externo , se interpondrá una denuncia antes los cuerpos y fuerzas de seguridad del estado&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Errores del administrador&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Este ha de corregir lo antes posible su error .&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Revelación&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Buscaremos resguardo en la legislación vigente y denunciaremos los echos  sobre dicha situación ante las autoridades policiales .&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Perdida de la información&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Se utilizaran herramientas de recuperación de información .&lt;/li&gt;
-  &lt;li&gt;En caso de que no lo consigamos restauraremos las copias de seguridad&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Sabotaje y Vandalismo&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Se identificara al culpable y se le sancionara&lt;/li&gt;
-  &lt;li&gt;Se procurara restaurar los daños a un estado previo&lt;/li&gt;
-  &lt;li&gt;El responsable se hará cargo de los daños  económicas&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Phishing&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Controlaremos los inicios de sesión&lt;/li&gt;
-  &lt;li&gt;Comprobaremos los registros de actividad&lt;/li&gt;
-  &lt;li&gt;Comprobaremos los envíos realizados a través de comunicaciones&lt;/li&gt;
-  &lt;li&gt;Cambiaremos todas las contraseñas y habilitaremos la autentificación en dos pasos&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;8.Implantación de medidas y costes&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;|&lt;strong&gt;Medidas&lt;/strong&gt; |&lt;strong&gt;Coste&lt;/strong&gt; |
-| - | - |
-|Copias de seguridad |Medio|
-|Instalación de extintores|Medio|
-|Elevación de dispositivos electrónicos |Bajo|
-|Compra de SAIS|Medio |
-|Compra de generadores eléctricos|Medio|
-|Sistemas de control de clima auxiliares  |Alto |
-|Destrucción de dispositivos de almacenamiento dañado |Bajo|
-|Implantación redes distribuidoras de trafico|Medio|
-|Implantación balanceadores de carga |Medio |
-|Implantación de antivirus |Medio |
-|Cifrar memorias USB |Bajo|
-|Implantación controles de acceso|Alto|
-|Medios de desencriptacion|Alto|
-&lt;strong&gt;9.Bibliografía&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;1- &lt;a href=&quot;https://www.incibe.es/protege-tu-empresa/que-te-interesa/plan-director-seguridad&quot;&gt;https://www.incibe.es/protege-tu-empresa/que-te-interesa/plan-director-seguridad&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;2- &lt;a href=&quot;https://www.incibe.es/protege-tu-empresa/que-te-interesa/plan-contingencia-continuidad-negocio&quot;&gt;https://www.incibe.es/protege-tu-empresa/que-te-interesa/plan-contingencia- continuidad-negocio&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;3- &lt;a href=&quot;https://www.incibe.es/protege-tu-empresa/herramientas/servicio-antibotnet&quot;&gt;https://www.incibe.es/protege-tu-empresa/herramientas/servicio-antibotnet&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;4- &lt;a href=&quot;https://www.incibe.es/protege-tu-empresa/blog/medidas-prevencion-ataques-denegacion-servicio&quot;&gt;https://www.incibe.es/protege-tu-empresa/blog/medidas-prevencion-ataques- denegacion-servicio&lt;/a&gt;
-28&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Seguridad" /><category term="SMR" /><summary type="html">Un Plan Director de Seguridad consiste en la definición y priorización de un conjunto de proyectos en materia de seguridad de la información con el objetivo de reducir los riesgos a los que está expuesta la or- ganización hasta unos niveles aceptables, a partir de un análisis de la situación inicial.</summary></entry><entry><title type="html">Scripts administracion usuarios y grupos locales active directory</title><link href="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/" rel="alternate" type="text/html" title="Scripts administracion usuarios y grupos locales active directory" /><published>2022-11-12T00:00:00+01:00</published><updated>2022-11-12T00:00:00+01:00</updated><id>http://localhost:4000/ADMINISTRAR%20USUARIOS%20Y%20GRUPOS%20LOCALES%20%20DE%20DOMINIO%20CON%20POWERSHELL</id><content type="html" xml:base="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/">&lt;!-- Google tag (gtag.js) --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-30T17:03:36+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Scripts administracion usuarios y grupos locales active directory</title><link href="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/" rel="alternate" type="text/html" title="Scripts administracion usuarios y grupos locales active directory" /><published>2022-11-12T00:00:00+01:00</published><updated>2022-11-12T00:00:00+01:00</updated><id>http://localhost:4000/ADMINISTRAR%20USUARIOS%20Y%20GRUPOS%20LOCALES%20%20DE%20DOMINIO%20CON%20POWERSHELL</id><content type="html" xml:base="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/">&lt;!-- Google tag (gtag.js) --&gt;
 &lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
@@ -1359,7 +72,937 @@
 
 &lt;p&gt;4.Realizar un script que cree la siguiente estructura en Directorio Activo:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/sistemas/Aspose.Words.43b37f75-4741-4aa3-b896-5df7106b447f.005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Sisteamas" /><category term="SMR" /><summary type="html">Scripts basicos de ejemplo para administrar usuarios y grupos locales de active directory en Windows Server 2019</summary></entry><entry><title type="html">Servicios DHCP - DNS - ISS -FTP - RDP -FTP en Windows Server 2019</title><link href="http://localhost:4000/servicios-win-server-dhcp-dns-iss-rdp-ftp/" rel="alternate" type="text/html" title="Servicios DHCP - DNS - ISS -FTP - RDP -FTP en Windows Server 2019" /><published>2021-05-22T00:00:00+02:00</published><updated>2021-05-22T00:00:00+02:00</updated><id>http://localhost:4000/servicios%20win%20server%20dhcp-dns-iss-rdp-ftp</id><content type="html" xml:base="http://localhost:4000/servicios-win-server-dhcp-dns-iss-rdp-ftp/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/sistemas/Aspose.Words.43b37f75-4741-4aa3-b896-5df7106b447f.005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Sisteamas" /><category term="SMR" /><summary type="html">Scripts basicos de ejemplo para administrar usuarios y grupos locales de active directory en Windows Server 2019</summary></entry><entry><title type="html">Servicios DHCP,DNS,APACHE,SHH,VNC,FTP bajo Debian 11</title><link href="http://localhost:4000/Servicios_debian/" rel="alternate" type="text/html" title="Servicios DHCP,DNS,APACHE,SHH,VNC,FTP bajo Debian 11" /><published>2022-03-01T00:00:00+01:00</published><updated>2022-03-01T00:00:00+01:00</updated><id>http://localhost:4000/Servicios_debian</id><content type="html" xml:base="http://localhost:4000/Servicios_debian/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GVDYVWJLRH');
+&lt;/script&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h1 id=&quot;nat-con-iptables&quot;&gt;&lt;strong&gt;NAT con iptables&lt;/strong&gt;&lt;/h1&gt;
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;instalación-del-entorno-de-pruebas&quot;&gt;&lt;strong&gt;Instalación del entorno de pruebas&lt;/strong&gt;&lt;/h2&gt;
+        &lt;p&gt;Vamos a instalar el siguiente entorno:&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.001.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;configuración-de-virtualbox&quot;&gt;&lt;strong&gt;Configuración de VirtualBox&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;Servidor debian :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.002.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cliente windows&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.003.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.004.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cliente debian&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.005.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.006.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h1 id=&quot;configuración-de-red&quot;&gt;&lt;strong&gt;Configuración de red&lt;/strong&gt;&lt;/h1&gt;
+    &lt;p&gt;Lo primero que haremos sera configurar las tarjetas de red de nuestras maquinas .&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;servidor-debian-&quot;&gt;&lt;strong&gt;Servidor debian :&lt;/strong&gt;&lt;/h3&gt;
+    &lt;p&gt;Editamos el fichero con nano /ect/network/interfaces como superusuario y añadimos las siguientes lineas .&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.007.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Los cuadros rojos corresponden a la configuración de las tarjetas de red enp0s3(tarjeta externa) y enp0s8(red interna). El cuadro azul corresponde a las reglas iptables para permitir las peticiones al exterior y prohibir las interiores .&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;cliente-debian-&quot;&gt;&lt;strong&gt;Cliente debian :&lt;/strong&gt;&lt;/h3&gt;
+    &lt;p&gt;Editamos el fichero con nano /etc/network/interfaces como superusuario y añadimos las siguientes lineas .La puerta de enlace sera la dirección ip de la tarjeta del servidor interna .&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.008.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;cliente-windows-10-&quot;&gt;&lt;strong&gt;Cliente Windows 10 :&lt;/strong&gt;&lt;/h3&gt;
+    &lt;p&gt;En windows 10 configuramos manualmente accediendo a conexiones de red &amp;gt; configuracion del adaptador &amp;gt; ipv4 y le asignamos lo siguiente .Al igual que el cliente debian cambiando la dirección ip . He puesto dns de Google porque utilizo mi red movil .&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.009.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;configuración-del-servidor&quot;&gt;&lt;strong&gt;Configuración del servidor&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;Modificar el fichero /etc/sysctl.conf. Hay que descomentar la línea :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.010.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Comprobamos si se ha aplicado&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.011.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;comprobación-de-internet-en-los-clientes&quot;&gt;&lt;strong&gt;Comprobación de internet en los clientes&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;Windows 10&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.012.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Debian 11&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.013.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;dhcp&quot;&gt;&lt;strong&gt;DHCP&lt;/strong&gt;&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;instalación-del-servidor-isc-dhcp-server&quot;&gt;&lt;strong&gt;Instalación del servidor isc-dhcp-server&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;Para instalar nuestro servidor dhcp ejecutamos:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.015.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nos dará el siguiente error ya que no esta configurado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.016.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;configuración-del-servidor-isc-dhcp-server&quot;&gt;&lt;strong&gt;Configuración del servidor isc-dhcp-server&lt;/strong&gt;&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Lo primero que tenemos que hacer es configurar el interfaz de red por el que va a trabajar el servidor dhcp, para ello editamos el siguiente fichero:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.017.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y añadimos nuestra interfaz que repartirá direcciones :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.018.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Configura el servidor dhcp con las siguientes características:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rango de direcciones a repartir: 192.168.0.100 - 192.168.0.110&lt;/li&gt;
+  &lt;li&gt;Máscara de red: 255.255.255.0&lt;/li&gt;
+  &lt;li&gt;Duración de la concesión: 1 hora&lt;/li&gt;
+  &lt;li&gt;Puerta de enlace: 192.168.0.1&lt;/li&gt;
+  &lt;li&gt;Servidores DNS: 8.8.8.8&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Para ello editamos el siguiente archivo :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.019.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora añadimos lo siguiente :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.020.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aquí estamos configurando nuestro ámbito conforme al enunciado .&lt;/p&gt;
+
+&lt;p&gt;Ahora deberemos de reiniciar el servicio con el siguiente comando :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.021.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;configura-los-clientes-para-obtener-un-direccionamiento-dinámico&quot;&gt;&lt;strong&gt;Configura los clientes para obtener un direccionamiento dinámico&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;Editaremos la configuración de red para que use el dhcp :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;En el debian editamos el network/interfaces:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.022.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora reiniciamos la tarjeta de red :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.023.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora comprobaremos si nos a asignado ip con ipconfig:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.024.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vemos que se ha asignado correctamente . Repetiremos lo mismo con nuestro cliente windows .&lt;/p&gt;
+
+&lt;p&gt;Configuramos la tarjeta de red para que utilice el protocolo dhcp, reiniciamos la tarjeta  y comprobamos la ip que nos ha asignado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.025.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.026.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos a comprobar las concesiones de direcciones para ello deberemos ver el siguiente archivo . Lo abriremos con cat ya que es importante no editarlo ,  puede causar problemas .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.027.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.028.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;reserva-en-un-servidor-dhcp&quot;&gt;&lt;strong&gt;Reserva en un servidor dhcp&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;Para ello deberemos editar el archivo de configuración de nuestro servidor dhcp :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.029.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez aquí vamos a añadir las siguientes lineas :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Nombre de la reserva&lt;/li&gt;
+  &lt;li&gt;hardware Ethernet: Es la dirección MAC de la tarjeta de red del host.&lt;/li&gt;
+  &lt;li&gt;fixed-address: La dirección IP que le vamos a asignar.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Quedaría nuestra reserva así(la pondremos fuera de la configuración de nuestro ámbito):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.030.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora reiniciaremos el servicio&lt;/p&gt;
+
+&lt;p&gt;Vamos a comprobar que se ha realizado la concesión , para ello nos vamos a windows . Es posible que tengamos que renovar la concesión o reiniciar la tarjeta de red .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.031.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.032.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vamos a comprobar qué ocurre con la configuración de los clientes en determinadas circunstancias, para ello vamos a poner un tiempo de concesión muy bajo . Le pondré 1 min .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.033.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;1.Los clientes toman una configuración, y a continuación apagamos el servidor dhcp. ¿Qué ocurre con el cliente windows? ¿Y con el cliente Linux?&lt;/p&gt;
+
+&lt;p&gt;En windows nos asignara una dirección de APIPA&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.034.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mientras que en Linux no me asigna ninguna dirección ip , aunque después me asigno una dirección de APIPA&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.035.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2.Los clientes toman una configuración, y a continuación cambiamos la configuración del servidor dhcp (por ejemplo, el rango). ¿Qué ocurre con el cliente windows? ¿Y con el cliente Linux?&lt;/p&gt;
+
+&lt;p&gt;Modificamos el rango :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.036.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y reiniciamos el servicio&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.037.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Con windows mantengo la dirección de la reserva   :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.038.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y con Linux nos asigna la dirección del nuevo rango  :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.039.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;actividad-de-ampliación&quot;&gt;&lt;strong&gt;Actividad de ampliación&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;Realizar las modificaciones necesarias en la configuración actual de nuestro servidor dhcp para que reparta direcciones ip a dos redes diferentes, la 192.168.0.0 y la 192.168.2.0.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Lo primero que haremos sera añadir una cuarta tarjeta de red  y la configuraremos manualmente . Si no sabemos el nombre de la interfaz podemos verlo con ip a :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.040.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora la configuraremos estática  , siguiendo el enunciado y la añadimos al /etc/default/isc-dhcp-server.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.041.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.042.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y configuramos nuestro segundo rango :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.043.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora reiniciamos el servicio :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.044.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora le añadiré varias tarjetas de red a mi cliente para comprobar las concesiones y configuramos las tarjetas  :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.045.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y nos habría concedido dirección ip en ambos rangos :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.046.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;dns&quot;&gt;&lt;strong&gt;DNS&lt;/strong&gt;&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;dnsmasq&quot;&gt;&lt;strong&gt;Dnsmasq&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;El paquete dnsmasq permite poner en marcha un servidor DNS de una forma muy sencilla. Simplemente instalando y arrancando el servicio dnsmasq, sin realizar ningún tipo de configuración adicional, nuestro PC se convertirá en un servidor caché DNS y además, resolverá los nombres que tengamos configurados en el archivo /etc/hosts de nuestro servidor. La resolución funcionará tanto en sentido directo como en sentido inverso, es decir, resolverá la IP dado un nombre de PC y el nombre del PC dada la IP.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;instalación&quot;&gt;&lt;strong&gt;Instalación&lt;/strong&gt;&lt;/h3&gt;
+    &lt;p&gt;Para instalarlo solo sera necesario introducir el siguiente comando :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.048.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;configuración&quot;&gt;&lt;strong&gt;Configuración&lt;/strong&gt;&lt;/h3&gt;
+    &lt;p&gt;A continuación, editamos el fichero /etc/dnsmasq.conf y modificamos las siguientes líneas:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.049.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Descomentamos strict-order para que se realicen las peticiones DNS a los servidores que aparecen en el fichero /etc/resolv.conf en el orden en él aparecen.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.050.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Incluimos las interfaces de red que deben aceptar peticiones DNS, descomentar la línea interface por ejemplo: interface=eth0&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.051.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora crearemos nuestro archivo de configuración :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Creamos el fichero de configuración de nuestra zona :&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.052.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;El dominio que hemos elegido es iesgn.org&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.053.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Suponemos que el nombre del servidor es miservidor.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.054.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Vamos a suponer que tenemos un servidor ftp que se llame ftp.iesgn.org y que está en 192.168.1.201 (esto es ficticio) y que tenemos dos sitios webs: www.iesgn.org y departamentos.iesgn.org.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.055.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;` `Además queremos nombrar al cliente que tenía asignada una reserva: lisa.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.056.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Y reiniciamos el servicio&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.057.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;ejercicios&quot;&gt;&lt;strong&gt;Ejercicios&lt;/strong&gt;&lt;/h3&gt;
+    &lt;p&gt;1.Configura los clientes e indica que su DNS es nuestro servidor. Si tienes un servidor DHCP modificarlo para que envíe el nuevo DNS a los clientes.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Editamos el fichero :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.058.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y reiniciamos el servicio :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.059.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora comprobaremos si el cliente nos ha cambiado el dns mirando el siguiente archivo :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.060.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Se nos ha cambiado satisfactoriamente .&lt;/p&gt;
+
+&lt;p&gt;2.Comprueba el funcionamiento usando el comando dig/nslookup desde los clientes preguntando por los distintos nombres. Comprueba que el servidor DNS hace de forwarder preguntando con  dig/nslookup la dirección ip de www.josedomingo.org.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.061.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para la pagina de Jose domingo la respuesta es no autorizada porque nuestro servidor no tiene la resolución en su fichero y tiene que utilizar un forwarder&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.062.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como ves arriba yo he creado mi propia zona y a pesar de haber seguido los pasos de esta &lt;a href=&quot;https://www.josedomingo.org/pledin/2020/12/servidor-dns-dnsmasq/&quot;&gt;pagina&lt;/a&gt; de Jose domingo , no he conseguido que las respuestas estén autorizadas .&lt;/p&gt;
+
+&lt;p&gt;He creado el archivo dns.conf .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.063.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y he creado  mi zona :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.064.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;También he probado mas cosas sin embargo la única forma que he conseguido que me de respuesta autorizada es teniendo solo las resoluciones en el fichero host del servidor , sin crear mi zona .&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;dns-bind-9&quot;&gt;&lt;strong&gt;DNS BIND 9&lt;/strong&gt;&lt;/h2&gt;
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;h3 id=&quot;instalación-1&quot;&gt;&lt;strong&gt;Instalación&lt;/strong&gt;&lt;/h3&gt;
+        &lt;p&gt;Lo primero que haremos sera desinstalar dnsmasq ya que ambos no son compatibles :&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.065.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ademas podemos ver que nos dice que el directorio /etc/dnsmasq.d/ al no estar vació no se ha borrado seria bueno que lo borrásemos manualmente para eliminar todo rastro de anteriores configuraciones :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.066.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos a instalarlos bind:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;configuración-1&quot;&gt;&lt;strong&gt;Configuración&lt;/strong&gt;&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.067.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos a editar el fichero  /etc/bind/named.conf.local donde crearemos las zonas (directas e inversas). En el caso de la práctica nos piden una directa (isgn.com) y otra inversa (red 192.168.1).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.068.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Añadiremos las siguientes líneas a dicho fichero :&lt;/p&gt;
+
+&lt;p&gt;En el directorio / etc/bind están los ficheros db.empty y db.127 (ficheros de configuración de la zona directa e inversa respectivamente). Los copiamos al directorio / var/cache/bind para empezar a añadir los registros&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.069.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Modificamos el fichero  / var/cache/bind/db.isgn e incluimos las siguientes líneas para la resolución directa :&lt;/p&gt;
+
+&lt;p&gt;-javiercruces es el nombre de mi maquina lo he cambiado para facilitar las cosas&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.070.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora haremos lo mismo para la resolución inversa :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.071.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora reiniciaremos el servicio para que se apliquen los cambios :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.072.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ademas para asegurarnos de que hemos realizado bien la configuración vamos a mirar el estado del servicio para ver si nuestras zonas están funcionando :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.073.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Este paso es opcional , pero gracias a revisar esto he descubierto porque no me hacia la resolución inversa y gracias a ver las zonas que estaban cargadas me di cuenta de que el error estaba en el fichero de configuración /etc/bind/named.conf.local y pude solucionarlo .&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;reenviador&quot;&gt;&lt;strong&gt;Reenviador&lt;/strong&gt;&lt;/h3&gt;
+    &lt;p&gt;Hasta ahora, sólo nos resolvería los nombres e ip de nuestra red local. Si queremos configurar un reenviador al que preguntar en caso de que el DNS local no pueda darnos la respuesta, debemos editar el fichero nano / etc/bind/named.conf.options y añadir lo siguiente:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.074.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Antes de hacer este apartado aclarar que como en el apartado de dnsmasq ya comentamos el fichero host y modificamos la configuración del dhcp para que asigne el dns automáticamente , lo omitiré de esta parte&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;ejercicios-1&quot;&gt;&lt;strong&gt;Ejercicios&lt;/strong&gt;&lt;/h3&gt;
+    &lt;p&gt;Comprueba el funcionamiento usando el comando dig/nslookup desde los clientes preguntando por los distintos nombres. Comprueba que el servidor DNS hace de forwarder preguntando con  dig/nslookup la dirección ip de www.josedomingo.org .&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.075.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vemos aquí que las respuestas son correctas , las que están en nuestro servidor estas autorizadas mientras que la pagina de Jose domingo nos la ha echo un forwarder .&lt;/p&gt;
+
+&lt;p&gt;Ahora haré las mismas peticiones pero inversas :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.076.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.077.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Con esto hemos comprobado que el servidor dns funciona correctamente .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.078.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h1 id=&quot;ssh&quot;&gt;&lt;strong&gt;SSH&lt;/strong&gt;&lt;/h1&gt;
+    &lt;h2 id=&quot;práctica--1-gestión-remota-usando-ssh&quot;&gt;&lt;strong&gt;Práctica  1: Gestión remota usando SSH&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;Lo primeros que deberemos de hacer sera instalarnos el paquete  en el servidor y el cliente :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.079.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Por seguridad se suele no permitir la conexión del root al servidor; para ello, se debe modificar el archivo /etc/ssh/sshd_config, y se pone la siguiente opción:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.080.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y reiniciamos el servicio para que se apliquen los cambios :&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;conectarse-al-servidor-ssh&quot;&gt;&lt;strong&gt;Conectarse al servidor ssh&lt;/strong&gt;&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.081.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vamos a  instalarnos el cliente ssh, para ello:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.082.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para acceder desde el cliente al servidor tecleamos:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.083.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nos abríamos conectado remotamente&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;ejecución-remota-de-aplicaciones-gráficas&quot;&gt;&lt;strong&gt;Ejecución remota de aplicaciones gráficas&lt;/strong&gt;&lt;/h3&gt;
+    &lt;p&gt;Mediante ssh existe la posibilidad de ejecutar aplicaciones gráficas en el servidor y manejarlas y visualizarlas en el cliente. El servidor ssh deberá tener activada la redirección del protocolo X, es decir, deberá tener el siguiente parámetro en el archivo de configuración /etc/ssh/sshd_config:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.084.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En mi caso ya estaba habilitado , si no lo tuviésemos lo cambiamos y reiniciamos el servicio para que se apliquen los cambios . Ahora deberemos de conectarnos con el parámetro -X :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.085.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;y posteriormente podemos ejecutar cualquier aplicación gráfica, por ejemplo, gedit:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.086.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Se nos abrirá el programa gráficamente :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.087.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vemos en el servidor que se ha creado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.088.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;transferir-ficheros-con-ssh&quot;&gt;&lt;strong&gt;Transferir ficheros con ssh&lt;/strong&gt;&lt;/h3&gt;
+    &lt;p&gt;Para copiar un fichero desde el cliente al servidor introducimos el siguiente comando :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.089.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos a comprobar si se ha copiado al servidor :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.090.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;práctica-2--acceso-remoto&quot;&gt;&lt;strong&gt;Práctica 2 : Acceso remoto&lt;/strong&gt;&lt;/h2&gt;
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;h3 id=&quot;instalación-y-configuración-del-acceso-remoto&quot;&gt;&lt;strong&gt;Instalación y configuración del acceso remoto&lt;/strong&gt;&lt;/h3&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Vamos a generar nuestras  claves desde nuestro cliente :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.091.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos a añadirla a nuestro servidor :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.092.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez echo esto deshabilitamos el acceso con contraseña en el servidor editando el archivo /etc/ssh/sshd_config :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.093.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A continuación solo debemos reiniciar el servicio y al volver a registrarnos,  ya estaremos utilizando clave publica :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.094.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;` `Si nos intentamos registrar con usuario el cual no tenemos la clave publica nos dirá lo siguiente :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.095.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cambio de puerto&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos a editar el fichero de configuración para indicar el puerto :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.096.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y reiniciaremos el servicio :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.097.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora si nos intentamos conectar como lo hemos hecho anterior mente , nos dara el siguiente error :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.098.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para conectarnos deberemos de especificar el puerto por el cual nos conectamos con -p :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.099.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;conectarnos-con-un-cliente-de-acceso-remoto-usando-túneles&quot;&gt;&lt;strong&gt;Conectarnos con un cliente de acceso remoto usando túneles&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Usaremos kitty  , cuando lo abramos en la primera pantalla introducimos la ip del servidor  y el puerto  que haya configurado en el servidor para el ssh en mi caso 2222&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.100.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora añadimos el puerto por el cual nos conectaremos usando el túnel y después la ip seguida de dos puntos y el mismo puerto .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.101.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora introducimos nuestro usuario y contraseña y nos habremos conectado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.102.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si queremos hacer lo mismo pero usando una clave publica desde windows , pulsamos windows +r y escribimos lo siguiente :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.103.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y generamos las claves publicas :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.104.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos a la ruta que lo hemos guardado copiamos la clave publica y la introducimos en el servidor , por comodidad la he copiado desde el cliente usando ssh.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.105.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.106.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez añadida guardamos el archivo :&lt;/p&gt;
+
+&lt;p&gt;Vamos a desactivar la autenticación por contraseña y reiniciamos el servicio&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.107.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.097.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora desde el kitty deberemos de irnos al apartado ssh&amp;gt;auth , le damos a browse y seleccionamos nuestra clave privada , que deberá tener la extension .ppk . Yo la copie en otro   directorio por comodidad para las pruebas .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.108.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y nos conectamos :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.109.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aquí hemos combinado conectarnos con kitty usando un túnel + otro puerto + clave publica .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.110.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;instalación-vncserver&quot;&gt;&lt;strong&gt;Instalación VNCserver&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;Lo instalamos con el siguiente comando :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.111.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A continuación configuramos las credenciales de configuración para administradores y  usuarios de acceso con el siguiente comando :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.112.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos al cliente y introducimos la ip seguida del puerto por  dos puntos, si no lo sabemos lo podemos mirar con  :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.113.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.114.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nos saldrá una advertencia al  no estar cifrada la comunicación , le damos a continuar y  introducimos la contraseña de acceso , que hayamos puesto anteriormente :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.115.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.116.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como no tenemos entrono grafico en el servidor no nos mostrara imagen pero podemos ver que hemos establecido conexión tanto en windows como en Linux  :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.117.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.118.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;práctica-3-gestión-de-páginas-web-mediante-ssh&quot;&gt;&lt;strong&gt;Práctica 3: gestión de páginas web mediante ssh&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;1.Una vez creado los dos sitio virtuales deseamos establecer una conexión segura a cada uno de nuestros sitios, para ello debemos establecer un túnel ssh de la misma manera que lo hemos establecido para establecer una conexión remota por vnc .&lt;/p&gt;
+
+&lt;p&gt;2.Crear un túnel desde el cliente ssh para que el acceso a la sección privada de la web de departamentos se establezca por el puerto 9999&lt;/p&gt;
+
+&lt;p&gt;3.Con ambos túneles establecidos comprobar que el acceso a la web iesgn.org se puede realizar sin problemas por el puerto 80&lt;/p&gt;
+
+&lt;p&gt;Solo he conseguido hacer a mi pagina por defecto , para eso hacemos un túnel con kitty por ejemplo:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.119.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora añadimos los puertos origen y destino  del puerto :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.120.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.121.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora nos registramos con nuestro usuario :&lt;/p&gt;
+
+&lt;p&gt;Una vez establecido el túnel introducimos en el navegador localhost:8888 :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.122.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y así hemos establecido una conexión segura web .&lt;/p&gt;
+
+&lt;p&gt;Si cerramos el túnel perderemos la conexión :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.123.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h1 id=&quot;apache&quot;&gt;&lt;strong&gt;APACHE&lt;/strong&gt;&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;práctica-1-instalar-un-servidor-web-apache-para-el-uso-en-una-intranet&quot;&gt;&lt;strong&gt;Práctica 1: Instalar un servidor web Apache para el uso en una Intranet&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;Para instalar el servidor debemos ejecutar como root el siguiente comando:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.125.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Crea dentro del directorio /var/www/html un fichero llamado entrada.html en el que pongáis un mensaje de bienvenida&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.126.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora  lo meteré dentro de la ruta :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.127.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A continuación vamos a publicar una página más completa en nuestro servidor, para ello&lt;/p&gt;
+
+&lt;p&gt;utiliza tu sitio web de aplicaciones web.&lt;/p&gt;
+
+&lt;p&gt;Ademas debemos de darle permisos de lectura a otros para que podamos visualizarla :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.128.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Accede desde los clientes, poniendo en un navegador la siguiente URL:&lt;/p&gt;
+
+&lt;p&gt;Desde debian cliente :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.129.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.130.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A continuación vamos a publicar una página más completa en nuestro servidor, para ello utiliza tu sitio web de aplicaciones web:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.131.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.132.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.133.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.134.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Resolución local de nombres : modifica los ficheros necesarios en el servicio BIND y accede usando el nombre que has indicado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.135.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como ya tenia echo el dns anteriormente he utilizado este nombre :&lt;/p&gt;
+
+&lt;h2 id=&quot;ejercicio-2-configuración-de-sitios-web-virtuales-usando-apache&quot;&gt;&lt;strong&gt;Ejercicio 2: Configuración de sitios web virtuales usando Apache&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;La primera web tendrá el directorio base será /var/www/iesgn y contendrá una página llamada index.html, donde sólo se verá una bienvenida a la página del instituto Gonzalo Nazareno .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.136.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La segunda web tendrá el directorio base será /var/www/departamentos. En este sitio sólo tendremos una página inicial index.html, dando la bienvenida a la página de los departamentos del instituto.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.137.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Necesitamos tener dos ficheros para realizar la configuración de los dos sitios virtuales, para ello vamos a copiar el fichero 000-default.conf&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.138.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez hayamos creado los ficheros añadiremos dentro de cada uno el siguiente contenido :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.139.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.140.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora deberemos crear un enlace simbólico en el directorio /etc/apache2/sites-enabled.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.141.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para que se apliquen estos cambios debemos reiniciar el servicio :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.142.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora deberemos de actualizar el dns :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.143.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez reiniciado el dns podremos acceder a ambos sitios desde el navegador :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.144.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.145.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;ejercicio-3-acceso-autentificado-al-servidor-web-apache&quot;&gt;&lt;strong&gt;Ejercicio 3: Acceso autentificado al servidor web Apache&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;Para activar la autentificación básica debemos de añadir las siguientes lineas a nuestro archivo de configuración del sitio :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.146.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora creamos el archivo de las contraseñas , con el usuario previamente creado  :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.147.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Reiniciamos el servicio y nos conectamos :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.148.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.149.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos ha hacer que a la pagina departamentos solo acceda el director y el profesor , ademas  que a dirección solo acceda el director , para eso añadimos en departamentos:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.150.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos a añadir los usuarios de las zonas para eso , utilizamos este comando :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Usuario profesor a departamentos :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.151.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Usuario director a departamentos :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.152.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Usuario director a zona dirección :&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.153.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora reiniciaremos el servicio y comprobaremos que podemos acceder :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.154.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Accederemos a departamentos :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.155.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.156.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora a la zona equipo directivo :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.157.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.158.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ftp&quot;&gt;&lt;strong&gt;FTP&lt;/strong&gt;&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;ejercicio-1-instalación-del-servidor-proftpd-autentificado&quot;&gt;&lt;strong&gt;Ejercicio 1: Instalación del servidor proFTPd autentificado&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;1.Primero nos crearemos un grupo que se llame ftpgroup :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.160.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2.Crea dos usuarios locales que pertenezcan al grupo ftp que hemos creado: Jose y Maria&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.161.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3.Nos instalamos el servicio ftp :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.162.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;4.Configuración básica del fichero proftpd.conf:&lt;/p&gt;
+
+&lt;p&gt;Todos los usuarios accedan  solo a su directorio :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.163.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora podemos acceder desde el navegador con los usuarios jose y maria  :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.164.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.165.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cada uno de estos he creado una carpeta con su nombre dentro de sus directorios personales para poder identificarlos .&lt;/p&gt;
+
+&lt;p&gt;Para que cada usuario pueda conectarse realmente al servidor FTP en Debian y le sea posible subir y descargar los datos en su propio directorio, debes introducir su directorio de entrada en proftpd.conf :&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.166.png&quot; alt=&quot;&quot; /&gt;&lt;/h2&gt;
+    &lt;p&gt;Podemos transferir archivos correctamente :&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.167.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;ejercicio-2-configuración-de-proftpd-para-crear-ftp-anónimo&quot;&gt;&lt;strong&gt;Ejercicio 2: Configuración de proFTPd para crear ftp anónimo&lt;/strong&gt;&lt;/h2&gt;
+    &lt;p&gt;Lo primero que tenemos que hacer es crear el directorio y darle el propietario adecuado:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.168.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora cambiaremos esta regla y permitiremos que todos puedan unirse :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.169.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ademas añadimos  las siguientes lineas e indicaremos la ruta a la que accederán los anónimos :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.170.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Por lo que cuando reiniciemos podrán conectarse los usuarios anónimos :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.171.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pero no con los usuarios que hemos creado anteriormente :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.172.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para permitir que nuestros usuarios se puedan conectar  ademas de los anonimos:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.173.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora aplicamos estos cambios y probamos a conectarnos . Vemos que con anonimos no podemos copiar nada al servidor pero si podemos descargar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.174.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora con un usuario del grupo , podremos copiar archivos  :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.175.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Servicios" /><category term="SMR" /><summary type="html">Practica de servicios en red curso 2021/2022 , en esta se desarolla un escenario con una red local en la que se implantan los servicios NAT ,DNS , DHCP , SSH, VNC , SMTP ,POP3 , IMAP ,FTP</summary></entry><entry><title type="html">Servicios DHCP - DNS - ISS -FTP - RDP -FTP en Windows Server 2019</title><link href="http://localhost:4000/servicios-win-server-dhcp-dns-iss-rdp-ftp/" rel="alternate" type="text/html" title="Servicios DHCP - DNS - ISS -FTP - RDP -FTP en Windows Server 2019" /><published>2021-05-22T00:00:00+02:00</published><updated>2021-05-22T00:00:00+02:00</updated><id>http://localhost:4000/servicios%20win%20server%20dhcp-dns-iss-rdp-ftp</id><content type="html" xml:base="http://localhost:4000/servicios-win-server-dhcp-dns-iss-rdp-ftp/">&lt;!-- Google tag (gtag.js) --&gt;
 &lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;

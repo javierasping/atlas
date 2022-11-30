@@ -1,0 +1,1641 @@
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GVDYVWJLRH');
+</script>
+
+<p><strong>Esquema de red</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.001.jpeg" alt="" /></p>
+
+<p><strong>Características de las maquinas</strong></p>
+
+<p><strong>Maquina Windows server :</strong></p>
+
+<ul>
+  <li>2048 MB de ram</li>
+  <li>32 GB de almacenamiento</li>
+  <li>Tarjeta de red en modo puente y interna</li>
+</ul>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.002.png" alt="" /></p>
+
+<p>Las características hardware de la maquina no las he aumentado ya que de momento me parecen suficiente</p>
+
+<p><strong>Cliente 1 (Debian ) :</strong></p>
+
+<ul>
+  <li>1 GB de ram</li>
+  <li>10 GB de disco duro</li>
+  <li>Tarjeta de red en modo Red Interna</li>
+</ul>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.003.png" alt="" /></p>
+
+<p>He decidido aumentar la ram  para que vaya mas fluido y el almacenamiento por si se necesita en un futuro .</p>
+
+<p><strong>Cliente 2 (Windows)</strong> Características :</p>
+
+<ul>
+  <li>2GB de ram</li>
+  <li>50 GB de almacenamiento</li>
+  <li>1 tarjeta de red en modo red interna</li>
+</ul>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.004.png" alt="" /></p>
+
+<p>He aumentado las características ya que con las que pide el documento no es posible instalar Windows 10 , he aumentado a 2GB de ram  y a 50 GB de almacenamiento aunque con 1GB de ram y 32 GB de almacenamiento seria suficiente</p>
+
+<p>Conforme vaya utilizando las maquinas es posible que le aumente la cantidad de núcleos .</p>
+
+<p><strong>Instalación de las guests additions</strong></p>
+
+<p>El software que vamos a instalar  añade funcionalidades a la instalación básica de Virtual Box que mejoran su rendimiento y consiguen un mejor nivel de integración entre la máquina huésped y la máquina anfitriona .</p>
+
+<p><strong>Maquina Windows server :</strong></p>
+
+<p>Lo primero que tenemos que hacer es insertar la imagen  con la maquina arrancada , para esto desplegamos  la pestaña dispositivos y al final de esta encontraremos la opción .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.005.png" alt="" /></p>
+
+<p>A continuación abrimos el explorador de archivos  nos situamos en este equipo y abrimos el cd .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.006.png" alt="" /></p>
+
+<p>Una vez abierto seleccionamos el ejecutable de nuestra arquitectura en nuestro caso es el siguiente :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.007.png" alt="" /></p>
+
+<p>A continuación se nos abrirá el programa de instalación , pulsamos en siguiente y nos consultara la ruta donde queremos instalarlo en mi caso dejare la por defecto .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.008.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.009.png" alt="" /></p>
+
+<p>Ahora seleccionamos todos los programas y le damos a instalar .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.010.png" alt="" /></p>
+
+<p>Mientras se instala nos saltara una alerta para instalar software de dispositivo deberemos darle a instalar .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.011.png" alt="" /></p>
+
+<p>Una vez ya acabado el proceso  tendremos que reiniciar , se hará automáticamente si dejamos rebot now seleccionado y pulsamos sobre finish .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.012.png" alt="" /></p>
+
+<p><strong>Cliente 1 (Debian ) :</strong></p>
+
+<p>Para empezar  que tenemos que hacer es insertar la imagen  con la maquina arrancada , para esto desplegamos  la pestaña dispositivos y al final de esta encontraremos la opción .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.005.png" alt="" /></p>
+
+<p>A continuación debemos montar el cd , para conocer su ruta podemos hacer un lsblk . En mi caso la ruta del cd es /dev/sr0  y la montare en /media/cdrom como súper usuario .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.013.png" alt="" /></p>
+
+<p>Ahora nos moveremos a la ruta /media/cdrom y ejecutaremos sudo sh./VboxLinuxAdditions.run</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.014.png" alt="" /></p>
+
+<p>Para completar la instalación solo debemos reiniciar la maquina</p>
+
+<p><strong>Cliente 2 (Windows)</strong></p>
+
+<p>Para este cliente los pasos son idénticos a los de Windows Server así que pulsa aquí para ir a la explicación .</p>
+
+<p>Una vez instalado nos permitirá cambiar la resolución de nuestra maquina virtual o compartir el portapapeles</p>
+
+<p><strong>Nombres de las máquinas</strong></p>
+
+<p>Para tener orden voy a llamar las maquinas tal y como están en el esquema del enunciado</p>
+
+<p><strong>Maquina Windows server :</strong></p>
+
+<p>Para cambiarlo en sistemas Windows tal y como indica el enunciado se hace así : Inicio -&gt; Botón derecho en Equipo -&gt; Propiedades -&gt; Cambiar configuración -&gt; Cambiar …</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.015.png" alt="" /></p>
+
+<p><strong>Cliente 1 (Debian ) :</strong></p>
+
+<p>Para Linux debemos editar el fichero /etc/hostname</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.016.png" alt="" /></p>
+
+<p><strong>Cliente 2 (Windows)</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.017.png" alt="" /></p>
+
+<p><strong>Desactivación del Firewall de Windows server</strong></p>
+
+<p>Para que no tengamos problemas de conectividades vamos a desconectar el cortafuego del Windows Server, para ello :</p>
+
+<p>Inicio -&gt; Herramientas administrativas -&gt; Firewall de Windows con seguridad avanzada -&gt; Y desactivamos los tres perfiles (dominio, privado, público) .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.018.png" alt="" /></p>
+
+<p><strong>Configuración de las interfaces de red</strong></p>
+
+<p>Voy a seguir el esquema del enunciado :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.019.png" alt="" /></p>
+
+<p><strong>Maquina Windows server :</strong></p>
+
+<p>En esta maquina disponemos de 2 tarjetas de red :</p>
+
+<p>-Adaptador puente : DHCP</p>
+
+<p>-Red interna: <strong>!</strong>la puerta de enlace sera la ip de la tarjeta adaptador puente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.020.png" alt="" /></p>
+
+<p><strong>Cliente 1 (Debian ) :</strong></p>
+
+<p>Para configurar nuestra tarjeta de red usamos nano  /etc/network/interfaces , para que se aplique debemos subir y bajar la tarjeta de red con ifup y ifdown .</p>
+
+<p><strong>!</strong>La puerta de enlace es la dirección ip de la tarjeta de red interna del Windows server</p>
+
+<p>También he añadido el dns del centro con nano /etc/resolv.conf</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.021.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.022.png" alt="" /></p>
+
+<p><strong>Cliente 12 (Windows)</strong></p>
+
+<p><em><strong>!</strong>La puerta de enlace es la dirección ip de la tarjeta de red interna del Windows server</em></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.023.png" alt="" /></p>
+
+<p><strong>Comprobaciones de conexión</strong></p>
+
+<p><strong>Maquina Windows server :</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.024.png" alt="" /></p>
+
+<p><strong>Cliente 1 (Debian ) :</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.025.png" alt="" /></p>
+
+<p><strong>Cliente 13 (Windows) :</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.026.png" alt="" /></p>
+
+<p>Todas las maquinas pueden verse entre si , he realizado con cada maquina un ping a las otras .</p>
+
+<p><strong>NAT</strong></p>
+
+<p>Para ello hay que seguir los siguientes pasos:</p>
+
+<ol>
+  <li>Inicio -&gt; Herramientas administrativas -&gt; Administrador del servidor -&gt; Agregar roles</li>
+</ol>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.027.png" alt="" /></p>
+
+<p>Le damos a siguiente</p>
+
+<ol>
+  <li>Seleccionamos la instalación basada en características o roles</li>
+  <li>Seleccionamos nuestro servidor</li>
+</ol>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.028.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.029.png" alt="" /></p>
+
+<ol>
+  <li>Seleccionamos Acceso remoto y le  damos a  siguiente</li>
+</ol>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.030.png" alt="" /></p>
+
+<p>5.En este ventana no es necesaria seleccionar nada , le damos a siguiente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.031.png" alt="" /></p>
+
+<p>6.Aquí seleccionamos enrutamiento y le damos a agregar característica</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.032.png" alt="" /></p>
+
+<p>7.Ahora marcamos la opción de reiniciar automáticamente para automatizar el proceso y le damos a instalar</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.033.png" alt="" /></p>
+
+<p>8.Ahora volveremos a Administrador del servidor y vamos a  Herramientas&gt; Enrutamiento y acceso remoto  . Seleccionamos nuestro servidor clic derecho  configurar y habilitar .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.034.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.035.png" alt="" /></p>
+
+<p>9.Se nos abrirá un asistente seleccionamos NAT y elegimos la  tarjeta de red con acceso a internet</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.036.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.037.png" alt="" /></p>
+
+<p>10 . Para terminar seleccionamos configurar mas adelante ya que nosotros no utilizamos DHCP.</p>
+
+<p><strong>Comprobación de que ambos clientes navegan</strong></p>
+
+<p><strong>Cliente 1 (Debian ) :</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.038.png" alt="" /></p>
+
+<p><strong>Cliente 2 (Windows) :</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.039.png" alt="" /></p>
+
+<p><strong>Servidor DHCP</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.040.png" alt="" /></p>
+
+<p><strong>Instala el rol de servidor DHCP</strong></p>
+
+<p>En primer lugar tenemos que instalar un nuevo rol en el servidor .Para ello nos dirigimos al administrador del servidor y pulsamos sobre agregar roles y características como hicimos anteriormente  .</p>
+
+<p>En el tipo de instalación seleccionamos Instalación basada en características o en roles y pulsamos en Siguiente.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.041.png" alt="" /></p>
+
+<p>Seleccionamos nuestro servidor  y pulsamos en siguiente para continuar.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.042.png" alt="" /></p>
+
+<p>Seleccionamos el rol Servidor DHCP y agregamos las características requeridas que nos indica la ventana emergente que nos aparecerá.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.043.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.044.png" alt="" /></p>
+
+<p>En la pantalla de información donde nos explica que es un servidor DHCP pulsamos en Siguiente.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.045.png" alt="" /></p>
+
+<p>Confirmamos la selección y le damos a instalar . Yo marcare la opción de reiniciar automáticamente si es necesario para amenizar el proceso</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.046.png" alt="" /></p>
+
+<p>Deberemos esperar a que se instale</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.047.png" alt="" /></p>
+
+<p>Una vez finalizado cerramos la ventana y procedemos a realizar la configuración .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.048.png" alt="" /></p>
+
+<p><strong>Configuración inicial servidor DHCP</strong></p>
+
+<p>Para realizar la configuración inicial de nuestro servidor pulsamos en herramientas administrativas → DHCP . Desplegaremos nuestro servidor y seleccionaremos ipv4 una vez hacemos click derecho y ámbito nuevo .</p>
+
+<p>Se nos abrirá un asistente , le damos a siguiente . Ahora nos pedirá el nombre y una descripción de nuestro ámbito . En mi caso de nombre le pondré iesgn y no pondré descripción</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.049.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.050.png" alt="" /></p>
+
+<p>Nos pedirán las direcciones ip iniciales y finales  a asignar así como la mascara de subred .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.051.png" alt="" /></p>
+
+<p>A continuación nos pedirá las exclusiones pero como nosotros no vamos a hacer le damos a siguiente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.052.png" alt="" /></p>
+
+<p>Ahora pondremos la duración de la concesión</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.053.png" alt="" /></p>
+
+<p>A continuación procederemos a configurar la puerta de enlace y dns para ello marcamos configurar ahora .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.054.png" alt="" /></p>
+
+<p>Para añadir la puerta de enlace la escribimos y le damos a agregar , después a siguiente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.055.png" alt="" /></p>
+
+<p>En dominio primario deberemos escribir la dirección de nuestro servidor dns</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.056.png" alt="" /></p>
+
+<p>Como no vamos a usar servidor wins le damos a siguiente sin escribir nada</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.057.png" alt="" /></p>
+
+<p>Ahora seleccionamos habilitar este ámbito ahora y finalizamos el asistente de configuración</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.058.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.059.png" alt="" /></p>
+
+<p><strong>Cambio de configuración en  los clientes</strong></p>
+
+<p><strong>Cliente 1 (Debian ) :</strong></p>
+
+<p>Deberemos cambiar la configuración de la tarjeta de red de estática a DHCP para ello hacemos nano etc/<em>network/interfaces</em>   ademas deberemos reiniciar la tarjeta con ifdown enp0s3 <em>y ifup enp0s3</em></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.060.png" alt="" /></p>
+
+<p><strong>Cliente 2 (Windows) :</strong></p>
+
+<p>Para ello accedemos Panel de control &gt; redes e internet &gt; conexiones de red &gt; Propiedades de nuestra tarjeta &gt; IPV4 y seleccionamos obtener automáticamente todos los campos .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.061.png" alt="" /></p>
+
+<p><strong>Comprobación de configuración en  los clientes</strong></p>
+
+<p><strong>Cliente 1 (Debian ) :</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.062.png" alt="" /></p>
+
+<p><strong>Cliente 2 (Windows) :</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.063.png" alt="" /></p>
+
+<p><strong>Windows server  :</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.064.png" alt="" /></p>
+
+<p><strong>Reserva a un cliente</strong></p>
+
+<p>Para reservar un dirección ip a un cliente deberemos acceder al conjunto de direcciones seleccionar el cliente que deseemos y darle a agregar a reserva .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.065.png" alt="" /></p>
+
+<p>Ahora venimos al apartado concesiones y pulsamos sobre la estrella para hacer una reserva nueva , rellenamos el formulario con los datos que deseemos y con la mac del dispositivo . Una vez echo esto le damos a agregar .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.066.png" alt="" /></p>
+
+<p>En la carpeta  reserva se nos creara una carpeta con los datos de la reserva que acabamos de crear. Podemos ver si hemos realizado bien la reserva en concesiones de direcciones .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.067.png" alt="" /></p>
+
+<p>Para que nuestro dispositivo coja la dirección ip que le hemos asignado podemos subir y bajar la tarjeta o esperar a que finalice el tiempo de concesión</p>
+
+<p><strong>Comprobación de navegación</strong></p>
+
+<p><strong>Cliente 1 (Debian ) :</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.068.png" alt="" /></p>
+
+<p><strong>Cliente 2 (Windows) :</strong></p>
+
+<p>Podemos ver que la ip de esta maquina es la que le he asignado en la reserva .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.069.png" alt="" /></p>
+
+<p><strong>Parte II</strong></p>
+
+<p><strong>Configuración de la red</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.070.png" alt="" /></p>
+
+<p>*la puerta de enlace es mi direcion de la tarjeta de red en adaptador puente .</p>
+
+<p><strong>Modifica la configuración del servidor DHCP</strong></p>
+
+<p>Desactivamos el ámbito nuestro actual y crearemos otro siguiendo el enunciado .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.071.png" alt="" /></p>
+
+<p>Como la creación de un ámbito esta explicado en un apartado anterior me voy a limitar a indicarte las características de este .</p>
+
+<p>Direcciones ip iniciales e finales  y mascara de subred .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.072.png" alt="" /></p>
+
+<p>Tiempo de concesión</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.073.png" alt="" /></p>
+
+<p>Puerta de enlace</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.074.png" alt="" /></p>
+
+<p>Servidor dns</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.075.png" alt="" /></p>
+
+<p>Sin servidor wins</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.076.png" alt="" /></p>
+
+<p>Con esto y reiniciar habríamos acabado de configurar el ámbito.</p>
+
+<p>En nuestros dispositivos clientes en este caso no tendremos que hacer nada solamente reiniciar la tarjeta de red  o reiniciarlos para que se actualice al nuevo ámbito</p>
+
+<p><strong>Comprobaciones de concesiones</strong></p>
+
+<p><strong>Cliente 1 (Debian ) :</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.077.png" alt="" /></p>
+
+<p><strong>Cliente 2 (Windows) :</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.078.png" alt="" /></p>
+
+<p><strong>Windows Server:</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.079.png" alt="" /></p>
+
+<p><strong>Reserva parte 2</strong></p>
+
+<p>Este apartado esta explicado anteriormente , repetimos el proceso .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.080.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.081.png" alt="" /></p>
+
+<p><strong>Comprobación de navegación</strong></p>
+
+<p><strong>Cliente 2 (Windows) :</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.082.png" alt="" /></p>
+
+<p><strong>Servicio dns</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.083.jpeg" alt="" /></p>
+
+<p><strong>Instalación del servicio DNS</strong></p>
+
+<p>Para instalar el servicio como en los demás apartados nos  dirigiremos al Administrador del servidor y pulsaremos sobre Agregar roles y características ,. Una vez allí seleccionamos Instalación basada en características o en roles . Seleccionamos nuestro servidor y pulsamos en siguiente , ahora seleccionamos el servicio dns y le damos a agregar características .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.084.png" alt="" /></p>
+
+<p>En la siguiente ventana no necesitamos seleccionar nada así que le damos a siguiente .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.085.png" alt="" />En la siguiente ventana le damos a siguiente y seleccionamos instalar , yo he marcado la opción de reiniciar automáticamente para agilizar el proceso .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.086.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.087.png" alt="" /></p>
+
+<p>Ahora esperamos a que se instale .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.088.png" alt="" /></p>
+
+<p>Una vez finalizado cerramos el asistente y ya tendremos instalado nuestro servicio dns .</p>
+
+<p><strong>Configuración del servicio dns</strong></p>
+
+<p>Para esto nos iremos a Inicio&gt;Herramientas administrativas de servidor&gt;DNS</p>
+
+<p>Una vez aquí seleccionamos nuestro servidor y podremos ver las distintas tareas que podemos realizar .</p>
+
+<p>**Creación de zonas **</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.089.png" alt="" /></p>
+
+<p>Las zonas directas son las encargadas de realizar las traducciones de una cadena de nombre de host a la dirección IP.</p>
+
+<p>Las zonas inversas hace lo contrario a las zonas directas, es decir, se encargan de realizar las traducciones de una dirección IP al nombre de host.</p>
+
+<p>Para nuestro servicio vamos a implementar las dos para ello en administrados de dns pulsamos sobre la carpeta zona directa o inversa &gt; nueva zona .</p>
+
+<p><strong>Creación Zona directa</strong></p>
+
+<p>Una vez abierto el asistente  le damos a siguiente  , tendremos que crear una zona ya que nosotros no disponemos de ninguna seleccionaremos la primera opción .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.090.png" alt="" /> 
+<img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.091.png" alt="" /></p>
+
+<p>Ahora le pondremos nombre en mi caso iesgn.com</p>
+
+<p>Como no tenemos archivo le damos a crear uno nuevo y a siguiente .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.092.png" alt="" /></p>
+
+<p>Como nosotros no vamos a utilizar active directory le damos a no permitir actualizaciones .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.093.png" alt="" /></p>
+
+<p>Le damos a finalizar  .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.094.png" alt="" /></p>
+
+<p><strong>Creación Zona inversa</strong></p>
+
+<p>Nos dirigimos a zona de búsqueda inversa &gt; nueva zona . Se nos abrirá el asistente y le damos a siguiente .**  Seleccionamos crear zona nueva</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.095.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.096.png" alt="" /></p>
+
+<p>Ahora seleccionaremos zona inversa para ipv4</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.097.png" alt="" /></p>
+
+<p>Ahora deberemos introducir el nombre de la zona inversa introduciendo la dirección ip de nuestra red o el nombre directamente . En la siguiente ventana le daremos a crear archivo puesto que no tenemos uno previo .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.098.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.099.png" alt="" /></p>
+
+<p>Al igual que en la zona directa no permitiremos las actualizaciones dinámicas puesto que no usamos active directory</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.100.png" alt="" /></p>
+
+<p>Ahora le damos a finalizar</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.101.png" alt="" /></p>
+
+<p><strong>Creación de los FQHN</strong></p>
+
+<p>Para ello nos dirigimos a  nuestra zona de búsqueda directa y le damos a añadir host nuevo (A o AAAA)</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.102.png" alt="" /></p>
+
+<p>Ahora introducimos el nombre doraemon y añadimos la ip 192.168.1.1</p>
+
+<p>Nos indicara que se ha creado  correctamente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.103.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.104.png" alt="" /></p>
+
+<p>Ahora deberemos de repetir esto para crear todos los FQHD y nos debería quedar así :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.105.png" alt="" /></p>
+
+<p><strong>Servidor de correo</strong></p>
+
+<p>Al igual que en el apartado anterior nos dirigimos  a  nuestra zona de búsqueda directa y le damos a añadir host nuevo (MX) . Y rellenamos el formulario .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.106.png" alt="" /></p>
+
+<p>Ahora deberemos crear un host  A como en el apartado anterior</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.107.png" alt="" /></p>
+
+<p>Posteriormente hacemos doble clic sobre nuestro host mx y seleccionamos a nuestro host A</p>
+
+<p>Ahora estarán enlazados correctamente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.108.png" alt="" /></p>
+
+<p><strong>Servidor FTP</strong></p>
+
+<p>Repetimos los pasos anteriores solo que ahora seleccionamos la opción (CNAME) le pondremos ftp y la enlazaremos con dorami</p>
+
+<p>**Búsqueda inversa **</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.109.png" alt="" /></p>
+
+<p>Nos vamos a la zona inversa &gt; clic derecho &gt;nuevo puntero PTR</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.110.jpeg" alt="" /></p>
+
+<p>Ahora le damos a examinar , nos dirigimos a nuestro ámbito y seleccionamos cada uno de los FQDN . Y se nos rellenaran los demás campos automáticamente  , le damos a siguiente y continuamos  haciendo esto hasta tenerlos todos creados .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.111.png" alt="" /></p>
+
+<p><strong>Modificación DHCP</strong></p>
+
+<p>Para que el servidor DHCP le de a nuestros clientes el dns deberemos de ir a nuestro ámbito y opciones de ámbito , servicio dns y poner la dirección de nuestro servidor dns  .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.112.jpeg" alt="" /></p>
+
+<p><strong>Configuración de los clientes</strong></p>
+
+<p>En mi caso no tendré que tocar nada manualmente de configuración ya que todo se asigna automáticamente . Lo único que hay que hacer es reiniciar los equipos una vez echo el apartado anterior para que se actualice el dns o subir y bajar las tarjetas de los clientes</p>
+
+<p><strong>Comprobaciones</strong></p>
+
+<p>Doraemon.iesgn.com</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.113.png" alt="" /></p>
+
+<p>iesgn.com y www.iesgn.com (captura echa después de realizar servicio web)</p>
+
+<p>ftp.iesgn.com</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.114.png" alt="" /></p>
+
+<p>nobita.iesgn.com</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.115.png" alt="" /></p>
+
+<p>El servidor de correo configurado para iesgn.com</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.116.png" alt="" /></p>
+
+<p>La  dirección ip de www.josedomingo.org</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.117.png" alt="" /></p>
+
+<p>El nombre de la dierecion 192.168.0.203</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.118.png" alt="" /></p>
+
+<p>El servidor dns que tiene configurado iesgn.com</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.119.png" alt="" /></p>
+
+<p><strong>Navegación en cliente Windows</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.120.jpeg" alt="" /></p>
+
+<p><strong>Navegación en cliente debian</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.121.png" alt="" /></p>
+
+<p><strong>Configuración de los clientes</strong> Windows cliente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.122.png" alt="" /></p>
+
+<p>Debian cliente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.123.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.124.png" alt="" /></p>
+
+<p><strong>Configurar  reenviadores</strong></p>
+
+<p>En  nuestro administrador de dns , accedemos a renviadores condicionales , acemos clic derecho y seleccionamos nuevo reenviador condicional</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.125.png" alt="" /></p>
+
+<p>Tendremos la siguiente ventana la cual deberemos rellenar</p>
+
+<p>En domino dns deberemos poner el nombre con el que se guardara el grupo de renviadores , en la tabla del centro pondré las direcciones ip de los servidores dns de google .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.126.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.127.png" alt="" /></p>
+
+<p>Una vez echo esto le daremos a actualizar y ya tendríamos los reenviadores configurados</p>
+
+<p><strong>Servicio Web (IIS)</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.128.jpeg" alt="" /></p>
+
+<p><strong>Instalación del servicio ISS</strong></p>
+
+<p>Con el servicio nat se me instalo parcialmente parte del servicio web , para evitar posibles problemas mas adelante he buscado una guia y según esta he añadido las características que no tenia instaladas . <a href="https://help.mproerp.com/help/0000000059/">Aquí</a> te lo dejo .</p>
+
+<p>Al igual que en los servicios anteriores accedemos a agregar roles y características</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.129.jpeg" alt="" /></p>
+
+<p>Seleccionamos nuestro servidor</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.130.jpeg" alt="" />Ahora deberemos tener seleccionado servidor web  y dentro de estos asegurarnos de que tenemos instaladas todas las siguientes características .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.131.png" alt="" /></p>
+
+<p>También deberemos de instalar todas las características del menú desarrollo de aplicaciones . Cuando las seleccionaremos deberemos aceptar agregar las características .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.132.png" alt="" /></p>
+
+<p>Ademas de lo anterior también debemos agregar las siguientes características</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.133.png" alt="" /></p>
+
+<p>En la siguiente pestaña de añadir características no deberemos de añadir nada . Avanzamos y le damos a instalar .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.134.png" alt="" /></p>
+
+<p>Una vez haya finalizado podremos cerrar el asistente .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.135.png" alt="" /></p>
+
+<p><strong>Ejercicio1: Instalar un servidor web IIS para el uso en una</strong></p>
+
+<p><strong>Ejercicio 1.1</strong></p>
+
+<p>En la ruta c:/inetpub/wwwroot he creado el archivo  entrada.html el cual contiene :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.136.png" alt="" /> 
+<img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.137.png" alt="" /></p>
+
+<p>Desde el navegador de Windows server buscamos http://localhost/entrada.html y nos muestra lo siguiente :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.138.png" alt="" /></p>
+
+<p>Y para acceder desde los clientes deberemos introducir la puerta de enlace seguido de /entrada.html</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.139.png" alt="" /></p>
+
+<p><strong>Ejercicio 1.2</strong></p>
+
+<p>Accedemos a Administrador de Internet Information Services (IIS) y cremos nuestro sitio</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.140.png" alt="" /></p>
+
+<p>Si introducimos  http://localhost vemos mi proyecto correctamente desde el servidor</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.141.jpeg" alt="" /></p>
+
+<p>Y para verlo desde el cliente introducimos la puerta de enlace</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.142.jpeg" alt="" /></p>
+
+<p><strong>Ejercicio 1.3</strong></p>
+
+<p>Para ello modificamos ambos ficheros host tanto como el del cliente como el del servidor y nos quedaría tal que así .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.143.jpeg" alt="" />Una vez guardados podremos acceder usando una url , sin usar el dns . Aquí en el cliente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.144.png" alt="" /></p>
+
+<p>Y aquí accedemos desde el servidor</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.145.png" alt="" /></p>
+
+<p><strong>Ejercicio2: Configuración de sitios web virtuales usando IIS</strong></p>
+
+<p>Primero creare el sitio web IES para realizar el ejercicio.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.146.jpeg" alt="" /></p>
+
+<p>Después creare el sitio web  departamentos</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.147.png" alt="" /></p>
+
+<p>Previamente he creado las carpetas y las rutas . Aquí te las muestro .Primero la carpeta IES</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.148.png" alt="" /></p>
+
+<p>Y aquí la carpeta departamentos</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.149.png" alt="" /></p>
+
+<p>Ahora modificaremos los ficheros host de los clientes y del servidor . Todos devén quedar como este para visualizar ambas paginas</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.150.png" alt="" /></p>
+
+<p>Una vez modificado podremos visualizar ambas paginas .Aquí la comprobación del servidor :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.151.png" alt="" /></p>
+
+<p>Y aquí la comprobación desde el cliente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.152.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.153.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.154.png" alt="" /></p>
+
+<p><strong>Ejercicio 3: Acceso autentificado al servidor IIS</strong></p>
+
+<p>Anteriormente ya me instale el servicio al rol de IIS 8: Autentificación básica .Así que lo primero que deberemos hacer sera habilitar la autenticación básica y deshabilitar la anónima .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.155.png" alt="" /></p>
+
+<p>En el directorio base de (c:inetpub/ies ) vamos a crear una carpeta llamada “profesores”, que será la carpeta que vamos a controlar su acceso por medio de la autenticación</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.156.png" alt="" /></p>
+
+<p>Dentro de esta carpeta crea un archivo index.html con un mensaje de bienvenida a la zona privada de los profesores.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.157.png" alt="" /></p>
+
+<p>Vamos a crear una serie de usuario y un grupo llamado “Profesores”, vamos a crear cuatro usuarios: Alicia, Luisa, Jesús y Raúl . Para crear los usuarios Inicio-&gt;Herramientas administrativas- &gt;Administración de equipos-&gt; Usuarios y grupos locales . Una vez hay clic derecho y crear usuario . Tendremos que rellenar este formulario simplemente poniendo nombre de usuario y contraseña . También desmarcaremos la primera casilla para no tener que cambiar la contraseña .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.158.png" alt="" /> 
+<img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.159.png" alt="" /></p>
+
+<p>Una vez creados vamos a crear  un grupo llamado Profesores, y vamos añadir a este grupo sólo los usuarios Alicia y Luisa. Para esto pinchamos sobre la carpeta grupos y clic derecho nuevo grupo .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.160.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.161.png" alt="" /></p>
+
+<p>A continuación, le damos los permisos necesarios a la carpeta C:/inetpub/ies/profesores, para ello ir al botón derecho→Editar permisos→seguridad . Desde aquí deshabilitamos la herencia desde opciones avanzadas . Y hacemos lo siguiente , quitar el grupo Usuarios, para no permitir el acceso a ningún usuario.</p>
+
+<p>-Agregar el grupo Profesores, con los permisos con los permisos de “Lectura y ejecución”, “Mostrar el contenido de la carpeta” y “Leer”, de modo que cuando la ventana de la imagen superior presente el aspecto mostrado en la imagen inferior, pulsaremos sobre el botón “Aceptar”.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.162.png" alt="" /></p>
+
+<p>Ahora vamos a comprobar si podemos acceder a <a href="http://www.iesgn.com/profesores">http://www.iesgn.com/profesores</a> desde el cliente con los diferentes usuarios  .Nos pedirá el nombre de usuario y contraseña .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.163.png" alt="" /></p>
+
+<p>Primero accederé con Alicia que pertenece al grupo profesores</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.164.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.165.png" alt="" /></p>
+
+<p>Ahora intentare acceder con raul que no pertenece a al grupo profesores .g</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.166.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.167.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.168.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.169.png" alt="" /></p>
+
+<p>Como vemos no nos deja conectarnos ya que no pertenecemos al grupo profesores .</p>
+
+<p><strong>Ejercicio 4 : Configurar el DNS para que haga la resolución de nombres del sitio Web creado.</strong></p>
+
+<p>Para hacer la resolución dinámica debemos de ir a administrador de dns . Una vez aquí deberemos de crear un alias nuevo (CNAME) .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.170.png" alt="" /></p>
+
+<p>Debemos de tener en cuenta que nuestra pagina este en nuestra zona .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.171.png" alt="" /></p>
+
+<p>En el nombre del alias deberemos introducir el nombre de nuestra pagina podemos verlo desde IIS, debemos de asegurarnos que el FQDN coincidan , si nos fijamos en el primer apartado solo introduzco www ya que es lo que falta .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.172.png" alt="" /></p>
+
+<p>Y en el ultimo apartado elegimos el host , en mi caso doraemon que tiene la ip 192.168.0.1  que creamos previamente.</p>
+
+<p>Una vez echo esto pulsamos sobre actualizar archivos de datos del servidor .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.173.png" alt="" /></p>
+
+<p>Ahora deberemos ir a los clientes y comentar las lineas del fichero host .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.174.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.175.png" alt="" /></p>
+
+<p>Ahora comprobaremos si funciona en los clientes y nos funcionara .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.176.png" alt="" /></p>
+
+<p>También podemos comprobarlo con nslookup</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.177.png" alt="" /></p>
+
+<p><strong>Servicio remoto</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.178.jpeg" alt="" /></p>
+
+<p><strong>Instalación del servicio</strong></p>
+
+<p>Al igual  que los servicio anteriores accedemos a administración del servidor &gt; Agregar roles y características</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.179.png" alt="" /></p>
+
+<p>Nos saltamos las pestañas ya que no vamos a modificar nada . En la pestañas de servicios de rol seleccionaremos todas las opciones menos host de virtualización . Yo no he podido instalar la característica de acceso web debido a un error pero como no la vamos a utilizar no es relevante .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.180.png" alt="" />Ahora tenemos que comprobar que hemos añadido las características y le damos a instalar . Y marcamos la casilla de reiniciar automáticamente .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.181.jpeg" alt="" /></p>
+
+<p>Esperamos a que finalice .</p>
+
+<p><strong>Configuración del acceso remoto en el servidor</strong></p>
+
+<p>Deberemos de permitir en nuestro servidor el acceso remoto , accediendo a propiedades del sistema , acceso remoto y permitir conexiones remotas .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.182.png" alt="" /></p>
+
+<p><strong>Acceder desde el cliente al servidor remotamente</strong></p>
+
+<p>Ahora para conectarnos a este equipo nos vamos al cliente y podemos iniciar el programa de control remoto buscando por conexión a escritorio remoto .</p>
+
+<p>También podemos acceder a esta aplicación pulsando la tecla Windows + R y escribiendo mstsc.exe
+<img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.183.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.184.png" alt="" /></p>
+
+<p>Una vez abierto el programa debemos de introducir el nombre de nuestro equipo o direccion de red</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.185.png" alt="" /></p>
+
+<p>Ahora deberemos de introducir las credenciales de nuestro usuario administrador .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.186.png" alt="" /></p>
+
+<p>Es posible que si no tenemos los certificados configurados nos salte este aviso , pero como estamos seguros del equipo que vamos a controlar le damos a si .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.187.png" alt="" /></p>
+
+<p>Como podemos ver se nos ha conectado</p>
+
+<p>Ahora me conectare usando su dirección de red .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.188.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.189.png" alt="" /></p>
+
+<p>Como no he introducido ningún usuario nos lo preguntara así como sus credenciales .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.190.png" alt="" /></p>
+
+<p>Como vemos ahora en vez de mostrarnos el nombre del equipo nos dirá su dirección de red .</p>
+
+<p><strong>Crea un usuario con permisos de acceso remoto y conectate</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.191.png" alt="" /></p>
+
+<p>Accedemos a usuarios y grupos locales y añadimos el nuevo usuario como hicimos en el servicio anterior .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.192.png" alt="" /></p>
+
+<p>Ahora pulsamos sobre el usuario para darle permisos</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.193.png" alt="" /></p>
+
+<p>Debemos irnos a propiedades del usuario y darle permisos de control remoto</p>
+
+<p>Ademas debemos de añadir en propiedades del sistema a nuestro usuario creado</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.194.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.195.png" alt="" /></p>
+
+<p>Ahora nos iremos al cliente y accederemos con el usuario que acabamos de crear . Ponemos nuestra dirección de red y nuestro usuario .</p>
+
+<p>Ahora introducimos nuestra contraseña</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.196.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.197.png" alt="" /></p>
+
+<p>Como ves hemos accedido al servidor con el usuario que acabamos de crear .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.198.png" alt="" /></p>
+
+<p><strong>Software gratuitos de acceso remoto</strong></p>
+
+<p>Algunos ejemplos de estos software son :</p>
+
+<p><strong>-AnyDesk:</strong> programa completamente gratuito para uso personal que nos permite conectarnos a un ordenador de forma remota desde cualquier parte del mundo. Ademas esta aplicación es multiplataforma y se encuentra disponible en Windows, macOS, iOS, Android, Linux, Chrome OS y Raspberry Pi. También nos permite el envió de archivos de forma remota asi como conexiones seguras y fiables .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.199.png" alt="" /></p>
+
+<p><strong>-SupRemo:</strong> es gratuita y de uso personal ademas es multiplataforma pero esta disponibles en menos sistemas que AnyDesk estando  solo  disponible  en Windows,  macOS, iOS, Android . En comparación con estos , este permite tener varias conexiones simultáneamente .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.200.png" alt="" /></p>
+
+<p>-TeamViewer: Este es muy conocido y esta muy extendido  nos permite conectarnos remotamente ademas es usado en entornos profesionales . Este nos permite grabar las sesiones y un sistema de chat .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.201.png" alt="" /></p>
+
+<p><strong>Instalación de TeamViewer</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.202.png" alt="" /></p>
+
+<p>Vamos a su pagina web  y nos dirigimos a Windows aquí te dejo el <a href="https://www.teamviewer.com/es/descarga/windows/">enlace</a>. Pulsamos en descargar la versión de 64 bits que son nuestros sistemas .</p>
+
+<p>Esperamos a que se descargue el instalador y lo abrimos .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.203.png" alt="" /></p>
+
+<p>Instalamos con los ajustes predeterminados y le damos a siguiente .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.204.png" alt="" /></p>
+
+<p>Nos pedirá permisos de administrador y se los debemos de dar para que se instale .Ahora esperamos que se instale .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.205.png" alt="" /></p>
+
+<p>Cuando acabe se nos abrira una pestaña para aceptar el acuerdo de licencia , marcamos la casilla y confirmamos</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.206.png" alt="" /></p>
+
+<p><strong>Usar TeamViewer para controlar un equipo remotamente</strong></p>
+
+<p>Cuando abrimos el programa nos mostrara los datos que debemos darle a la persona para que se conecte remotamente</p>
+
+<p>Conociendo estos datos desde el servidor introducimos los datos del cliente
+<img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.207.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.208.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.209.png" alt="" /></p>
+
+<p>Como vemos estamos controlando el equipo con este programa para salirnos de la conexión podemos pulsar la x y finalizara .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.210.png" alt="" />Cuando finalizamos las sesiones como tenemos una versión gratuita nos saltara este aviso pero podremos seguir usándola</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.211.png" alt="" /></p>
+
+<p><strong>Accede desde tu servidor windows al servidor de un compañero de clase</strong></p>
+
+<p>Para ello debemos estar conectado a la misma red . Deberemos introducir la direcion ip de la tarjeta externa del compañero a conectarnos en mi caso Juan Diego .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.212.png" alt="" /></p>
+
+<p>A continuación introducimos el usuario y las credenciales de su usuario del servidor , el introducio las de su usuario administrador .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.213.png" alt="" /></p>
+
+<p>Como ves me he conectado a su servidor</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.214.png" alt="" /></p>
+
+<p><strong>Servidor FTP</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.215.png" alt="" /></p>
+
+<p><strong>Instalación del servicio ftp</strong></p>
+
+<p>Para instalar el servicio accedemos a administración del servidor &gt; agregar roles y características &gt; tipo de instalación seleccionamos basada en roles y seleccionamos servidor ftp , que estara al desplegar servidor web .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.216.png" alt="" /></p>
+
+<p>En los siguientes apartados no sera necesario seleccionar nada . En confirmar selección marcamos la casilla de reiniciar y comenzamos la instalación .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.217.png" alt="" /></p>
+
+<p>Una vez finalice la instalación podremos cerrar el asistente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.218.png" alt="" /></p>
+
+<p><strong>Configuración del servicio</strong></p>
+
+<p>Para configurar nuestro sitio ftp primero deberemos de crear una ruta donde almacenemos nuestros archivos en mi caso sera c:/inetpub/ftp/public . Dentro de esto crearemos los archivos que se compartirán .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.219.png" alt="" />Una vez echo esto nos dirigimos al IIS y hacemos clic derecho sobre nuestro server , aquí seleccionamos agregar sitio ftp .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.220.png" alt="" /></p>
+
+<p>Se nos abrirá un asistente en el cual deberemos de ponerle un nombre al sitio y indicar la ruta que hemos creado anteriormente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.221.png" alt="" />Ponemos en dirección ip ponemos nuestra puerta de enlace ya que lo mantendremos localmente en nuestra red . Permitimos el SSL y seleccionamos nuestro certificado .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.222.png" alt="" /></p>
+
+<p>Seleccionamos autenticación anónima y permitimos el acceso a usuarios anónimos . Ademas le damos permisos de lectura .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.223.png" alt="" /></p>
+
+<p>Accedemos a nuestra pagina ftp desde el iis y nos metemos en reglas de autorización .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.224.png" alt="" /></p>
+
+<p>Una vez dentro crearemos comprobamos que se haya creado correctamente la regla anterior .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.225.png" alt="" /></p>
+
+<p>Si no se ha añadido , agregaremos a todos los usuarios anónimos y le daremos permisos de lectura .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.226.png" alt="" /></p>
+
+<p>A continuación , para hacer que podamos encontrar nuestro servicio con un nombre utilizaremos el dns , accedemos a el y crearemos un cname y lo vincularemos a doraemon .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.227.png" alt="" /></p>
+
+<p>Nuestra zona dns debería quedar así :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.228.png" alt="" /></p>
+
+<p><strong>Comprobación desde los clientes</strong></p>
+
+<p>Para acceder a través de la ip introducimos en el navegador <a href="ftp://192.168.0.1/">ftp://192.168.0.1</a></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.229.png" alt="" /></p>
+
+<p>Si queremos acceder usando un nombre deberemos de poner <a href="ftp://ftp.iesgn.com/">ftp://ftp.iesgn.com</a></p>
+
+<p><strong>Configuración de un servidor FTP con acceso autentificado</strong></p>
+
+<p>Lo primero que haremos sera crear el sitio ftp . Le asignamos el nombre que queramos y seleccionamos de ruta <a href="file:///c:/users">c:\users</a></p>
+
+<p>Repetimos la configuración del ejercicio anterior , ponemos la ip 192.168.0.1 y permitimos el certificado ssl .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.230.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.231.png" alt="" /></p>
+
+<p>En esta ventana  seleccionamos usuarios anónimos con permisos de lectura y le damos a finalizar .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.232.png" alt="" /></p>
+
+<p>Crearemos los usuarios Jose y maría  accediendo a usuarios y grupos locales .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.233.png" alt="" /></p>
+
+<p>Comprobaremos que se han creado correctamente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.234.png" alt="" /></p>
+
+<p>Una  vez  echo  esto  deberemos  de  crearle  sus  directorios  correspondientes  a c:/usuarios/LocalUser/Jose   c:/usuarios/LocalUser/Maria  y  le  meteré  algún  archivo  para visualizarlo.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.235.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.236.png" alt="" /></p>
+
+<p>Ahora comprobaremos que puedo acceder como Jose y maría . Primero con Jose</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.237.png" alt="" /></p>
+
+<p>Como vemos puedo acceder como Jose</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.238.png" alt="" /></p>
+
+<p>Ahora lo haremos con maría</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.239.png" alt="" /></p>
+
+<p>Vemos su directorio</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.240.png" alt="" /></p>
+
+<p>Como vemos accedemos directamente al directorio del usuario .</p>
+
+<p><strong>!!Para que cada usuario entre en directamente en su directorio he realizado lo siguiente :</strong> En aislamiento habilitamos la tercera opción</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.241.png" alt="" /></p>
+
+<p>Ahora nos dirigimos a nuestras carpetas de los usuarios y le damos permiso solo a ese usuario . A Jose :</p>
+
+<p>Y a maría :
+<img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.242.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.243.png" alt="" /></p>
+
+<p>Ademas debemos de tener habilitada la autenticación básica y deshabilitada la anónima</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.244.png" alt="" /></p>
+
+<p><strong>Mi solución al error</strong></p>
+
+<p>5)Para que puedan acceder usuarios anónimos debemos habilitar la autentificación anónima y en la reglas de autorización debemos añadir la opción de usuarios anónimos. Los usuarios anónimos accederán a una carpeta llamada: c:/usuarios/LocalUser/Public</p>
+
+<p><strong>!!He estado investigando y al tener habilitada el aislamiento de usuarios no es compatible con la autenticación anónima , en el articulo que he encontrado habla de active directory pero creo que es aplicable a nuestro caso ya que el error es el mismo . Te dejo el enlace <a href="https://docs.microsoft.com/es-es/troubleshoot/iis/error-530-anonymous-ftp-sites">aquí</a> .</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.245.png" alt="" /></p>
+
+<p><strong>Así , que una posible solución que he encontrado es crear un usuario local en el servidor  que tenga el nombre de anonymous y crear su directorio al igual que hicimos con Jose y maría ya que estos van ligados a los usuarios .</strong></p>
+
+<p><strong>Tengo entendido que al usar este sistema de aislamiento los directorios van ligados a los nombres de usuarios ,  por lo que acceder a la carpeta public con el usuario que acabamos de crear no seria posible .</strong></p>
+
+<p><strong>Si podríamos tener acceso , usando aislamiento , si tenemos un usuario que se llame  public .</strong> Te enseño lo que he echo , creo su directorio :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.246.png" alt="" /></p>
+
+<p>Creo el usuario :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.247.png" alt="" /></p>
+
+<p>Le damos permiso al usuario .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.248.png" alt="" /></p>
+
+<p>Metemos a anonnymous el usuario que acabamos de crear</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.249.png" alt="" /></p>
+
+<p>Como ves podemos acceder al directorio .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.250.png" alt="" /></p>
+
+<p>Claro, esto es un usuario local como Jose y Maria , por eso funciona .</p>
+
+<p><strong>Acceder con usuario anónimo y subir archivos</strong></p>
+
+<p>Lo primero es darle permisos de escritura al usuario en la carpeta localmente .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.251.png" alt="" /></p>
+
+<p>Ahora nos iremos al explorador de archivos y buscaremos ftp://192.168.0.1</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.252.png" alt="" />Para añadir un archivo podemos arrastrarlo por ejemplo , como ves se ha añadido a la carpeta . También podríamos copiarlo y pegarlo</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.253.png" alt="" /></p>
+
+<p>Estos se guardaran el la ruta donde acceda nuestro usuario en este caso aquí .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.254.png" alt="" /></p>
+
+<p><strong>Gestión de páginas web mediante acceso FTP</strong></p>
+
+<p>Vamos a crear dos sitios webs virtuales en el servidor IIS que se llamen web1.iesgn.com y web2.iesgn.com .</p>
+
+<p>Primero creare sus directorios :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.255.png" alt="" /></p>
+
+<p>Ahora creare las dos web , primero web1</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.256.png" alt="" /></p>
+
+<p>y web2</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.257.png" alt="" /></p>
+
+<p>Ahora crearemos los usuarios web1 y web2</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.258.png" alt="" /></p>
+
+<p>Ahora modificaremos el servidor dns para que haga la resolución de nombres parra ello crearemos los correspondientes registros cname .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.259.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.260.png" alt="" /></p>
+
+<p>Nuestro dns quedaría así :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.261.png" alt="" /></p>
+
+<p>Ahora nos conectaremos a través de ftp y subiremos los archivos de las paginas web comprimidos .</p>
+
+<p>Pero antes de esto deberemos darle permisos de escritura y lectura a los usuarios web a sus respectivos directorios .</p>
+
+<p>Primero a web1</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.262.png" alt="" /></p>
+
+<p>Por ultimo a web2</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.263.png" alt="" /></p>
+
+<p>Ahora nos dirigimos al cliente y nos conectamos con los dos usuarios a traves de ftp en el explorador de archivos .</p>
+
+<p>Primero con el usuario web1</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.264.png" alt="" /></p>
+
+<p>Ahora pasamos la carpeta comprimida a nuestro ftp .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.265.png" alt="" /></p>
+
+<p>Repetimos lo mismo con el usuario web2</p>
+
+<p>Y pasamos la carpeta comprimida</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.266.png" alt="" /></p>
+
+<p>Ahora deberíamos de acceder a las paginas web pero si accemos esto nos saldrá esto :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.267.png" alt="" /></p>
+
+<p>Para solucionar esto deberemos ir a IIS y cambiar el documento predeterminado .</p>
+
+<p>En mi caso los index se llaman web1.html y web2.html asi que los añadiremos y una vez echo esto deberemos de descomprimir la carpeta para que lea los archivos .</p>
+
+<p>De modo que el directorio quedaría así para web1 :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.268.png" alt="" /></p>
+
+<p>y así para web2</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.269.png" alt="" /></p>
+
+<p>Así quedaría el documento predeterminado de web1</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.270.png" alt="" /></p>
+
+<p>Y así quedaría el documento predeterminado de web2</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.271.png" alt="" /></p>
+
+<p>Ahora te mostrare el resultado desde los clientes . Desde windows10 se vería así web1</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.272.png" alt="" /></p>
+
+<p>Desde windows10 se vería así web2</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.273.png" alt="" /></p>
+
+<p>Desde debian se vería así web1
+<img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.274.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.275.png" alt="" /></p>
+
+<p>Desde debian se vería así web2</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.276.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.277.png" alt="" /></p>
+
+<p><strong>Instalación y configuración de un servidor/cliente FTP gratuito</strong></p>
+
+<p>5 Servidores ftp populares :</p>
+
+<p><strong>-Cyberduck :</strong> Un cliente FTP Mac muy interesante para los usuarios del sistema operativo Mac OS. La principal funcionalidad que ofrece es que se puede integrar con los editores de códigos más relevantes y utilizados del mercado. Además, hace las funciones de cliente para Google Docs y Amazon S3.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.278.png" alt="" /></p>
+
+<p><strong>-WinSCP:</strong> Un cliente SFTP que hace uso de la tecnología Secure Shell para garantizar la máxima seguridad a los usuarios. Permite la transferencia de datos y archivos entre ordenadores locales y remotos de forma completamente segura, sin fisuras. Se trata de un cliente FTP Windows, disponible sólo para este sistema operativo.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.279.png" alt="" /></p>
+
+<p><strong>-Transmit:</strong> Un cliente FTP de pago para Mac OS y otros dispositivos con sistema operativo iOS. Una de las grandes ventajas que ofrece es que la transmisión de datos se realiza de manera muy rápida. Además, gracias a la función de sincronización los usuarios tienen plena libertad para ajustar directorios completos para su transmisión con el servidor. No hay que olvidar que admite la encriptación SSL y SSH, lo cual es un gran punto a favor en términos de seguridad.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.280.png" alt="" /></p>
+
+<p><strong>-SmartFTP:</strong>Un software compartido compatible con Windows que admite los protocolos FTP, FTPS y SFTP. Una de sus funcionalidades más destacadas es que establece plazo para las transferencias y, además, reanuda aquellas transferencias que se han interrumpido por cualquier motivo. Tiene capacidad para conectarse de manera simultánea a varios servidores.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.281.png" alt="" /></p>
+
+<p><strong>-FileZilla:</strong> Casi con total seguridad, uno de los mejores clientes FTP en la actualidad. Ofrece soporte para FTP sobre SSL / TLS (FTPS) y SSH File Transfer Protocol (SFTP). También una gran selección de funciones, como por ejemplo el sistema de configuración en red o la transferencia en cola. Se trata de un cliente gratuito y, además, disponible para Windows, Mac OS y Linux.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.282.png" alt="" /></p>
+
+<p><strong>Instalación de FileZilla</strong></p>
+
+<p>Lo primero que deberemos de hacer es descargarlo en nuestro servidor para ello buscamos en nuestro navegador la pagina oficial de FileZilla , aquí te dejo el <a href="https://filezilla-project.org/">enlace</a>.</p>
+
+<p>Deberemos seleccionar la opción de server .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.283.png" alt="" /></p>
+
+<p>Pulsaremos sobre donwload FileZilla server .</p>
+
+<p>Nos saldrá el siguiente aviso deberemos agregar la pagina para que podamos descargar al archivo si no el navegador no confiara y no permitirá la descarga .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.284.png" alt="" /></p>
+
+<p>Nos saldrá este aviso en la parte inferior del navegador le daremos a guardar para que se descargue</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.285.png" alt="" /></p>
+
+<p>Cunado finalice la descarga le daremos  ejecutar</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.286.png" alt="" /></p>
+
+<p>Ahora comenzara el proceso de instalacion , lo primero que tenemos que hacer es aceptar la licencia de uso .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.287.png" alt="" /></p>
+
+<p>Aquí dejamos marcadas todas las opciones y le damos a next</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.288.png" alt="" /></p>
+
+<p>Ahora seleccionamos la ruta donde se instalara , yo dejare la predeterminada</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.289.png" alt="" /></p>
+
+<p>Ahora deberemos elegir los accesos directos . Yo dejare los que vienen asi que le damos a next</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.290.png" alt="" /></p>
+
+<p>Ahora deberemos elegir varias opciones , la primera es cuando queremos que se inicie , la segunda el puerto por el cual escuchara la administración de la interfaz y las contraseñas de administracion que le pondremos</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.291.png" alt="" /></p>
+
+<p>Ahora elegiremos cuando se iniciaría la interfaz de administración</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.292.png" alt="" /></p>
+
+<p>Y le damos a instalar y esperamos que finalice</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.293.png" alt="" /></p>
+
+<p>Se  nos abrirá automáticamente una ventana de administración como esta :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.294.png" alt="" /></p>
+
+<p>Ahora rellenamos esta ventana con los siguientes datos :</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.295.png" alt="" /></p>
+
+<p>Ahora deberemos guardar la firma</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.296.png" alt="" /></p>
+
+<p>Nos saldrá la siguiente ventana pulsamos sobre server &gt; configure</p>
+
+<p>Ahora nos movemos a usuarios , le damos a adduser y le ponemos el nombre que queramos , yo al crear el usuario que no necesita autentificación es decir el anónimo lo he llamado anonnymous .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.297.png" alt="" /></p>
+
+<p>Le dejamos la opción que no requiere contraseña y le ponemos la ruta de la carpeta public por ejemplo. Y marcamos la opción de writeable para poder escribir .</p>
+
+<p>Ahora creare la zona autenticada , para esto repetimos , crearemos un usuario yo le pondré Jose , le damos que requiera contraseña y le indicamos la ruta de la carpeta Jose . Y marcamos la opción de writeable</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.298.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.297.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.299.jpeg" alt="" /></p>
+
+<p><strong>Instalación del cliente</strong></p>
+
+<p>Accedemos a su pagina web igual que con el servidor y seleccionamos la opción de cliente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.300.png" alt="" /></p>
+
+<p>Pulsamos sobre descargar</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.301.png" alt="" /></p>
+
+<p>Y seleccionamos la primera opción</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.302.png" alt="" /></p>
+
+<p>Le damos a ejecutar</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.303.png" alt="" /></p>
+
+<p>Le damos permisos pulsando en si</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.304.png" alt="" /></p>
+
+<p>Aceptamos el acuerdo de licencia</p>
+
+<p>Denegamos el programa adicional</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.305.png" alt="" /></p>
+
+<p>Ahora nos preguntara si lo queremos instalar para este usuario o para todos , en mi caso seleccionare solo para mi .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.306.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.307.png" alt="" /></p>
+
+<p>Dejamos seleccionadas las predeterminadas</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.308.png" alt="" /></p>
+
+<p>Introducimos la ruta donde se instalara , en mi caso dejare la predeterminada</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.309.png" alt="" /></p>
+
+<p>Ahora se crearan los accesos directos , lo dejaremos como viene</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.310.png" alt="" /></p>
+
+<p>Y cuando finalice la instalación le damos a finish .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.311.png" alt="" /></p>
+
+<p>Una vez finalizado se nos abrirá el programa , si tenemos el FileZilla apagado podemos usar el ftp de la actividad 2 y3 podremos acceder como  poniendo  la dirección ip y los datos de los usuarios, nos saldrá una ventana como esta ya que el certificado es desconocido así que le damos a aceptar y nos conectara a la carpeta del usuario .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.312.png" alt="" /></p>
+
+<p>Ahora vamos a conectarnos a FileZilla server así que detenemos todos los sitios ftp.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.313.png" alt="" /></p>
+
+<p>Ahora introducimos en el cliente la dirección ip del servidor y el usuario anonymous , como vemos sin introducir contraseña hemos podido acceder anónimamente , abajo a la derecha podemos ver el contenido de la carpeta</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.314.png" alt="" /></p>
+
+<p>Ahora probaremos a subir un archivos desde FileZilla para esto seleccionamos el archivo y le damos a subir</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.315.png" alt="" /></p>
+
+<p>Podremos asegurarnos de que se ha transferido en la parte inferior en transferencias satisfactorias .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.316.png" alt="" /></p>
+
+<p>Vamos a hacer lo mismo con el usuario Jose el cual nos tendremos que identificar</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.317.png" alt="" /></p>
+
+<p>Transferiré el archivo y veremos que se ha transferido satisfactoriamente .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.318.png" alt="" /></p>
+
+<p>Ahora descargaremos los dos archivos que hemos subido , primero con Jose el usuario autenticado pulsamos sobre el archivo y le damos a descargar</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.319.png" alt="" /></p>
+
+<p>Aquí podemos ver que se ha descargado</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.320.png" alt="" /></p>
+
+<p>Ahora con anonnymous descargare el archivo publico</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.321.png" alt="" /></p>
+
+<p>Aquí la transferencia satisfactoria vemos que se ha realizado .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.322.png" alt="" /></p>
+
+<p><strong>Servidor de correo</strong></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.323.png" alt="" /></p>
+
+<p><strong>Instalación</strong></p>
+
+<p>Al igual que en los servicios anteriores debemos ir a administración del servidor &gt; agregar roles y características . Una vez aquí nos vamos a características y seleccionamos servidor smtp .</p>
+
+<p>Cuando pulsamos sobre esta nos pedirá agregar características , le damos a agregar</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.324.png" alt="" /></p>
+
+<p>Una vez marcada la opción le damos a siguiente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.325.png" alt="" /></p>
+
+<p>Marcamos la opción de reiniciar si fuese necesario y le damos a instalar</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.326.png" alt="" /></p>
+
+<p>Una vez instalada podemos cerrar el asistente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.327.png" alt="" /></p>
+
+<p>Ahora nos descargaremos el servidor de correo hMailServer , aquí te dejo el <a href="https://www.hmailserver.com/download">enlace</a> .</p>
+
+<p>Deberemos añadirle a sitios de confianza para que nos permita descargar el archivo.</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.328.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.329.png" alt="" /></p>
+
+<p>Guardamos el archivos</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.330.png" alt="" /></p>
+
+<p>Cuando finalice la descarga le damos a ejecutar .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.331.png" alt="" /></p>
+
+<p>Se nos abrirá el asistente , le damos a siguiente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.332.png" alt="" /></p>
+
+<p>Aceptamos el acuerdo de licencia y le damos a siguiente</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.333.png" alt="" /></p>
+
+<p>Ahora seleccionamos la ruta , yo dejare la predeterminada</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.334.png" alt="" /></p>
+
+<p>Seleccionamos las opciones que queramos instalar , yo las dejaras todas .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.335.png" alt="" /></p>
+
+<p>Ahora elegimos el tipo de base de datos</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.336.png" alt="" /></p>
+
+<p>Ahora seleccionamos el nombre del acceso directo , yo dejare el que viene</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.337.png" alt="" /></p>
+
+<p>Ahora deberemos de crear una contraseña de administración</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.338.png" alt="" /></p>
+
+<p>Ahora  nos mostrara un resumen de lo seleccionado , si vemos que es correcto le damos a instalar</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.339.png" alt="" /></p>
+
+<p>Una vez finalizado , marcamos la casilla y le damos a finish para que se inicie al cerrar .</p>
+
+<p>Ahora nos conectamos al servidor dándole a conect</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.340.png" alt="" /></p>
+
+<p>Ahora introducimos nuestra contraseña</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.341.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.342.png" alt="" /></p>
+
+<p>Se nos abrirá una ventana como esta , ahora le damos a add domain y le ponemos iesgn.com</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.343.png" alt="" /></p>
+
+<p>Una vez echo esto le damos a save .</p>
+
+<p>Ahora vamos a poner que use el protocolo POP3 , nos vamos a settings &gt; protocols .Y solo dejamos esta seleccionada</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.344.png" alt="" /></p>
+
+<p><strong>Añadir usuarios</strong></p>
+
+<p>Nos vamos debajo de nuestro dominio y en accounts le damos a add .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.345.png" alt="" /></p>
+
+<p>Ahora rellenamos el formulario en mi caso solo le he puesto dirección y lo he guardado</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.346.png" alt="" /></p>
+
+<p>Lo mismo con el usuario2</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.347.png" alt="" /></p>
+
+<p><strong>Añadir entradas al dns</strong></p>
+
+<p>Vamos a nuestra zona y creamos un nuevo registro mx uno para smtp</p>
+
+<p>Y otro para pop3 <img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.348.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.349.png" alt="" /></p>
+
+<p>Así quedaría nuestro dns</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.350.png" alt="" /></p>
+
+<p><strong>Utiliza  Thunderbird para acceder al servidor de correo instalado</strong></p>
+
+<p>Abrimos Thunderbird y añadimos las 2 cuentas , en hostname deberemos poner la ip del servidor .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.351.png" alt="" /></p>
+
+<p>Cuando le demos a done nos saldrá este aviso , le damos a entiendo el riesgo y le das a confirmar .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.352.jpeg" alt="" /></p>
+
+<p>Ahora con el usuario1 le mandare un correo al usuario2</p>
+
+<p>Miraremos la bandeja de entrada del usuario2 , nos ha llegado correctamente .</p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.353.png" alt="" /></p>
+
+<p><img src="/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.354.png" alt="" /></p>
+

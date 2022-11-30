@@ -1,0 +1,814 @@
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GVDYVWJLRH');
+</script>
+
+<ol>
+  <li>
+    <h1 id="nat-con-iptables"><strong>NAT con iptables</strong></h1>
+    <ol>
+      <li>
+        <h2 id="-instalación-del-entorno-de-pruebas">` `<strong>Instalación del entorno de pruebas</strong></h2>
+        <p>Vamos a instalar el siguiente entorno:</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.001.png" alt="" /></p>
+<ol>
+  <li>
+    <h2 id="configuración-de-virtualbox"><strong>Configuración de VirtualBox</strong></h2>
+    <p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.002.png" alt="" />Servidor debian :</p>
+  </li>
+</ol>
+
+<p>Cliente windows</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.003.png" alt="" />
+<img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.004.png" alt="" /></p>
+
+<p>Cliente debian</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.005.png" alt="" />
+<img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.006.png" alt="" /></p>
+
+<ol>
+  <li>
+    <h2 id="configuración-de-red"><strong>Configuración de red</strong></h2>
+    <p>Lo primero que haremos sera configurar las tarjetas de red de nuestras maquinas .</p>
+  </li>
+  <li>
+    <h3 id="servidor-debian-"><strong>Servidor debian :</strong></h3>
+    <p>Editamos el fichero con nano /ect/network/interfaces como superusuario y añadimos las siguientes lineas .</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.007.png" alt="" /></p>
+
+<p>Los cuadros rojos corresponden a la configuración de las tarjetas de red enp0s3(tarjeta externa) y enp0s8(red interna). El cuadro azul corresponde a las reglas iptables para permitir las peticiones al exterior y prohibir las interiores .</p>
+<ol>
+  <li>
+    <h3 id="cliente-debian-"><strong>Cliente debian :</strong></h3>
+    <p>Editamos el fichero con nano /etc/network/interfaces como superusuario y añadimos las siguientes lineas .La puerta de enlace sera la dirección ip de la tarjeta del servidor interna .</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.008.png" alt="" /></p>
+
+<ol>
+  <li>
+    <h3 id="cliente-windows-10-"><strong>Cliente Windows 10 :</strong></h3>
+    <p>En windows 10 configuramos manualmente accediendo a conexiones de red &gt; configuracion del adaptador &gt; ipv4 y le asignamos lo siguiente .Al igual que el cliente debian cambiando la dirección ip . He puesto dns de Google porque utilizo mi red movil .</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.009.png" alt="" /></p>
+
+<ol>
+  <li>
+    <h2 id="configuración-del-servidor"><strong>Configuración del servidor</strong></h2>
+    <p>Modificar el fichero /etc/sysctl.conf. Hay que descomentar la línea :</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.010.png" alt="" /></p>
+
+<p>Comprobamos si se ha aplicado</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.011.png" alt="" /></p>
+
+<ol>
+  <li>
+    <h2 id="comprobación-de-internet-en-los-clientes"><strong>Comprobación de internet en los clientes</strong></h2>
+    <p>Windows 10</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.012.png" alt="" />Debian 11</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.013.png" alt="" /></p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.014.png" alt="" /></p>
+
+<h1 id="dhcp"><strong>DHCP</strong></h1>
+<ol>
+  <li>
+    <h2 id="instalación-del-servidor-isc-dhcp-server"><strong>Instalación del servidor isc-dhcp-server</strong></h2>
+    <p>Para instalar nuestro servidor dhcp ejecutamos:</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.015.png" alt="" /></p>
+
+<p>Nos dará el siguiente error ya que no esta configurado :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.016.png" alt="" /></p>
+
+<ol>
+  <li>
+    <h2 id="configuración-del-servidor-isc-dhcp-server"><strong>Configuración del servidor isc-dhcp-server</strong></h2>
+    <p>Lo primero que tenemos que hacer es configurar el interfaz de red por el que va a trabajar el servidor dhcp, para ello editamos el siguiente fichero:</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.017.png" alt="" />Y añadimos nuestra interfaz que repartirá direcciones :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.018.png" alt="" /></p>
+
+<p>Configura el servidor dhcp con las siguientes características:</p>
+
+<ul>
+  <li>Rango de direcciones a repartir: 192.168.0.100 - 192.168.0.110</li>
+  <li>Máscara de red: 255.255.255.0</li>
+  <li>Duración de la concesión: 1 hora</li>
+  <li>Puerta de enlace: 192.168.0.1</li>
+  <li>Servidores DNS: 8.8.8.8</li>
+</ul>
+
+<p>Para ello editamos el siguiente archivo :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.019.png" alt="" /></p>
+
+<p>Ahora añadimos lo siguiente :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.020.png" alt="" /></p>
+
+<p>Aquí estamos configurando nuestro ámbito conforme al enunciado .</p>
+
+<p>Ahora deberemos de reiniciar el servicio con el siguiente comando :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.021.png" alt="" /></p>
+<ol>
+  <li>
+    <h2 id="configura-los-clientes-para-obtener-un-direccionamiento-dinámico"><strong>Configura los clientes para obtener un direccionamiento dinámico</strong></h2>
+    <p>Editaremos la configuración de red para que use el dhcp :</p>
+  </li>
+</ol>
+
+<p>En el debian editamos el network/interfaces:</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.022.png" alt="" /></p>
+
+<p>Ahora reiniciamos la tarjeta de red :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.023.png" alt="" /></p>
+
+<p>Ahora comprobaremos si nos a asignado ip con ipconfig:</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.024.png" alt="" />Vemos que se ha asignado correctamente . Repetiremos lo mismo con nuestro cliente windows .</p>
+
+<p>Configuramos la tarjeta de red para que utilice el protocolo dhcp, reiniciamos la tarjeta  y comprobamos la ip que nos ha asignado :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.025.png" alt="" /></p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.026.png" alt="" /></p>
+
+<p>Ahora vamos a comprobar las concesiones de direcciones para ello deberemos ver el siguiente archivo . Lo abriremos con cat ya que es importante no editarlo ,  puede causar problemas .</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.027.png" alt="" /></p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.028.png" alt="" /></p>
+
+<ol>
+  <li>
+    <h2 id="reserva-en-un-servidor-dhcp"><strong>Reserva en un servidor dhcp</strong></h2>
+    <p>Para ello deberemos editar el archivo de configuración de nuestro servidor dhcp :</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.029.png" alt="" /></p>
+
+<p>Una vez aquí vamos a añadir las siguientes lineas :</p>
+
+<ul>
+  <li>Nombre de la reserva</li>
+  <li>hardware Ethernet: Es la dirección MAC de la tarjeta de red del host.</li>
+  <li>fixed-address: La dirección IP que le vamos a asignar.</li>
+</ul>
+
+<p>Quedaría nuestra reserva así(la pondremos fuera de la configuración de nuestro ámbito):</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.030.png" alt="" /></p>
+
+<p>Ahora reiniciaremos el servicio</p>
+
+<p>Vamos a comprobar que se ha realizado la concesión , para ello nos vamos a windows . Es posible que tengamos que renovar la concesión o reiniciar la tarjeta de red .</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.031.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.032.png" alt="" /></p>
+
+<p>Vamos a comprobar qué ocurre con la configuración de los clientes en determinadas circunstancias, para ello vamos a poner un tiempo de concesión muy bajo . Le pondré 1 min .</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.033.png" alt="" /></p>
+
+<p>1.Los clientes toman una configuración, y a continuación apagamos el servidor dhcp. ¿Qué ocurre con el cliente windows? ¿Y con el cliente Linux?</p>
+
+<p>En windows nos asignara una dirección de APIPA</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.034.png" alt="" />Mientras que en Linux no me asigna ninguna dirección ip , aunque después me asigno una dirección de APIPA</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.035.png" alt="" /></p>
+
+<p>2.Los clientes toman una configuración, y a continuación cambiamos la configuración del servidor dhcp (por ejemplo, el rango). ¿Qué ocurre con el cliente windows? ¿Y con el cliente Linux?</p>
+
+<p>Modificamos el rango :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.036.png" alt="" />Y reiniciamos el servicio</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.037.png" alt="" />Con windows mantengo la dirección de la reserva   :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.038.png" alt="" />Y con Linux nos asigna la dirección del nuevo rango  :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.039.png" alt="" /></p>
+
+<ol>
+  <li>
+    <h2 id="actividad-de-ampliación"><strong>Actividad de ampliación</strong></h2>
+    <p>Realizar las modificaciones necesarias en la configuración actual de nuestro servidor dhcp para que reparta direcciones ip a dos redes diferentes, la 192.168.0.0 y la 192.168.2.0.</p>
+  </li>
+</ol>
+
+<p>Lo primero que haremos sera añadir una cuarta tarjeta de red  y la configuraremos manualmente . Si no sabemos el nombre de la interfaz podemos verlo con ip a :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.040.png" alt="" /></p>
+
+<p>Ahora la configuraremos estática  , siguiendo el enunciado y la añadimos al /etc/default/isc-dhcp-server.</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.041.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.042.png" alt="" /></p>
+
+<p>Y configuramos nuestro segundo rango :</p>
+
+<p>A<img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.043.png" alt="" />hora reiniciamos el servicio :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.044.png" alt="" /></p>
+
+<p>Ahora le añadiré varias tarjetas de red a mi cliente para comprobar las concesiones y configuramos las tarjetas  :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.045.png" alt="" /></p>
+
+<p>Y nos habría concedido dirección ip en ambos rangos :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.046.png" alt="" /></p>
+
+<p>`						`DNS</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.047.png" alt="" /></p>
+<h1 id="dns"><strong>DNS</strong></h1>
+<ol>
+  <li>
+    <h2 id="dnsmasq"><strong>Dnsmasq</strong></h2>
+    <p>El paquete dnsmasq permite poner en marcha un servidor DNS de una forma muy sencilla. Simplemente instalando y arrancando el servicio dnsmasq, sin realizar ningún tipo de configuración adicional, nuestro PC se convertirá en un servidor caché DNS y además, resolverá los nombres que tengamos configurados en el archivo /etc/hosts de nuestro servidor. La resolución funcionará tanto en sentido directo como en sentido inverso, es decir, resolverá la IP dado un nombre de PC y el nombre del PC dada la IP.</p>
+  </li>
+  <li>
+    <h3 id="instalación"><strong>Instalación</strong></h3>
+    <p>Para instalarlo solo sera necesario introducir el siguiente comando :</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.048.png" alt="" /></p>
+<ol>
+  <li>
+    <h3 id="configuración"><strong>Configuración</strong></h3>
+    <p>A continuación, editamos el fichero /etc/dnsmasq.conf y modificamos las siguientes líneas:</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.049.png" alt="" /></p>
+
+<ol>
+  <li>Descomentamos strict-order para que se realicen las peticiones DNS a los servidores que aparecen en el fichero /etc/resolv.conf en el orden en él aparecen.</li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.050.png" alt="" /></p>
+
+<ol>
+  <li>Incluimos las interfaces de red que deben aceptar peticiones DNS, descomentar la línea interface por ejemplo: interface=eth0</li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.051.png" alt="" /></p>
+
+<p>Ahora crearemos nuestro archivo de configuración :</p>
+
+<ol>
+  <li>Creamos el fichero de configuración de nuestra zona :</li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.052.png" alt="" /></p>
+
+<ol>
+  <li>El dominio que hemos elegido es iesgn.org</li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.053.png" alt="" /></p>
+
+<ol>
+  <li>Suponemos que el nombre del servidor es miservidor.</li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.054.png" alt="" /></p>
+
+<ol>
+  <li>Vamos a suponer que tenemos un servidor ftp que se llame ftp.iesgn.org y que está en 192.168.1.201 (esto es ficticio) y que tenemos dos sitios webs: www.iesgn.org y departamentos.iesgn.org.</li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.055.png" alt="" /></p>
+
+<ol>
+  <li>` `Además queremos nombrar al cliente que tenía asignada una reserva: lisa.</li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.056.png" alt="" /></p>
+
+<ol>
+  <li>Y reiniciamos el servicio</li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.057.png" alt="" /></p>
+
+<ol>
+  <li>
+    <h3 id="ejercicios"><strong>Ejercicios</strong></h3>
+    <p>1.Configura los clientes e indica que su DNS es nuestro servidor. Si tienes un servidor DHCP modificarlo para que envíe el nuevo DNS a los clientes.</p>
+  </li>
+</ol>
+
+<p>Editamos el fichero :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.058.png" alt="" />Y reiniciamos el servicio :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.059.png" alt="" /></p>
+
+<p>Ahora comprobaremos si el cliente nos ha cambiado el dns mirando el siguiente archivo :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.060.png" alt="" />Se nos ha cambiado satisfactoriamente .</p>
+
+<p>2.Comprueba el funcionamiento usando el comando dig/nslookup desde los clientes preguntando por los distintos nombres. Comprueba que el servidor DNS hace de forwarder preguntando con <img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.061.png" alt="" />dig/nslookup la dirección ip de www.josedomingo.org.</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.062.png" alt="" />Para la pagina de Jose domingo la respuesta es no autorizada porque nuestro servidor no tiene la resolución en su fichero y tiene que utilizar un forwarder</p>
+
+<p>Como ves arriba yo he creado mi propia zona y a pesar de haber seguido los pasos de esta <a href="https://www.josedomingo.org/pledin/2020/12/servidor-dns-dnsmasq/">pagina</a> de Jose domingo , no he conseguido que las respuestas estén autorizadas .</p>
+
+<p>He creado el archivo dns.conf .</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.063.png" alt="" />Y he creado  mi zona :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.064.png" alt="" /></p>
+
+<p>También he probado mas cosas sin embargo la única forma que he conseguido que me de respuesta autorizada es teniendo solo las resoluciones en el fichero host del servidor , sin crear mi zona .</p>
+
+<ol>
+  <li>
+    <h2 id="dns-bind-9"><strong>DNS BIND 9</strong></h2>
+    <ol>
+      <li>
+        <h3 id="instalación-1"><strong>Instalación</strong></h3>
+        <p>Lo primero que haremos sera desinstalar dnsmasq ya que ambos no son compatibles :</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.065.png" alt="" />Ademas podemos ver que nos dice que el directorio /etc/dnsmasq.d/ al no estar vació no se ha borrado seria bueno que lo borrásemos manualmente para eliminar todo rastro de anteriores configuraciones :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.066.png" alt="" /></p>
+
+<p>Ahora vamos a instalarlos bind:</p>
+<ol>
+  <li>
+    <h3 id="configuración-1"><strong>C<img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.067.png" alt="" />onfiguración</strong></h3>
+    <p>Ahora vamos a editar el fichero  /etc/bind/named.conf.local donde crearemos las zonas (directas e inversas). En el caso de la práctica nos piden una directa (isgn.com) y otra inversa (red 192.168.1). <img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.068.png" alt="" />Añadiremos las siguientes líneas a dicho fichero :</p>
+  </li>
+</ol>
+
+<p>En el directorio / etc/bind están los ficheros db.empty y db.127 (ficheros de configuración de la zona directa e inversa respectivamente). Los copiamos al directorio / var/cache/bind para empezar a añadir los registros</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.069.png" alt="" /></p>
+
+<p>Modificamos el fichero  / var/cache/bind/db.isgn e incluimos las siguientes líneas para la resolución directa :</p>
+
+<p>-javiercruces es el nombre de mi maquina lo he cambiado para facilitar las cosas</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.070.png" alt="" /></p>
+
+<p>Ahora haremos lo mismo para la resolución inversa :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.071.png" alt="" /></p>
+
+<p>Ahora reiniciaremos el servicio para que se apliquen los cambios :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.072.png" alt="" />Ademas para asegurarnos de que hemos realizado bien la configuración vamos a mirar el estado del servicio para ver si nuestras zonas están funcionando :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.073.png" alt="" />Este paso es opcional , pero gracias a revisar esto he descubierto porque no me hacia la resolución inversa y gracias a ver las zonas que estaban cargadas me di cuenta de que el error estaba en el fichero de configuración /etc/bind/named.conf.local y pude solucionarlo .</p>
+<ol>
+  <li>
+    <h3 id="reenviador"><strong>Reenviador</strong></h3>
+    <p>Hasta ahora, sólo nos resolvería los nombres e ip de nuestra red local. Si queremos configurar un reenviador al que preguntar en caso de que el DNS local no pueda darnos la respuesta, debemos editar el fichero nano / etc/bind/named.conf.options y añadir lo siguiente:</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.074.png" alt="" /></p>
+
+<p>Antes de hacer este apartado aclarar que como en el apartado de dnsmasq ya comentamos el fichero host y modificamos la configuración del dhcp para que asigne el dns automáticamente , lo omitiré de esta parte</p>
+<ol>
+  <li>
+    <h3 id="ejercicios-1"><strong>Ejercicios</strong></h3>
+    <p>Comprueba el funcionamiento usando el comando dig/nslookup desde los clientes preguntando por los distintos nombres. Comprueba que el servidor DNS hace de forwarder preguntando con  dig/nslookup la dirección ip de www.josedomingo.org .</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.075.png" alt="" />Vemos aquí que las respuestas son correctas , las que están en nuestro servidor estas autorizadas mientras que la pagina de Jose domingo nos la ha echo un forwarder .</p>
+
+<p>Ahora haré las mismas peticiones pero inversas :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.076.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.077.png" alt="" /></p>
+
+<p>Con esto hemos comprobado que el servidor dns funciona correctamente .</p>
+
+<p>`						`SSH</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.078.png" alt="" /></p>
+
+<ol>
+  <li>
+    <h1 id="ssh"><strong>SSH</strong></h1>
+    <h2 id="práctica--1-gestión-remota-usando-ssh"><strong>Práctica  1: Gestión remota usando SSH</strong></h2>
+    <p>Lo primeros que deberemos de hacer sera instalarnos el paquete  en el servidor y el cliente :</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.079.png" alt="" /></p>
+
+<p>Por seguridad se suele no permitir la conexión del root al servidor; para ello, se debe modificar el archivo /etc/ssh/sshd_config, y se pone la siguiente opción:</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.080.png" alt="" /></p>
+
+<p>Y reiniciamos el servicio para que se apliquen los cambios :</p>
+<ol>
+  <li>
+    <h3 id="conectarse-al-servidor-ssh"><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.081.png" alt="" /><strong>Conectarse al servidor ssh</strong></h3>
+    <p>Vamos a  instalarnos el cliente ssh, para ello:</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.082.png" alt="" />Para acceder desde el cliente al servidor tecleamos:</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.083.png" alt="" />Nos abríamos conectado remotamente</p>
+
+<ol>
+  <li>
+    <h3 id="ejecución-remota-de-aplicaciones-gráficas"><strong>Ejecución remota de aplicaciones gráficas</strong></h3>
+    <p>Mediante ssh existe la posibilidad de ejecutar aplicaciones gráficas en el servidor y manejarlas y visualizarlas en el cliente. El servidor ssh deberá tener activada la redirección del protocolo X, es decir, deberá tener el siguiente parámetro en el archivo de configuración /etc/ssh/sshd_config:</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.084.png" alt="" />En mi caso ya estaba habilitado , si no lo tuviésemos lo cambiamos y reiniciamos el servicio para que se apliquen los cambios . Ahora deberemos de conectarnos con el parámetro -X :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.085.png" alt="" /></p>
+
+<p>y posteriormente podemos ejecutar cualquier aplicación gráfica, por ejemplo, gedit:</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.086.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.087.png" alt="" />Se nos abrirá el programa gráficamente :</p>
+
+<p>Ahora vemos en el servidor que se ha creado :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.088.png" alt="" /></p>
+
+<ol>
+  <li>
+    <h3 id="transferir-ficheros-con-ssh"><strong>Transferir ficheros con ssh</strong></h3>
+    <p>Para copiar un fichero desde el cliente al servidor introducimos el siguiente comando :</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.089.png" alt="" /></p>
+
+<p>Ahora vamos a comprobar si se ha copiado al servidor :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.090.png" alt="" /></p>
+
+<ol>
+  <li>
+    <h2 id="práctica-2--acceso-remoto"><strong>Práctica 2 : Acceso remoto</strong></h2>
+    <ol>
+      <li>
+        <h3 id="instalación-y-configuración-del-acceso-remoto"><strong>Instalación y configuración del acceso remoto</strong></h3>
+        <p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.091.png" alt="" />Vamos a generar nuestras  claves desde nuestro cliente :</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p>Ahora vamos a añadirla a nuestro servidor :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.092.png" alt="" /></p>
+
+<p>Una vez echo esto deshabilitamos el acceso con contraseña en el servidor editando el archivo /etc/ssh/sshd_config :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.093.png" alt="" />A continuación solo debemos reiniciar el servicio y al volver a registrarnos,  ya estaremos utilizando clave publica :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.094.png" alt="" /></p>
+
+<p>` `Si nos intentamos registrar con usuario el cual no tenemos la clave publica nos dirá lo siguiente :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.095.png" alt="" /></p>
+
+<p><strong>Cambio de puerto</strong></p>
+
+<p>Ahora vamos a editar el fichero de configuración para indicar el puerto :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.096.png" alt="" /></p>
+
+<p>Y reiniciaremos el servicio :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.097.png" alt="" /></p>
+
+<p>Ahora si nos intentamos conectar como lo hemos hecho anterior mente , nos dara el siguiente error :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.098.png" alt="" /></p>
+
+<p>Para conectarnos deberemos de especificar el puerto por el cual nos conectamos con -p :</p>
+<h3 id="conectarnos-con-un-cliente-de-acceso-remoto-usando-túneles"><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.099.png" alt="" /><strong>Conectarnos con un cliente de acceso remoto usando túneles</strong></h3>
+<p>Usaremos kitty  , cuando lo abramos en la primera pantalla introducimos la ip del servidor  y el puerto  que haya configurado en el servidor para el ssh en mi caso 2222</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.100.png" alt="" /></p>
+
+<p>Ahora añadimos el puerto por el cual nos conectaremos usando el túnel y después la ip seguida de dos puntos y el mismo puerto .</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.101.png" alt="" /></p>
+
+<p>Ahora introducimos nuestro usuario y contraseña y nos habremos conectado :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.102.png" alt="" />Si queremos hacer lo mismo pero usando una clave publica desde windows , pulsamos windows +r y escribimos lo siguiente :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.103.png" alt="" />Y generamos las claves publicas :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.104.png" alt="" /></p>
+
+<p>Ahora vamos a la ruta que lo hemos guardado copiamos la clave publica y la introducimos en el servidor , por comodidad la he copiado desde el cliente usando ssh.</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.105.png" alt="" /></p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.106.png" alt="" />Una vez añadida guardamos el archivo :</p>
+
+<p>Vamos a desactivar la autenticación por contraseña y reiniciamos el servicio</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.107.png" alt="" /></p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.097.png" alt="" /></p>
+
+<p>Ahora desde el kitty deberemos de irnos al apartado ssh&gt;auth , le damos a browse y seleccionamos nuestra clave privada , que deberá tener la extension .ppk . Yo la copie en otro   directorio por comodidad para las pruebas .</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.108.png" alt="" /></p>
+
+<p>Y nos conectamos :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.109.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.110.png" alt="" /></p>
+
+<p>Aquí hemos combinado conectarnos con kitty usando un túnel + otro puerto + clave publica .</p>
+<ol>
+  <li>
+    <h2 id="instalación-vncserver"><strong>Instalación VNCserver</strong></h2>
+    <p>Lo instalamos con el siguiente comando :</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.111.png" alt="" />A continuación configuramos las credenciales de configuración para administradores y  usuarios de acceso con el siguiente comando :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.112.png" alt="" />Ahora vamos al cliente y introducimos la ip seguida del puerto por  dos puntos, si no lo sabemos lo podemos mirar con  :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.113.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.114.png" alt="" /></p>
+
+<p>Nos saldrá una advertencia al  no estar cifrada la comunicación , le damos a continuar y  introducimos la contraseña de acceso , que hayamos puesto anteriormente :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.115.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.116.png" alt="" /></p>
+
+<p>Como no tenemos entrono grafico en el servidor no nos mostrara imagen pero podemos ver que hemos establecido conexión tanto en windows como en Linux  :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.117.png" alt="" /></p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.118.png" alt="" />
+1.
+#</p>
+<h2 id="práctica-3-gestión-de-páginas-web-mediante-ssh"><strong>Práctica 3: gestión de páginas web mediante ssh</strong></h2>
+<p>1.Una vez creado los dos sitio virtuales deseamos establecer una conexión segura a cada uno de nuestros sitios, para ello debemos establecer un túnel ssh de la misma manera que lo hemos establecido para establecer una conexión remota por vnc .</p>
+
+<p>2.Crear un túnel desde el cliente ssh para que el acceso a la sección privada de la web de departamentos se establezca por el puerto 9999</p>
+
+<p>3.Con ambos túneles establecidos comprobar que el acceso a la web iesgn.org se puede realizar sin problemas por el puerto 80</p>
+
+<p>Solo he conseguido hacer a mi pagina por defecto , para eso hacemos un túnel con kitty por ejemplo:</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.119.png" alt="" />Ahora añadimos los puertos origen y destino  del puerto :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.120.png" alt="" />A<img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.121.png" alt="" />hora nos registramos con nuestro usuario :</p>
+
+<p>Una vez establecido el túnel introducimos en el navegador localhost:8888 :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.122.png" alt="" />Y así hemos establecido una conexión segura web .</p>
+
+<p>Si cerramos el túnel perderemos la conexión :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.123.png" alt="" /></p>
+
+<p>`				`SERVICIO WEB
+#</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.124.png" alt="" /></p>
+
+<h1 id="servidor-web"><strong>Servidor Web</strong></h1>
+<ol>
+  <li>
+    <h2 id="práctica-1-instalar-un-servidor-web-apache-para-el-uso-en-una-intranet"><strong>Práctica 1: Instalar un servidor web Apache para el uso en una Intranet</strong></h2>
+    <p>Para instalar el servidor debemos ejecutar como root el siguiente comando:</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.125.png" alt="" /></p>
+
+<p>Crea dentro del directorio /var/www/html un fichero llamado entrada.html en el que pongáis un</p>
+
+<p>mensaje de bienvenida</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.126.png" alt="" />Ahora  lo meteré dentro de la ruta :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.127.png" alt="" /></p>
+
+<p>` `A continuación vamos a publicar una página más completa en nuestro servidor, para ello</p>
+
+<p>utiliza tu sitio web de aplicaciones web.</p>
+
+<p>Ademas debemos de darle permisos de lectura a otros para que podamos visualizarla :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.128.png" alt="" />Accede desde los clientes, poniendo en un navegador la siguiente URL:</p>
+
+<p>Desde debian cliente :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.129.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.130.png" alt="" /></p>
+
+<p>` `A continuación vamos a publicar una página más completa en nuestro servidor, para ello</p>
+
+<p>utiliza tu sitio web de aplicaciones web:</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.131.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.132.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.133.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.134.png" alt="" />Mi sitio :</p>
+
+<p>Resolución local de nombres : modifica los ficheros necesarios en el servicio BIND y accede usando el nombre que has indicado :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.135.png" alt="" />Como ya tenia echo el dns anteriormente he utilizado este nombre :
+1.
+##</p>
+<h2 id="ejercicio-2-configuración-de-sitios-web-virtuales-usando-apache"><strong>Ejercicio 2: Configuración de sitios web virtuales usando Apache</strong></h2>
+<p>La primera web tendrá el directorio base será /var/www/iesgn y contendrá una página llamada index.html, donde sólo se verá una bienvenida a la página del instituto Gonzalo Nazareno .</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.136.png" alt="" /></p>
+
+<p>La segunda web tendrá el directorio base será /var/www/departamentos. En este sitio sólo tendremos una página inicial index.html, dando la bienvenida a la página de los departamentos del instituto.</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.137.png" alt="" /></p>
+
+<p>Necesitamos tener dos ficheros para realizar la configuración de los dos sitios virtuales, para ello vamos a copiar el fichero 000-default.conf</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.138.png" alt="" /></p>
+
+<p>Una vez hayamos creado los ficheros añadiremos dentro de cada uno el siguiente contenido :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.139.png" alt="" /></p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.140.png" alt="" /></p>
+
+<p>Ahora deberemos crear un enlace simbólico en el directorio /etc/apache2/sites-enabled.</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.141.png" alt="" /></p>
+
+<p>Para que se apliquen estos cambios debemos reiniciar el servicio :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.142.png" alt="" /></p>
+
+<p>Ahora deberemos de actualizar el dns :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.143.png" alt="" /></p>
+
+<p>Una vez reiniciado el dns podremos acceder a ambos sitios desde el navegador :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.144.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.145.png" alt="" /></p>
+
+<ol>
+  <li>
+    <h2 id="ejercicio-3-acceso-autentificado-al-servidor-web-apache"><strong>Ejercicio 3: Acceso autentificado al servidor web Apache</strong></h2>
+    <p>Para activar la autentificación básica debemos de añadir las siguientes lineas a nuestro archivo de configuración del sitio :</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.146.png" alt="" />Ahora creamos el archivo de las contraseñas , con el usuario previamente creado  :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.147.png" alt="" />Reiniciamos el servicio y nos conectamos :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.148.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.149.png" alt="" /></p>
+
+<p>Ahora vamos ha hacer que a la pagina departamentos solo acceda el director y el profesor , ademas  que a dirección solo acceda el director , para eso añadimos en departamentos:</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.150.png" alt="" />Ahora vamos a añadir los usuarios de las zonas para eso , utilizamos este comando :</p>
+
+<ul>
+  <li>Usuario profesor a departamentos :</li>
+</ul>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.151.png" alt="" /></p>
+
+<ul>
+  <li>Usuario director a departamentos :</li>
+</ul>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.152.png" alt="" /></p>
+
+<ul>
+  <li>Usuario director a zona dirección :</li>
+</ul>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.153.png" alt="" /></p>
+
+<p>Ahora reiniciaremos el servicio y comprobaremos que podemos acceder :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.154.png" alt="" /></p>
+
+<p>Accederemos a departamentos :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.155.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.156.png" alt="" /></p>
+
+<p>Ahora a la zona equipo directivo :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.157.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.158.png" alt="" /></p>
+
+<p>`					         `FTP</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.159.png" alt="" /></p>
+
+<h1 id="ftp"><strong>FTP</strong></h1>
+<ol>
+  <li>
+    <h2 id="ejercicio-1-instalación-del-servidor-proftpd-autentificado"><strong>Ejercicio 1: Instalación del servidor proFTPd autentificado</strong></h2>
+    <p>1.Primero nos crearemos un grupo que se llame ftpgroup :</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.160.png" alt="" />2.Crea dos usuarios locales que pertenezcan al grupo ftp que hemos creado: Jose y Maria</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.161.png" alt="" /></p>
+
+<p>3.Nos instalamos el servicio ftp :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.162.png" alt="" />4.Configuración básica del fichero proftpd.conf:</p>
+
+<p>`  `Todos los usuarios accedan  solo a su directorio :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.163.png" alt="" /></p>
+
+<p>Ahora podemos acceder desde el navegador con los usuarios jose y maria  :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.164.png" alt="" /><img src="Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.165.png" alt="" /></p>
+
+<p>Cada uno de estos he creado una carpeta con su nombre dentro de sus directorios personales para poder identificarlos .</p>
+
+<p>Para que cada usuario pueda conectarse realmente al servidor FTP en Debian y le sea posible subir y descargar los datos en su propio directorio, debes introducir su directorio de entrada en proftpd.conf :</p>
+<ol>
+  <li>
+    <h2><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.166.png" alt="" /></h2>
+    <p>Podemos transferir archivos correctamente :</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.167.png" alt="" />
+1.</p>
+
+<ol>
+  <li>
+    <h2 id="ejercicio-2-configuración-de-proftpd-para-crear-ftp-anónimo"><strong>Ejercicio 2: Configuración de proFTPd para crear ftp anónimo</strong></h2>
+    <p>` `Lo primero que tenemos que hacer es crear el directorio y darle el propietario adecuado:</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.168.png" alt="" />Ahora cambiaremos esta regla y permitiremos que todos puedan unirse :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.169.png" alt="" />Ademas añadimos  las siguientes lineas e indicaremos la ruta a la que accederán los anónimos :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.170.png" alt="" />Por lo que cuando reiniciemos podrán conectarse los usuarios anónimos :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.171.png" alt="" />Pero no con los usuarios que hemos creado anteriormente :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.172.png" alt="" /></p>
+
+<p>Para permitir que nuestros usuarios se puedan conectar  ademas de los anonimos:</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.173.png" alt="" />Ahora aplicamos estos cambios y probamos a conectarnos . Vemos que con anonimos no podemos copiar nada al servidor pero si podemos descargar.</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.174.png" alt="" /></p>
+
+<p>Ahora con un usuario del grupo , podremos copiar archivos  :</p>
+
+<p><img src="/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.175.png" alt="" />
+`	`7</p>
