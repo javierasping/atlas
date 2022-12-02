@@ -5,8 +5,16 @@
 <lastmod>2021-05-22T00:00:00+02:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/seleccionsais/</loc>
+<lastmod>2021-05-22T00:00:00+02:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/Servicios_debian/</loc>
 <lastmod>2022-03-01T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/proyecto_activedirectory_ubuntu/</loc>
+<lastmod>2022-06-01T00:00:00+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/</loc>

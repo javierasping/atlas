@@ -1,0 +1,1255 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Instalacion y configuracion Active Directory en Ubuntu Server 20.04 LTS - javiercd.es</title>
+<meta name="description" content="Proyecto final SOR , instalacion de active directory bajo Ubuntu y administracion remota del servidor">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="javiercd.es">
+<meta property="og:title" content="Instalacion y configuracion Active Directory en Ubuntu Server 20.04 LTS">
+<meta property="og:url" content="http://localhost:4000/proyecto_activedirectory_ubuntu/">
+
+
+  <meta property="og:description" content="Proyecto final SOR , instalacion de active directory bajo Ubuntu y administracion remota del servidor">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/prueba/logo.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2022-06-01T00:00:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/proyecto_activedirectory_ubuntu/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "atlas",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="javiercd.es Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/masthead.png" alt=""></a>
+                
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+    
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Instalacion y configuracion Active Directory en Ubuntu Server 20.04 LTS</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/avatar.png" alt="Francisco Javier Cruces Doval" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Francisco Javier Cruces Doval</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Administrador de sistemas
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">España</span>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:contacto@javiercd.es">
+            <meta itemprop="email" content="contacto@javiercd.es" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://twitter.com/javier_cd_" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/javiercd/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://instagram.com/javier_cd_" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Instalacion y configuracion Active Directory en Ubuntu Server 20.04 LTS">
+    <meta itemprop="description" content="Proyecto final SOR , instalacion de active directory bajo Ubuntu y administracion remota del servidor">
+    <meta itemprop="datePublished" content="June 01, 2022">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Instalacion y configuracion Active Directory en Ubuntu Server 20.04 LTS
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p class="page__meta">
+          
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-06-01T00:00:00+02:00">June 01, 2022 </time>&emsp;
+          
+          
+        </p>
+        <!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GVDYVWJLRH');
+</script>
+
+<p><strong>Introducción</strong></p>
+
+<p>Se quiere configurar un servidor Linux (Ubuntu Server 20.04 LTS) para dar servicio a un conjunto de equipos clientes (Windows y Linux).</p>
+
+<p>Aprovecharé que el escenario lo tenemos montado de las anteriores actividades de clase y restauraré  las  instantáneas para disponer de las máquinas limpias .</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.001.png" alt="" /></p>
+
+<p><strong>Preparación entornó</strong></p>
+
+<p>\1. El servidor Linux no tendrá entorno gráfico. Tendrá al menos las particiones: raiz, home y de intercambio.</p>
+
+<p>Aquí podemos ver que no tengo instalado entorno gráfico , podemos ver que el servicio está activo, sin embargo, no se lanza ningún entorno . Además, si buscamos algún proceso con los nombres de escritorio más conocidos no nos lanza ningún resultado .</p>
+
+<p>Aquí te muestro  las particiones  que tiene mi servidor Ubuntu  (raíz , boot , home y swap):</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.002.png" alt="" /></p>
+
+<p>2.El servidor debe estar preparado para que pueda administrarse de forma remota (a partir de este momento toda la gestión se hará remotamente desde otro equipo de la red).</p>
+
+<p>Para administrarlo de forma remota utilizaré ssh, para ello lo instalamos en el servidor :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.003.png" alt="" /></p>
+
+<p>Una vez que se instale lo tendremos funcionando , no es necesario realizar ninguna configuración .</p>
+
+<p>Si consultamos el estado del servicio podemos ver que ha tomado la configuración por defecto :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.004.png" alt="" /></p>
+
+<p>Para conectarnos remotamente necesitaremos saber la IP del equipo o el nombre :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.005.jpeg" alt="" /></p>
+
+<p>En mi caso me conectaré desde la red externa a nuestro servidor (enp0s3) , previamente hemos configurado la red con netplan :</p>
+
+<p>Y hemos aplicado los cambios :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.006.png" alt="" /></p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.007.png" alt="" /></p>
+
+<p>Una vez conociendo estos datos nos conectaremos por ssh desde una máquina de nuestra red para seguir con los demás apartados, en mi caso utilizaré mi máquina host, para ello me he instalado el paquete openssh-client previamente:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.008.jpeg" alt="" /></p>
+
+<ol>
+  <li>Crea los usuarios y grupos siguientes:
+    <ul>
+      <li>Grupos: profesores, alumnos, smr, asir. Creo los grupos :</li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.009.png" alt="" /></p>
+
+<ul>
+  <li>Usuario a crear :  profedesiree, profejose , proferaul , erik, manu, oliver, sandra, fabio y domi</li>
+</ul>
+
+<p>Creo los usuarios :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.010.png" alt="" /></p>
+
+<p>Los he creado con directorio home y les he asignado la contraseña 1234 (son de ejemplo) .</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.011.png" alt="" /></p>
+
+<ul>
+  <li>Usuarios del grupo profesores: profedesiree, profejose y proferaul. Los añadimos :</li>
+</ul>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.012.png" alt="" /></p>
+
+<p>Podemos comprobar que se han añadido con el siguiente comando :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.013.png" alt="" /></p>
+
+<ul>
+  <li>Usuarios del grupo alumnos: erik, manu, oliver, sandra, fabio y domi. Los añadimos :</li>
+</ul>
+
+<p>Comprobamos que se han añadido :
+<img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.014.png" alt="" /></p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.015.jpeg" alt="" /></p>
+
+<ul>
+  <li>Usuarios del grupo smr: profedesiree, profejose, proferaul, erik, manu y oliver.</li>
+</ul>
+
+<p>Los añadimos:</p>
+
+<p>Comprobamos que se han añadido :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.016.png" alt="" /></p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.017.png" alt="" /></p>
+
+<ul>
+  <li>Usuarios del grupo asir: sandra, fabio y domi.</li>
+</ul>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.018.png" alt="" /></p>
+
+<p>Comprobamos que se han añadido :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.019.png" alt="" /></p>
+
+<ol>
+  <li>Todos los usuarios serán usuarios Samba. Para ello deberemos tener instalado samba :</li>
+</ol>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.020.png" alt="" /></p>
+
+<p>Para añadir un usuario samba debemos de introducir el siguiente comando y asignarle una contraseña :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.021.png" alt="" /></p>
+
+<p>Esto lo haremos con los 9 usuarios , una vez añadidos podemos utilizar este comando para listar los usuarios samba que tenemos :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.022.png" alt="" /></p>
+
+<p><strong>Controlador de dominio samba</strong></p>
+
+<ol>
+  <li>Crea y configura un controlador de dominio Samba en el Servidor.</li>
+</ol>
+
+<p>Antes de comenzar con la instalación debemos de tener en cuenta una serie de datos :</p>
+
+<p>-Nombre del controlador de dominio de <em>Active Directory</em>: FJCD</p>
+
+<p>-Nombre DNS del dominio de <em>Active Directory</em>: javiercruces<em>.local</em></p>
+
+<p>-Nombre del Reino Kerberos: javiercruces.local</p>
+
+<p>-Nombre NetBIOS del dominio: javiercruces</p>
+
+<p>-Dirección IP fija del servidor: 192.168.0.1</p>
+
+<p>-Rol del servidor: Domain Controller (DC)</p>
+
+<p>-Reenviador DNS:192.168.0.1</p>
+
+<p>Una vez con estos datos claros comenzaremos con la instalación , lo primero será actualizar el sistema :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.023.png" alt="" /></p>
+
+<p>A continuación deberemos de cambiar el nombre de nuestro servidor para estar acorde con los datos que hemos seleccionado anteriormente, para ello yo he seleccionado mis iniciales , para ello editamos el fichero <em>/etc/hostname</em> :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.024.png" alt="" /></p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.025.png" alt="" /></p>
+
+<p>Ahora será necesario que reiniciemos el equipo para que se apliquen los cambios , perderemos la conexión por ssh :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.026.png" alt="" /></p>
+
+<p>Retomamos el control remoto por ssh en unos minutos cuando haya reiniciado :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.027.png" alt="" /></p>
+
+<p>Como puedes observar nos hemos conectado usando el antiguo nombre que tenia nuestro servidor , esto es porque el archivo /etc/hosts, contiene una relación de direcciones IP con sus correspondientes nombres lógicos. Este archivo contenía una referencia al nombre antiguo del propio servidor, que cambiaremos para que haga referencia al nuevo nombre :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.028.png" alt="" /></p>
+
+<p>Una vez hemos aplicado estos dos cambios , antes de continuar solo nos quedara asegurarnos de que nuestro servidor tiene correctamente configurada la red . En nuestro escenario disponemos de dos tarjetas de red en nuestro servidor :</p>
+
+<p>enp0s3 (Tarjeta externa , nos da acceso a internet)</p>
+
+<p>enp0s8 (Tarjeta interna , es la que se comunica con nuestra red local)</p>
+
+<p>Debido a esto la primera está configurada por DHCP, ya que no nos importa la configuración que se le asigne , sin embargo, la segunda está configurada estáticamente, ya que debemos de controlar la configuración de la misma para que tengamos control sobre la misma y posteriormente unir los equipos al dominio .</p>
+
+<p>Una vez aclarado esto , al principio del documento indico como se configuraran las interfaces , aquí dejo un pantallazo para recordar las direcciones :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.029.jpeg" alt="" /></p>
+
+<p>Ahora necesitaremos disponer de unos paquetes que deberán de estar instalados antes de comenzar . Estos son :</p>
+
+<p>samba: servidor de archivos, impresión y autenticación para SMB/CIFS. smbclient: clientes de línea de comandos para SMB/CIFS.</p>
+
+<p>krb5-config: Archivos de configuración para Kerberos Version 5.</p>
+
+<p>winbind: Servicio para resolver información sobre usuarios y grupos de servidores Windows NT.</p>
+
+<p>Podremos hacer la instalación de estos cuatro paquetes con un simple comando :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.030.png" alt="" /></p>
+
+<p>Kerberos, nos preguntará por el reino (nombre de dominio ) durante la instalacion de los paquetes, en nuestro caso será javiercruces.local :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.031.jpeg" alt="" /></p>
+
+<p>Aquí introduciremos el nombre de nuestro equipo servidor :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.032.png" alt="" /></p>
+
+<p>Aquí volveremos a introducir el nombre de nuestro servidor :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.033.png" alt="" /></p>
+
+<p>Después de esto, la instalación continuará un poco más, pero sin necesitar que aportemos más información:</p>
+
+<p>Ahora configuraremos samba , pero antes de hacerlo le cambiaremos el nombre al archivo de configuración <em>smb.conf</em> para que no lo use mientras que lo configuramos y así además tendremos una copia del archivo original :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.034.jpeg" alt="" /></p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.035.png" alt="" /></p>
+
+<p>Usaremos el comando samba-tool domain provision, para que sea el propio comando sea el que nos solicite los valores que necesite y, cuando sea posible, nos sugiera sus valores predeterminados. Así, si estos coinciden con los que nosotros esperamos, será muy probable que los pasos anteriores hayan sido los correctos:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.036.png" alt="" /></p>
+
+<p>Como puedes observar es muy intuitivo hacerlo, ya que salvo la IP de forwarder y la contraseña de administrador hemos elegido las respuestas que el mismo comando nos ofrece . Esta  debe cumplir unos requisitos de complejidad mínimos :</p>
+
+<p>-8 caracteres como mínimo</p>
+
+<p>-1 mayúscula</p>
+
+<p>-1 numero</p>
+
+<p>Con esto, además de configurarse Samba , se ha generado un archivo de configuración para Kerberos en la ruta /var/lib/samba/private/krb5.conf. Asi que lo copiaremos a /etc :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.037.png" alt="" /></p>
+
+<p>Lo siguiente será configurar la resolución de nombres, para ello comenzaremos deteniendo los servicios implicados :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.038.png" alt="" /></p>
+
+<p>También quitaremos que se inicien automáticamente al reiniciar el equipo :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.039.jpeg" alt="" /></p>
+
+<p>A continuación, nos aseguraremos de que el servicio samba-ad-dc se podrá iniciar sin dificultades, evitando cualquier enmascaramiento que pueda existir:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.040.png" alt="" /></p>
+
+<p>Después, eliminamos el archivo resolv.conf que, en realidad, será un enlace a stub-resolv.conf. Así que lo eliminamos y creamos uno nuevo para sustiruirlo:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.041.png" alt="" /></p>
+
+<p>Ahora introducimos los valores adecuados en función de nuestro dominio , para mi caso :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.042.png" alt="" /></p>
+
+<p>Guardamos los cambios y salimos del fichero.</p>
+
+<p>Iniciaremos el servicio de samba-ad-dc y lo habilitaremos para que se inicie al reiniciar el equipo :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.043.png" alt="" /></p>
+
+<p><strong>Comprobar la instalación</strong></p>
+
+<p>Si hemos conseguido llegar hasta aquí , tenemos todas las papeletas para que nuestra instalación haya sido correcta . Pero nunca está de más hacer unas comprobaciones</p>
+
+<p><strong>Consultar el nivel del dominio y crear un nuevo usuario</strong></p>
+
+<p>Para saber nuestro nivel de dominio simplemente introducimos este comando :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.044.png" alt="" /></p>
+
+<p>Al hacerlo, comprobamos que el nivel del dominio, y del bosque donde se encuentra, equivale a una instalación Windows Server 2008 R2</p>
+
+<p>Probaremos a crear una nueva cuenta de usuario en el dominio con el comando(deberemos de tener en cuenta la política de contraseñas):</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.045.png" alt="" /></p>
+
+<p><strong>Confirmar que el servidor DNS funciona de forma adecuada</strong></p>
+
+<p>Lo primero será comprobar el servicio LDAP sobre el protocolo TCP, para lo que escribiremos la siguiente orden:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.046.png" alt="" /></p>
+
+<p>Si tenemos una respuesta parecida a esa, todo funciona como debe.</p>
+
+<p>A continuación, comprobaremos el registro SRV para el protocolo Kerberos sobre UDP, para lo que usamos la siguiente orden:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.047.png" alt="" /></p>
+
+<p>La respuesta debe ser parecida a la anterior, si es así  registro SRV es correcto.</p>
+
+<p>Por último, comprobamos la resolución del nombre de nuestro servidor:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.048.jpeg" alt="" /></p>
+
+<p><strong>Comprobar el funcionamiento de Kerberos</strong></p>
+
+<p>Para comprobar el funcionamiento  podemos, por ejemplo, usar el comando smbclient para comprobar los servicios que puede obtener un determinado usuario. Para ello utilizaremos el siguiente comando :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.049.png" alt="" /></p>
+
+<p>Si la autenticación es correcta , ya sabremos que Kerberos está haciendo su trabajo . Si queremos, incluso podemos iniciar sesión en el servidor empleando la cuenta de administrador. Para lograrlo, usaremos una sintaxis como esta:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.050.png" alt="" /></p>
+
+<p>Ya hemos verificado todo así que podemos empezar a unir clientes a nuestro dominio .</p>
+
+<p><strong>Unir clientes al dominio</strong></p>
+
+<ol>
+  <li>Integra al menos un cliente con Windows en el dominio Samba. <strong>Cliente Windows</strong></li>
+</ol>
+
+<p>Lo primero que haremos será configurar la red de nuestro cliente :</p>
+
+<p>-IP 192.168.0.10</p>
+
+<p>-Mascará de subred /24</p>
+
+<p>-Puerta de enlace 192.168.0.1</p>
+
+<p>-DNS 192.168.0.1</p>
+
+<p>*Ambas tarjetas (Interna del servidor y la de Windows cliente ) deberán de estar en red interna para que se comuniquen .</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.051.png" alt="" /></p>
+
+<p>Una vez configurada la tarjeta le haremos un ping al servidor para comprobar la conectividad:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.052.png" alt="" /></p>
+
+<p>Ahora accedemos a panel de control → sistema y seguridad → sistema → configuración avanzada del sistema → nombre de equipo → id de red . Seleccionamos la primera opción para unirnos al dominio</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.053.png" alt="" /></p>
+
+<p>Seleccionaremos la primera opción, ya que nuestra red tiene un dominio :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.054.png" alt="" /></p>
+
+<p>Ahora deberemos de introducir los datos del usuario administrador y el nombre de nuestro dominio :</p>
+
+<p>*El usuario administrador que se crea por defecto en samba se llama administrator</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.055.png" alt="" />Una vez introducido los datos nos preguntará si queremos crear una cuenta de dominio en este equipo , yo seleccionare que no :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.056.png" alt="" /></p>
+
+<p>Y para que se apliquen los cambios deberemos de reiniciar :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.057.png" alt="" /></p>
+
+<p>Una vez reiniciado podremos iniciar sesión con los diferentes usuarios de nuestro dominio :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.058.jpeg" alt="" /></p>
+
+<p>Podemos ver que podemos iniciar sesión en el equipo con las cuentas de nuestro dominio:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.059.jpeg" alt="" /></p>
+
+<p><strong>Cliente Linux</strong></p>
+
+<p>Lo primero será configurar la red, para ello le he asignado la dirección IP 192.168.0.2</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.060.jpeg" alt="" /></p>
+
+<p>Ahora deberemos añadir a nuestro servidor en el fichero hosts, una línea en la que ira la dirección IP de nuestro servidor seguido del nombre de este y el nombre completo del dominio de nuestro servidor  :</p>
+
+<p>Para comprobar este cambio que hemos realizado le haremos un ping al servidor usando su nombre :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.061.jpeg" alt="" /></p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.062.jpeg" alt="" /></p>
+
+<p>Ahora actualizaremos el equipo para poder descargar las versiones más recientes desde los repositorios :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.063.png" alt="" /></p>
+
+<p>*Para tener internet en el cliente he configurado previamente NAT en el servidor .</p>
+
+<p>Una vez actualizado el sistema instalaremos los siguientes paquetes :</p>
+
+<ul>
+  <li>sssd (System Security Services Daemon): Administra los mecanismos de autenticación y el acceso a directorios remotos. Sustituye al clásico Winbind aportando más velocidad y estabilidad.</li>
+  <li>heimdal-clients: Se trata de una implementación libre de Kerberos 5 creada con la intención de ser compatible con el protocolo Kerberos implementado por el MIT.</li>
+  <li>msktutil: La utilidad que obtiene y administra los keytabs de Kerberos en un entorno de Microsoft Active Directory.</li>
+</ul>
+
+<p>Podemos hacerlo con 1 comando :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.064.png" alt="" /></p>
+
+<p>Mientras instalamos nos solicitara el nombre de nuestro servidor de active directory asi que lo introducimos :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.065.png" alt="" /></p>
+
+<p>Ahora nos preguntará el nombre del equipo que actúa como servidor  en nuestro caso es :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.066.png" alt="" /></p>
+
+<p>Por  último nos preguntará por el servidor administrativo que en nuestro caso es el mismo:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.067.png" alt="" /></p>
+
+<p>Una vez hecho esto, la instalación continuará sin que tengamos que introducir más datos.</p>
+
+<p>Ahora vamos a añadir en Kerberos unos datos adicionales para asegurarnos que se comporte correctamente. Comenzaremos por cambiar el nombre del archivo de configuración, para poder volver a los parámetros originales si fuese preciso:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.068.png" alt="" /></p>
+
+<p>Ahora utilizaremos nano para editar la configuración del archivo , este estará vacío así que añadiremos lo siguiente :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.069.jpeg" alt="" /></p>
+
+<p>Una vez rellenado con los datos de nuestro dominio, guardamos el archivos y comprobaremos si podemos iniciarnos sesión en el dominio :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.070.png" alt="" /></p>
+
+<p>Si la salida no nos ofrece ningún tipo de error, es porque el proceso de autenticación ha funcionado correctamente.</p>
+
+<p>Procederemos a unirnos al dominio, para ello utilizaremos el siguiente comando :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.071.png" alt="" /></p>
+
+<p>Este comando deberemos de rellenarlo conforme a los datos de nuestro dominio , en el caso de que no nos salga ninguna salida , nos habremos unido al dominio .</p>
+
+<p>Para completar la tarea, eliminaremos los tickets de autorización de kerberos que activamos al ejecutar kinit. Para lograrlo, basta con utilizar el comando kdestroy.</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.072.png" alt="" /></p>
+
+<p><strong>Compartir carpetas</strong></p>
+
+<ol>
+  <li>Se necesitan carpetas personales en el servidor para cada usuario. También habrá una carpeta para cada grupo, a la que solo podrán acceder y escribir los miembros de cada grupo.</li>
+</ol>
+
+<p>Vamos a crear los directorios en la partición raíz para cada usuario y uno para cada grupo. Estos los crearé con el nombre del grupo o usuario:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.073.png" alt="" /></p>
+
+<p>*Tenemos que tener en cuenta que los usuarios samba que hemos generado al principio del documento se han eliminado al instalar el dominio y deberemos de producirlos nuevamente.</p>
+
+<p>Vamos a compartir estas carpetas a través de samba, para ello editamos el fichero /etc/samba/smb.conf :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.074.jpeg" alt="" /></p>
+
+<p>Para indicar que pueda acceder un grupo deberemos de poner una @ delante dele nombre del grupo :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.075.jpeg" alt="" />Solo nos quedaría asignar correctamente los permisos locales adecuados para nuestros recursos y cambiar los propietarios de las carpetas para que los usuarios puedan escribir en ellas :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.076.png" alt="" /></p>
+
+<p>Esto sería lo correcto, pero si le asignamos los permisos 775 no podremos escribir en la carpeta, así que le asignaremos todos los permisos :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.077.png" alt="" /></p>
+
+<p>Ahora repetiremos esto con todos los directorios , primero le daré los permisos:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.078.png" alt="" /></p>
+
+<p>Y por último cambiaremos los propietarios de las carpetas y haremos a cada usuario o grupo sus respectivos dueños :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.079.png" alt="" /></p>
+
+<p>Vamos a asegurarnos de que hemos aplicado correctamente estos cambios :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.080.png" alt="" /></p>
+
+<p>Vamos a comprobar que podemos acceder a los recursos compartidos desde el usuario oliver  :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.081.jpeg" alt="" /></p>
+
+<p>Vamos a acceder  a la carpeta Oliver y a crear un directorio dentro :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.082.png" alt="" /></p>
+
+<ol>
+  <li>Desde Windows acceder a estas carpetas a través de unidades de red.</li>
+</ol>
+
+<p>Desde el explorador de archivos podremos ver todos los recursos compartidos en la red :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.081.jpeg" alt="" /></p>
+
+<p>Ahora vamos a crear unidades de red, así que por ejemplo vamos a añadir la carpeta Oliver al usuario Oliver como unidad de red, para esto , hacemos clic derecho en la carpeta &gt; conectar a unidad de red :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.083.png" alt="" /></p>
+
+<p>Y seleccionaremos una letra para asignarle a la unidad de red  :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.084.jpeg" alt="" /></p>
+
+<p>Ahora esta unidad nos aparecerá en este equipo :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.085.jpeg" alt="" /></p>
+
+<p><strong>Perfiles móviles</strong></p>
+
+<ol>
+  <li>Definir perfiles móviles en el servidor Linux mediante Samba, de forma que los usuarios se puedan autentificar en diferentes máquinas Windows, manteniendo su configuración. Para realizar esto vamos a instalarlos RSAT (Remote Server Administration Tools) que nos permitirá administrar nuestro controlador de dominio samba de forma idéntica a windows server .</li>
+</ol>
+
+<p>Para añadirlas buscaremos en la búsqueda de Windows <strong><em>Añadir características opcionales ,</em></strong> una vez aquí le daremos a añadir característica :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.086.png" alt="" /></p>
+
+<p>Una vez aquí buscaremos las siguientes características con RSAT y las instalaremos  :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.087.png" alt="" /></p>
+
+<p>Una vez instaladas se nos creará una aplicación similar a la de un Windows server llamada herramientas administrativas :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.088.png" alt="" /></p>
+
+<p>Se nos abrirá una carpeta con las herramientas de administración :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.089.jpeg" alt="" /></p>
+
+<p>Y buscaremos administración de usuarios y equipos de active directory o escribimos en ejecutar dsa.msc , esto lo haremos con el usuario administrador de nuestro dominio para poder acceder a esta:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.090.png" alt="" />Antes de crear nuestro usuario móvil crearemos un recurso de red al igual que hemos hecho anteriormente llamado perfiles y le daremos permisos al grupo móviles para que estos puedan escribir en ellos :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.091.png" alt="" /></p>
+
+<p>Para que nuestro usuario pueda escribir en este directorio lo añadiremos al grupo :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.092.png" alt="" /></p>
+
+<p>Ahora nos vamos a la configuración de nuestro usuario y le cambiamos la ruta del perfil . Pondremos la ruta de nuestra carpeta compartida perfiles seguida de <strong><em>\%username%</em></strong> :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.093.png" alt="" /></p>
+
+<p>Guardamos y ya tendríamos hecho nuestro perfil móvil creado .</p>
+
+<p>Vamos a demostrar el funcionamiento del perfil móvil , para ello le he cambiado el fondo y he creado dos carpetas  :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.094.jpeg" alt="" /></p>
+
+<p>Ahora vamos a cerrar sesión e iniciarla en el Windows de la derecha :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.095.jpeg" alt="" /></p>
+
+<p>Vemos que se ha realizado correctamente el perfil móvil .</p>
+
+<p><strong>NFS</strong></p>
+
+<ol>
+  <li>Mediante NFS, se compartirán en el servidor las carpetas: proyectos, documentación, programas_y_drivers. De la primera solo se podrá leer; en las dos últimas también se podrá escribir. Los equipos Linux montarán las carpetas automáticamente en el arranque.</li>
+</ol>
+
+<p>Lo primero que haremos será instalarnos los siguientes paquetes :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.096.png" alt="" /></p>
+
+<p>Ahora crearemos en la raíz los directorios que vamos a compartir :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.097.png" alt="" /></p>
+
+<p>Y le cambiaremos el propietario y los permisos a estos directorios :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.098.png" alt="" /></p>
+
+<p>Después de esto, debemos editar el archivo /etc/exports. Este es el archivo donde se indican a NFS las carpetas que vamos a compartir . La primera será solo de lectura y las dos últimas se podrán escribir :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.099.png" alt="" /></p>
+
+<p>Para poder acceder a estos recursos en el servidor vamos a instalarlos los siguientes paquetes :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.100.png" alt="" /></p>
+
+<p>Ahora vamos a crear los directorios donde montaremos nuestras carpetas :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.101.png" alt="" /></p>
+
+<p>Para montarlas manualmente en Linux haremos el siguiente comando  :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.102.png" alt="" /></p>
+
+<p>Vamos a comprobar que en proyectos no podremos escribir :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.103.png" alt="" /></p>
+
+<p>Mientras que en las otras dos si podremos escribir :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.104.png" alt="" /></p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.105.png" alt="" /></p>
+
+<p>Si queremos acceder a estos recursos en Windows : - \192.168.0.1\documentacion</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.106.png" alt="" /></p>
+
+<p>-\192.168.0.1\proyectos (directorio de solo lectura)</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.107.png" alt="" /></p>
+
+<p>-\192.168.0.1\programas_y_drivers</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.108.png" alt="" /></p>
+
+<p>Para poder visualizarlos será necesario tener instalados las siguientes características en Windows (Podemos acceder a este programa a través del buscador de Windows escribiendo características de Windows)</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.109.png" alt="" /></p>
+
+<p>Para finalizar con este punto vamos a configurar que los equipos Linux monten automáticamente al arrancar los directorios . Editaremos el fichero /etc/fstab añadiendo las siguientes líneas :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.110.png" alt="" /></p>
+
+<p>Una vez hecho esto reiniciamos y veremos que se nos habrán montado automáticamente:</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.111.png" alt="" /></p>
+
+<p><strong>Cuotas</strong></p>
+
+<ol>
+  <li>La carpeta /home del servidor tendrá un sistema de cuotas para evitar la saturación con archivos de los usuarios (100 MB por usuario).</li>
+</ol>
+
+<p>Lo primero que haremos será instalar los paquetes para implementar cuotas :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.112.png" alt="" /></p>
+
+<p>Ahora permitiremos las cuotas en la particion /home añadiendo esto al fstab de nuestro servidor :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.113.png" alt="" /></p>
+
+<p>Remontamos la partición home para que se apliquen estos cambios :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.114.png" alt="" /></p>
+
+<p>Y aplicamos cuotas en la partición /home</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.115.png" alt="" /></p>
+
+<p>Comprobaremos que en la raíz de la partición se nos ha creado dos archivos (aquota.group y aquota.user):</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.116.png" alt="" /></p>
+
+<p>Ahora le aplicaremos la cuota de 100Mb a oliver  usando edquota :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.117.png" alt="" /></p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.118.png" alt="" /></p>
+
+<p>Ahora usaremos una herramienta la cual es <em>gawk,</em> el cual nos permitirá concatenándolo con este comando, aplicarle la cuota que le acabamos de crear a Oliver a todos nuestros usuarios :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.119.png" alt="" /></p>
+
+<p>La orden que acabamos de lanzar ha extraído una lista de todos los usuarios y ha aplicado la cuota de Oliver a todos usuarios con un UID mayor a 499 .</p>
+
+<p>Ahora revisaremos las cuotas para ver como han quedado :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.120.jpeg" alt="" /></p>
+
+<p>Para comprobar que funciona vamos a agotar la cuota del usuario proferaul , para ello crearemos un archivo de 30 MB :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.121.png" alt="" /></p>
+
+<p>Ahora lo moveremos al directorio home de él y le haremos propietario del archivo :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.122.png" alt="" /></p>
+
+<p>Vemos que se actualiza el espacio usado en el directorio del usuario :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.123.png" alt="" /></p>
+
+<p><strong>Webmin</strong></p>
+
+<ol>
+  <li>Instala Webmin en el servidor para tener la posibilidad de gestionarlo gráficamente desde un cliente. Demuestra alguna de sus funcionalidades.</li>
+</ol>
+
+<p>Webmin es un panel de control web moderno que le permite administrar su servidor Linux a través de una interfaz basada en navegador.</p>
+
+<p>Necesitaremos instalar apache para poder instalar webmin en nuestro servidor :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.124.png" alt="" /></p>
+
+<p>Ahora deberemos de añadir el repositorio de webmin , así que editaremos el sources.list y lo añadiremos :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.125.png" alt="" /></p>
+
+<p>Guardamos el archivo y haremos un apt update para actualizar los repositorios , nos saldrá un error advirtiéndonos de que el repositorio no es fiable :<img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.126.png" alt="" /></p>
+
+<p>Así que ahora descargaremos la clave PGP de Webmin y la añadiremos a nuestro sistema :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.127.png" alt="" /></p>
+
+<p>Volvemos a hacer un apt update y veremos que ahora el repositorio es fiable</p>
+
+<p>A continuación descargaremos el paquete webmin :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.128.png" alt="" /></p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.129.png" alt="" /></p>
+
+<p>Las últimas líneas de la instalación nos dará los datos para acceder vía web a este servicio :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.130.png" alt="" /></p>
+
+<p>Así que en un cliente vamos al navegador y accedemos a esta url :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.131.jpeg" alt="" />Nos dirá que la conexión no es privada , para saltarnos esta advertencia Configuración avanzada &gt; acceder</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.132.png" alt="" /></p>
+
+<p>Tendremos un portal donde deberemos entrar con un usuario administrador de nuestro servidor :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.133.png" alt="" /></p>
+
+<p>Lo primero que veremos en la interfaz web será un monitor de recursos, así como datos de nuestro equipo :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.134.jpeg" alt="" /></p>
+
+<p>Podremos ver un histórico del monitor de recursos, el cual nos mostrara las horas y el porcentaje de uso de nuestro hardware, así como información del sistema :</p>
+
+<p>Tenemos más apartados como el de logins recientes o interfaces de red , el cual nos dará información de quien se ha conectado y las configuraciones de las mismas respectivamente :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.135.jpeg" alt="" /></p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.136.jpeg" alt="" /></p>
+
+<p>Para finalizar con el panel tendremos una última ventana la cual nos dirá el uso del disco y particiones :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.137.png" alt="" /></p>
+
+<p>Una vez que hemos echado un vistazo a la página principal vamos a aprovechar una funcionalidad que tiene que nos permite ver los directorios compartidos por nfs , para acceder aquí vamos a networking &gt; NFS exports :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.138.jpeg" alt="" /></p>
+
+<p>Vamos, que además nos permite editar los directorios compartidos actuales, así como añadir o eliminar estos .</p>
+
+<p>Además, esta herramienta nos permite configurar un Firewall con iptables , lo cual hoy día es de vital importancia disponer de seguridad en nuestra red :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.139.jpeg" alt="" /></p>
+
+<p>Incluso dispone de una terminal web para que podamos administrar el servidor desde un cliente , para acceder a esta desplegamos el menú y pulsamos sobre el símbolo de terminal o pulsamos Alt + K :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.140.png" alt="" /></p>
+
+<p>Vemos que usara ssh con el usuario conectado en la aplicación , en mi caso javiercruces :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.141.png" alt="" /></p>
+
+<p>Webmin incluye muchas más funciones de administración que nos ayuda a trabajar con el servidor de forma gráfica para hacer más ameno la administración del mismo ,desde actualizar paquetes hasta configurar un Firewall . Además, usa https, por lo que nuestro tráfico viajara cifrado , lo que nos permitiría configurar nat para poder acceder desde un dispositivo que este fuera de nuestra red , sin que un snifer pueda descifrar nuestro trafico fácilmente. Es aconsejable que cambiemos el certificado auto-firmado que usa webmin por uno propio que podemos generar con Let`s encrypt, por ejemplo .</p>
+
+<p><strong>CUPS</strong></p>
+
+<ol>
+  <li>Habrá un servidor de impresión CUPS, que se administrará desde un cliente Ubuntu. Lo primero que deberemos de hacer es instalar en el servidor cups :</li>
+</ol>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.142.png" alt="" /></p>
+
+<p>Una vez hecho esto vamos a configurar el servicio para permitir ser administrado desde nuestro cliente Ubuntu , para ello editamos el siguiente fichero :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.143.png" alt="" /></p>
+
+<p>Ahora añadiremos los siguientes parámetros :</p>
+
+<p>Listen 192.168.0.1:631</p>
+
+<p>allow 192.168.0.0/24</p>
+
+<p>Para permitir que nuestro cliente Ubuntu sea capaz de administrar el servicio</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.144.png" alt="" /></p>
+
+<p>Ahora solo nos quedaría reiniciar el servicio :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.145.png" alt="" /></p>
+
+<p>Nos desplazaremos al cliente y en el navegador introduciremos la ip de nuestro servidor seguido de dos puntos y 631 :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.146.jpeg" alt="" /></p>
+
+<p>Con esto hemos comprobado que el cliente puede administrar cups .</p>
+
+<ol>
+  <li>Configura una impresora en red para todos los usuarios, con límites de páginas diarias para todos los usuarios.</li>
+</ol>
+
+<p>Para compartir nuestra impresora en red , accedemos al panel web y en el apartado de administración marcamos compartir impresoras conectadas a este sistema :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.147.jpeg" alt="" /></p>
+
+<p>Antes de establecer los límites vamos a habilitar que el servicio registre el nombre de los usuarios al mandar archivos , para ello en el fichero cupsd.conf cambiamos este valor de default a none :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.148.png" alt="" /></p>
+
+<p>Ahora reiniciaremos el servicio :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.145.png" alt="" /></p>
+
+<p>Para establecer un límite diario para cada usuarios de 20 páginas por ejemplo , aplicaríamos el siguiente comando para nuestra impresora .</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.149.png" alt="" /></p>
+
+<p>Una vez aplicado este comando los usuarios solo podrán imprimir el número indicado de páginas ,cuando supere el límite los trabajos se mandaran a cups , pero este los desechara de la cola y no los imprimirá :</p>
+
+<p><img src="/assets/images/sistemas/proyecto_ad_ubuntu/Aspose.Words.582694fc-b92b-4748-a44e-690fed1b5e3f.150.jpeg" alt="" /></p>
+
+<p>Es decir, el trabajo 21 en este ejemplo no se creará hasta qué pasen 24 horas .</p>
+
+<p><strong>Bibliografía</strong></p>
+
+<p><a href="https://www.sysadmit.com/2020/06/linux-como-saber-que-escritorio-tengo.html">Como saber que escritorio tengo </a><a href="http://somebooks.es/crear-un-controlador-de-dominio-de-active-directory-con-samba-en-ubuntu-18-04-lts/">Montar controlador de dominio samba </a><a href="http://somebooks.es/establecer-una-direccion-ip-estatica-ubuntu-server-17-10-posteriores/">Configurar la red con netplan</a></p>
+
+<p><a href="http://somebooks.es/unir-un-cliente-ubuntu-20-04-a-un-dominio-de-active-directory-sobre-windows-server-2019-parte-1/">Unir cliente linux a dominio parte 1 </a><a href="http://somebooks.es/unir-un-cliente-ubuntu-20-04-a-un-dominio-de-active-directory-sobre-windows-server-2019-parte-2/">Unir cliente linux a dominio parte 2 </a><a href="http://somebooks.es/12-7-administrar-el-controlador-de-dominio-resara-con-rsat/">Administrar dominio con RSAT </a><a href="http://somebooks.es/nfs-parte-6-acceder-a-la-carpeta-compartida-desde-un-cliente-windows-10/">Acceder carpetas compartidas w10 </a><a href="https://www.linuxtotal.com.mx/index.php?cont=info_admon_018">Cuotas</a></p>
+
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-webmin-on-ubuntu-20-04-es">Instalación y uso de webmin </a><a href="https://docs.oracle.com/cd/E26921_01/html/E25809/gllgm.html">Comandos CUPS</a></p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#smr" class="page__taxonomy-item" rel="tag">SMR</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#sistemas" class="page__taxonomy-item" rel="tag">Sistemas</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-06-01T00:00:00+02:00">June 01, 2022</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/Servicios_debian/" class="pagination--pager" title="Servicios DHCP,DNS,APACHE,SHH,VNC,FTP bajo Debian 11
+">Previous</a>
+    
+    
+      <a href="/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/" class="pagination--pager" title="Scripts administracion usuarios y grupos locales  active directory
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 atlas</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
