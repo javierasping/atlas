@@ -9,7 +9,7 @@ header:
   teaser_home_page: true
   icon: /assets/images/logo.jpg       
 categories:
-  - Sisteamas
+  - Sistemas
 tags:
   - SMR
 ---
