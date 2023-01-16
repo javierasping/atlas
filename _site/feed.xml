@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-03T13:16:02+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Scripts administracion usuarios y grupos locales active directory</title><link href="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/" rel="alternate" type="text/html" title="Scripts administracion usuarios y grupos locales active directory" /><published>2022-11-12T00:00:00+01:00</published><updated>2022-11-12T00:00:00+01:00</updated><id>http://localhost:4000/ADMINISTRAR%20USUARIOS%20Y%20GRUPOS%20LOCALES%20%20DE%20DOMINIO%20CON%20POWERSHELL</id><content type="html" xml:base="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/">&lt;!-- Google tag (gtag.js) --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-16T10:06:16+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Scripts administracion usuarios y grupos locales active directory</title><link href="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/" rel="alternate" type="text/html" title="Scripts administracion usuarios y grupos locales active directory" /><published>2022-11-12T00:00:00+01:00</published><updated>2022-11-12T00:00:00+01:00</updated><id>http://localhost:4000/ADMINISTRAR%20USUARIOS%20Y%20GRUPOS%20LOCALES%20%20DE%20DOMINIO%20CON%20POWERSHELL</id><content type="html" xml:base="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/">&lt;!-- Google tag (gtag.js) --&gt;
 &lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
@@ -1814,7 +1814,352 @@
 
 &lt;p&gt;Ahora con un usuario del grupo , podremos copiar archivos  :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.175.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Servicios" /><category term="SMR" /><summary type="html">Practica de servicios en red curso 2021/2022 , en esta se desarolla un escenario con una red local en la que se implantan los servicios NAT ,DNS , DHCP , SSH, VNC , SMTP ,POP3 , IMAP ,FTP</summary></entry><entry><title type="html">¿Como utilizar particiones en linux y windows ?</title><link href="http://localhost:4000/Almacenamiento_informacion_t7/" rel="alternate" type="text/html" title="¿Como utilizar particiones en linux y windows ?" /><published>2022-01-10T00:00:00+01:00</published><updated>2022-01-10T00:00:00+01:00</updated><id>http://localhost:4000/Almacenamiento_informacion_t7</id><content type="html" xml:base="http://localhost:4000/Almacenamiento_informacion_t7/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.175.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Servicios" /><category term="SMR" /><summary type="html">Practica de servicios en red curso 2021/2022 , en esta se desarolla un escenario con una red local en la que se implantan los servicios NAT ,DNS , DHCP , SSH, VNC , SMTP ,POP3 , IMAP ,FTP</summary></entry><entry><title type="html">¿Como hacer copias de seguridad en Windows Server 2019?</title><link href="http://localhost:4000/COPIAS-DE-SEGURIDAD-EN-WINDOWS/" rel="alternate" type="text/html" title="¿Como hacer copias de seguridad en Windows Server 2019?" /><published>2022-01-16T00:00:00+01:00</published><updated>2022-01-16T00:00:00+01:00</updated><id>http://localhost:4000/COPIAS%20DE%20SEGURIDAD%20EN%20WINDOWS</id><content type="html" xml:base="http://localhost:4000/COPIAS-DE-SEGURIDAD-EN-WINDOWS/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GVDYVWJLRH');
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Copias de seguridad en Windows&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Como sabemos, Windows 10/11 proporciona herramientas de respaldo para ayudarnos a crear copia de seguridad del sistema y los archivos de manera gratuita: la utilidad de Copia de Seguridad y Recuperación y Historial de archivos.&lt;/p&gt;
+
+&lt;p&gt;La utilidad Copia de Seguridad y Recuperación lo ayuda a crear una imagen del sistema, así como a hacer una copia de seguridad de otros archivos que necesita. El Historial de archivos se centra en hacer una copia de seguridad de sus archivos personales. Sin embargo, ninguno de ellos lo ayudará a realizar copias de seguridad incrementales o diferenciales. Para hacerlo, debe hacer uso de software de terceros.&lt;/p&gt;
+
+&lt;p&gt;Estas opciones son  útiles para un tipo de usuario domestico sin embargo para un entorno profesional o en servidores esto no es practico .&lt;/p&gt;
+
+&lt;p&gt;Windows Server nos trae una característica propia la cual nos permite hacer copias de seguridad.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Instalación característica&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.001.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Accedemos  a  Administración  del  servidor  &amp;gt;  Agregar  características  y  roles  ,  y seleccionamos la característica de copias de seguridad .&lt;/p&gt;
+
+&lt;p&gt;Una vez instalada esta característica podremos utilizar el programa de copias nativo de windows server  .&lt;/p&gt;
+
+&lt;p&gt;Para iniciar la aplicación utilizamos el buscador de windows  :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.002.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Antes de esto crearemos es escenario previo a la realización del ejercicio , un directorio con tres ficheros :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.003.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copia manual&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Haremos una copia completa del directorio para ello accedemos a hacer una copia una vez  y seleccionaremos la segunda opción :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.004.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora seleccionaremos la raíz del el directorio que queremos hacer la copia de seguridad en mi caso este :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En el segundo paso nos dirá donde queremos almacenar la copia , lo común en un entorno profesional es almacenarla en un nas o similar . Pero para realizar este ejercicio lo almacenare localmente :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.006.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez hecho estos pasos nos saldrá un pequeño resumen :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.007.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez le demos a copia de seguridad comenzara nuestra copia , la cual podemos comprobar que se ha creado en el destino :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Programar copia&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Seleccionamos programar copia , seleccionamos personalizada:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.008.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Seleccionamos nuestro directorio que queremos hacerle una copia :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.009.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A continuación seleccionamos la hora en que queremos que se realice:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.010.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora elegiremos donde almacenarla en mi caso la segunda opción :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.011.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora añadimos el volumen en el que guardaremos la copia :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.012.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nos saldrá el resumen de la copia y cuando le demos a finalizar quedara programada:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.013.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Por ultimo nos mostrara cuando se realizara la primera copia de seguridad :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.014.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Por desgracia esta característica de Microsoft no me permite seleccionar cuando realizar una copia completa , incremental o diferencial . Solo nos da una opción la cual cambia para SIEMPRE como hace la copia :&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.015.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Por lo que no puedo realizar la actividad con windows tendré que hacerla haciendo uso de un programa de terceros .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copias de seguridad en Windows con programa de terceros&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Para realizar estas copias voy a utilizar un software de terceros que es gratuito , este es Cobian. Este software  me  permitirá  crear  todas  las  variantes  de  copias  de  seguridad  así  como programarlas .También incluye la posibilidad de cifrar la copia y comprimila .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copias incrementales&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Crea una carpeta llamada datos con tres ficheros con distintos contenidos:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.016.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Realiza una copia completa , para ello configurare una tarea :&lt;/p&gt;
+
+&lt;p&gt;-Seleccionando el origen y el destino :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.017.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;-Seleccionando el tipo de copia :&lt;/p&gt;
+
+&lt;p&gt;-Seleccionamos lanzar tarea :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.018.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Se nos guardara en el directorio que hayamos indicado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.019.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Modifica el fichero1.txt, borra el fichero2.txt y crea un nuevo fichero fichero4.txt. Realiza una copia incremental&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.020.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora crearemos la tarea de copia incremental :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.021.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lanzamos la tarea y comprobamos que se ha creado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.022.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Modifica el fichero3.txt y crea un nuevo fichero fichero5.txt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.023.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Realizamos una copa incremental :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.024.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Crea un directorio carpeta1 y dentro crea un nuevo fichero fichero6.txt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.025.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Realizamos una copia incremental y comprobamos que se haya creado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.026.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Borra el fichero1.txt y renombre la carpeta a carpeta2.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.027.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Realizamos una copia incremental y comprobamos que se haya creado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.028.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 6&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Realiza una copia completa de el directorio .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.029.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 7&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Crea otro directorio carpeta3 y dentro el fichero fichero6.txt. Borra el fichero4.txt&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.030.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Realizamos una copia incremental y comprobamos que se haya creado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.031.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Borra el fichero5.txt&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.032.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Realizamos una copia incremental del directorio :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.033.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Restaurar copias incrementales&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Para ello restauraremos las tres primeras copias y se nos quedaría el directorio así :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.034.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para ello restauraremos las 5 primeras copias , una vez restaurado quedaría así :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.035.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 8&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Restauraremos la copia completa del día 6 y las incrementales posteriores a esta :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.036.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copias diferenciales&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.037.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Realiza una copia completa , para ello configurare una tarea : -Seleccionando el origen y el destino :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.038.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;-Seleccionando el tipo de copia :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.039.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;-Seleccionamos lanzar una copia completa cada 4 diferenciales para que coincida con el enunciado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.040.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lanzamos la copia y se nos guardara en el directorio que hayamos indicado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.041.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Modifica el fichero1.txt, borra el fichero2.txt y crea un nuevo fichero fichero4.txt. Realiza una copia incremental .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.042.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lanzamos la tarea y comprobamos que se ha creado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.043.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 20&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Modifica el fichero3.txt y crea un nuevo fichero fichero5.txt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.044.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Realizamos una copa diferencial :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.045.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Crea un directorio carpeta1 y dentro crea un nuevo fichero fichero6.txt.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.046.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Realizamos la tarea y comprobamos que se haya creado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.047.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 21&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Borra el fichero1.txt y renombre la carpeta a carpeta2.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.048.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Realizamos una copia incremental y comprobamos que se haya creado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.049.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 6&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Realiza una copia completa de el directorio .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.050.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 7&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Crea otro directorio carpeta3 y dentro el fichero fichero6.txt. Borra el fichero4.txt&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.051.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Realizamos una copia diferencial y comprobamos que se haya creado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.052.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 8&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Borra el fichero5.txt&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.053.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Realizamos una copia incremental del directorio :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.054.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Restaurar copias&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez restaurada las 3 primeras copias nos quedaría un directorio con el siguiente contenido :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.055.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez restaurada las 5 primeras copias nos quedaría el directorio con el siguiente contenido :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.056.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 8&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez restaurada la segunda completa y las 2 diferenciales posteriores nos quedaría así el directorio :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.057.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copias mixtas&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Para no alargar el documento , como ya he mostrado en este documento como hacer estas 3 tipos de copias . Pasare directamente a restaurar las mismas .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Restauración copias mixtas Dia 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.034.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.058.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dia 8&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.059.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;¿Ocupan más las copias diferenciales o las copias incrementales?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Según mis copias pesan mas las diferenciales ya que consiste en copiar todos los datos nuevos o modificados desde la última copia completa.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.060.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.061.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Automatización de copias de seguridad&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;El mismo programa con las tareas que he creado anteriormente para la realización de los ejercicios nos permite programar las copias :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.062.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ademas en la misma aplicación nos permite configurar el envió de correos para recibir el estado de la tarea para así evitarnos comprobar diariamente el estados de las tareas accediendo al servidor  y facilitándolo con un simple vistazo al correo :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasdeseguridadwin/Aspose.Words.f2457733-db51-4433-a67d-46472fbcad76.063.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Seguridad" /><category term="SMR" /><summary type="html">Practica de seguridad informatica del curso 2021/2022 , en esta se desarolla un escenario en el cual tienes que hacer diferentes tipos de copias de seguridad para comprobar su funcionamiento</summary></entry><entry><title type="html">¿Como utilizar particiones en linux y windows ?</title><link href="http://localhost:4000/Almacenamiento_informacion_t7/" rel="alternate" type="text/html" title="¿Como utilizar particiones en linux y windows ?" /><published>2022-01-10T00:00:00+01:00</published><updated>2022-01-10T00:00:00+01:00</updated><id>http://localhost:4000/Almacenamiento_informacion_t7</id><content type="html" xml:base="http://localhost:4000/Almacenamiento_informacion_t7/">&lt;!-- Google tag (gtag.js) --&gt;
 &lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
