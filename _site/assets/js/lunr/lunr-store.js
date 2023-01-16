@@ -24,6 +24,11 @@ var store = [{
         "tags": ["SMR"],
         "url": "http://localhost:4000/COPIAS-DE-SEGURIDAD-EN-WINDOWS/",
         "teaser":"http://localhost:4000/assets/images/prueba/logo.png"},{
+        "title": "¿Como hacer copias de seguridad en Linux?",
+        "excerpt":"Copias incrementales Crea una carpeta llamada datos con tres ficheros con distintos contenidos: Dentro de cada fichero le he puesto el nombre del mismo . Primer día Realiza una copia completa de esa carpeta con el comando tar (los ficheros lo vamos a ir numerando como si las copias la...","categories": ["Seguridad"],
+        "tags": ["SMR"],
+        "url": "http://localhost:4000/copiasdeseguridadlinux/",
+        "teaser":"http://localhost:4000/assets/images/prueba/logo.png"},{
         "title": "Servicios DHCP,DNS,APACHE,SHH,VNC,FTP bajo Debian 11",
         "excerpt":"NAT con iptables Instalación del entorno de pruebas Vamos a instalar el siguiente entorno: Configuración de VirtualBox Servidor debian : Cliente windows Cliente debian Configuración de red Lo primero que haremos sera configurar las tarjetas de red de nuestras maquinas . Servidor debian : Editamos el fichero con nano /ect/network/interfaces...","categories": ["Servicios"],
         "tags": ["SMR"],
@@ -34,8 +39,8 @@ var store = [{
         "tags": ["SMR"],
         "url": "http://localhost:4000/proyecto_activedirectory_ubuntu/",
         "teaser":"http://localhost:4000/assets/images/prueba/logo.png"},{
-        "title": "Scripts administracion usuarios y grupos locales  active directory",
-        "excerpt":"Usuarios y grupos locales Crear un script de PowerShell que realice las siguientes tareas (script1.ps1) Crear un usuario llamado “usuloc01”, sin contraseña y que esté deshabilitado. Habilitar el usuario “usuloc01” Modificar la descripción del usuario “usuloc01” para que tenga el texto “Descripción usuario de prueba”. Crear otro usuario llamado “usuloc02”...","categories": ["Sistemas"],
+        "title": "Aprovechando la vunlerabilidad log4j",
+        "excerpt":"¿Que es Log4J? Log4j es una biblioteca de código abierto desarrollada en Java por Apache Software Foundation que permite a los desarrolladores de software escribir mensajes de registro, cuyo propósito es dejar constancia de una determinada transacción en el tiempo de ejecución. Es ampliamente utilizado por los desarrolladores de aplicaciones...","categories": ["Seguridad"],
         "tags": ["SMR"],
-        "url": "http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/",
+        "url": "http://localhost:4000/TE1-LOG4J/",
         "teaser":"http://localhost:4000/assets/images/prueba/logo.png"}]

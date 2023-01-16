@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-16T10:06:16+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Scripts administracion usuarios y grupos locales active directory</title><link href="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/" rel="alternate" type="text/html" title="Scripts administracion usuarios y grupos locales active directory" /><published>2022-11-12T00:00:00+01:00</published><updated>2022-11-12T00:00:00+01:00</updated><id>http://localhost:4000/ADMINISTRAR%20USUARIOS%20Y%20GRUPOS%20LOCALES%20%20DE%20DOMINIO%20CON%20POWERSHELL</id><content type="html" xml:base="http://localhost:4000/ADMINISTRAR-USUARIOS-Y-GRUPOS-LOCALES-DE-DOMINIO-CON-POWERSHELL/">&lt;!-- Google tag (gtag.js) --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-16T13:46:14+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Aprovechando la vunlerabilidad log4j</title><link href="http://localhost:4000/TE1-LOG4J/" rel="alternate" type="text/html" title="Aprovechando la vunlerabilidad log4j" /><published>2022-12-12T00:00:00+01:00</published><updated>2022-12-12T00:00:00+01:00</updated><id>http://localhost:4000/TE1%20LOG4J</id><content type="html" xml:base="http://localhost:4000/TE1-LOG4J/">&lt;!-- Google tag (gtag.js) --&gt;
 &lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
@@ -9,70 +9,139 @@
   gtag('config', 'G-GVDYVWJLRH');
 &lt;/script&gt;
 
-&lt;p&gt;&lt;strong&gt;Usuarios y grupos locales&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;¿Que es Log4J?&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Crear un script de PowerShell que realice las siguientes tareas (script1.ps1)&lt;/li&gt;
-  &lt;li&gt;Crear un usuario llamado “usuloc01”, sin contraseña y que esté deshabilitado.&lt;/li&gt;
-  &lt;li&gt;Habilitar el usuario “usuloc01”&lt;/li&gt;
-  &lt;li&gt;Modificar la descripción del usuario “usuloc01” para que tenga el texto “Descripción usuario de prueba”.&lt;/li&gt;
-  &lt;li&gt;Crear otro usuario llamado “usuloc02” con contraseña (habilitado).&lt;/li&gt;
-  &lt;li&gt;Crear otro usuario llamado “usuloc03” con contraseña y que se cree deshabilitado.&lt;/li&gt;
-  &lt;li&gt;Crear un nuevo grupo local llamado “grptest01”.&lt;/li&gt;
-  &lt;li&gt;Crear otro grupo llamado “grpsegundo”.&lt;/li&gt;
-  &lt;li&gt;Cambiar el nombre del grupo “grptest01” por “grpprimero”.&lt;/li&gt;
-  &lt;li&gt;Modificar el grupo “grpprimero” y añadirle la descripción “Este es el primer grupo local”.&lt;/li&gt;
-  &lt;li&gt;Añadir los usuarios “usuloc01” y “usuloc02” al grupo “grpprimero”&lt;/li&gt;
-  &lt;li&gt;Añadir el usuario “usuloc03” al grupo “grpsegundo”.&lt;/li&gt;
-  &lt;li&gt;Obtener/mostrar los miembros del grupo “grpprimero”&lt;/li&gt;
-  &lt;li&gt;Eliminar el usuario “usuloc02” del grupo “grpprimero”.&lt;/li&gt;
-  &lt;li&gt;Eliminar el grupo “grpsegundo”.&lt;/li&gt;
-  &lt;li&gt;Eliminar el usuario “usuloc03”.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Log4j es una biblioteca de código abierto desarrollada en Java por  Apache Software Foundation que permite a los desarrolladores de software escribir mensajes de registro, cuyo propósito es dejar constancia de una determinada transacción en el tiempo de ejecución. Es ampliamente utilizado por los desarrolladores de aplicaciones web y servidores basados en Java .&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/sistemas/Aspose.Words.43b37f75-4741-4aa3-b896-5df7106b447f.001.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;¿Que es CVE-2021-44228?&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Administrar objetos del dominio&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Esta  vulnerabilidad  Log4J de Apache para Java. Esta vulnerabilidad en particular, ha sido registrada con una clasificación CVSS «crítica» máxima de 10, especialmente debido a la capacidad de búsqueda de Log4J, combinada con JNDI (Java Naming and Directory Interface). Este problema está muy extendido porque muchos desarrolladores desconocían  lo peligroso que resulta emplear Log4J sin filtrar las entradas. El riesgo reside es que un atacante puede hacer que una cadena llegue al depurador, cuando es procesada por Log4J, y ejecute código arbitrario  desde una URL remota.&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Crear un script de PowerShell que realice las siguientes tareas (script2.ps1).&lt;/li&gt;
-  &lt;li&gt;Crear una unidad organizativa llamada “ciclosmr”.&lt;/li&gt;
-  &lt;li&gt;Crear otra unidad organizativa llamada “cicloasir”.&lt;/li&gt;
-  &lt;li&gt;Dentro de la UO “ciclosmr” crear otras dos unidades organizativas, llamadas “primerosmr” y “segundosmr”&lt;/li&gt;
-  &lt;li&gt;Crear un grupo llamado “sistemas” dentro de la UO “primerosmr” (recuerda que está dentro de la UO “ciclosmr”).&lt;/li&gt;
-  &lt;li&gt;Crear otro grupo llamado “equipos” dentro de la UO “primerosmr”.&lt;/li&gt;
-  &lt;li&gt;Crear un usuario llamado “Alfonso”, con contraseña y habilitado.&lt;/li&gt;
-  &lt;li&gt;Crear otro usuario llamado “Manuel”, con contraseña, pero que esté deshabilitado.&lt;/li&gt;
-  &lt;li&gt;Habilitar la cuenta de usuario “Manuel”.&lt;/li&gt;
-  &lt;li&gt;Borrar el usuario “Manuel”.&lt;/li&gt;
-  &lt;li&gt;Crear los usuarios “Marta” y “Antonio”, con contraseña y habilitados.&lt;/li&gt;
-  &lt;li&gt;Añadir al grupo “sistemas” los usuarios Marta y Antonio.&lt;/li&gt;
-  &lt;li&gt;Añadir al grupo “equipos” el usuario Alfonso.&lt;/li&gt;
-  &lt;li&gt;Eliminar del grupo “sistemas” al usuario Antonio.&lt;/li&gt;
-  &lt;li&gt;Mover a la Unidad Organizativa “cicloasir” el usuario “Alfonso”.&lt;/li&gt;
-  &lt;li&gt;Crear otro usuario llamado “Teresa”, con contraseña, habilitado y que se cree directamente en la Unidad Organizativa “ciclosmr”.&lt;/li&gt;
-  &lt;li&gt;Permitir el borrado accidental de la UO “cicloasir”.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Dado que es una librería incluida en las propias aplicaciones Java, resulta complejo hacernos a la idea del alcance y magnitud del problema. Aquí puedes ver  una relación de las aplicaciones que utilizan Log4J y que en mayor o menor medida están expuestas a esta vulnerabilidad. Esto no excluye a todos los desarrollos a medida existentes que la incluyen →  &lt;a href=&quot;https://gist.github.com/SwitHak/b66db3a06c2955a9cb71a8718970c592&quot;&gt;productos afectados&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/sistemas/Aspose.Words.43b37f75-4741-4aa3-b896-5df7106b447f.002.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Se encuentran afectadas las versiones de Apache Log4j comprendidas entre la 2.0-beta9 y la 2.14.1, ambas incluidas. Aquí te dejo este enlace con mas &lt;a href=&quot;https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/&quot;&gt;información&lt;/a&gt; , entre ellos  los servicios en la nube como en Steam, Apple iCloud, y aplicaciones como Minecraft son vulnerables. Muchos proyectos de código abierto como el servidor de Minecraft, Paper, Elasticsearch, Zrails, Hadoop, Kafka, Kibana, Solr, Spark, Struts, Tapestry, Wicket, ya han comenzado a parchear el uso de Log4j. Se ha demostrado que simplemente cambiar el nombre de un iPhone desencadena la vulnerabilidad en los servidores de Apple.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Script&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Preparación del entorno&lt;/strong&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Crear un script (script3.ps1) que muestre un menú al usuario y le permita realizar distintas operaciones con usuarios y grupos. Utiliza como base el archivo “menu_usuarios_grupos_AD.ps1”. Vamos a suponer que el usuario siempre introduce valores correctos, no es necesario controlar posibles campos vacíos, nombres erróneos, objetos inexistentes, etc.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Para simular un escenario real vamos a tener 2 maquinas virtuales , un Ubuntu que simulara ser un servidor vulnerable y un Kali que sera el atacante .&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/sistemas/Aspose.Words.43b37f75-4741-4aa3-b896-5df7106b447f.003.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Empezamos con Ubuntu instalándonos la utilidad git ya que posteriormente descargaremos una herramienta para tener  un servidor vulnerable :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/sistemas/Aspose.Words.43b37f75-4741-4aa3-b896-5df7106b447f.004.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.001.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;*Los start-sleep los he puesto para que se vea el ultimo mensaje .&lt;/p&gt;
+&lt;p&gt;También instalaremos docker&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Estructura&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.002.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;4.Realizar un script que cree la siguiente estructura en Directorio Activo:&lt;/p&gt;
+&lt;p&gt;Ahora clonaremos este repositorio donde descargaremos un servicio vulnerable :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/sistemas/Aspose.Words.43b37f75-4741-4aa3-b896-5df7106b447f.005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Sistemas" /><category term="SMR" /><summary type="html">Scripts basicos de ejemplo para administrar usuarios y grupos locales de active directory en Windows Server 2019</summary></entry><entry><title type="html">Instalacion y configuracion Active Directory en Ubuntu Server 20.04 LTS</title><link href="http://localhost:4000/proyecto_activedirectory_ubuntu/" rel="alternate" type="text/html" title="Instalacion y configuracion Active Directory en Ubuntu Server 20.04 LTS" /><published>2022-06-01T00:00:00+02:00</published><updated>2022-06-01T00:00:00+02:00</updated><id>http://localhost:4000/proyecto_activedirectory_ubuntu</id><content type="html" xml:base="http://localhost:4000/proyecto_activedirectory_ubuntu/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.003.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Comprobamos la ruta de la carpeta&lt;/p&gt;
+
+&lt;p&gt;Vamos a cargala usando docker:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.004.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez tengamos la siguiente salida ya abríamos cargado el programa , que es un apache vulnerable (Spring) :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.006.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Este se quedara escuchando a través del puerto 8080 así que nosotros vamos a irnos a nuestro kali a descargarnos el nuestro exploit :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.007.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como nos hemos descargado el archivo comprimido vamos a descomprimirlo :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.008.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vemos que se nos ha creado dos archivos .jar , vamos a ejecutarlos :&lt;/p&gt;
+
+&lt;p&gt;Los parámetros -i (ip local de la maquina kali ) , -p (puerto por el que escucha )&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.009.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Con esta herramienta acabamos de hacer un servidor LDAP y HTTP maliciosos que van a recibir la información de la maquina vulnerable cuando le enviemos comandos . Todo esto hemos de hacerlo en maquinas virtuales ya que estamos utilizando código de terceros y no sabemos si tiene malware dentro .&lt;/p&gt;
+
+&lt;p&gt;Ahora ejecutaremos un comando  en el cual podremos hacer cualquier cosa en el servidor , tiene la siguiente sintaxis  :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.010.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En función del comando que pongamos codificado en base64 hará diferente cosas , este comando hace que cree un archivo en el servidor . Vamos a comprobarlo si se ha creado en el servidor :&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.011.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.012.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora usando un codificador en base64 vamos a cambiar el comando por uno que haga una carpeta llamada RAUL .&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos a cambiar el comando&lt;/p&gt;
+
+&lt;p&gt;:&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.013.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.014.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y a comprobar si se ha creado la carpeta :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.015.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;He aquí el gran problema de esta vulnerabilidad que podemos ejecutar comandos teniendo el control total sobre los servidores ,  pudiendo hacer los que nos de la gana , ejecutar malware , robar información …&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Como verificar si nuestro servidor es vulnerable&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Para comprobar si tenemos esta vulnerabilidad vamos a ejecutar este scrpit de github que se ha echo bastante popular :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.016.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si nos fijamos nos tira 3 advertencias :&lt;/p&gt;
+
+&lt;p&gt;-Tenemos java instalado&lt;/p&gt;
+
+&lt;p&gt;-Ha encontrado 2 aplicaciones con el nombre log4j&lt;/p&gt;
+
+&lt;p&gt;-El scrpit no tiene el 100% de la razón de si somos o no vulnerables Vamos a ver que nos dice &lt;strong&gt;OpenVas&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.017.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Efectivamente somos vulnerable a esta vulnerabilidad así que vamos a solucionarla .&lt;/p&gt;
+
+&lt;p&gt;Tan bien le he echo un escaneo a la red de mi casa para ver si algún dispositivo es vulnerable a esta (La red 43.X es la red de mi móvil y 1.X de mi casa):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.018.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.019.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mi red de  casa no ha sido afectada por esta vulnerabilidad .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solución a la vulnerabilidad&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hay varias formas de solucionar el problema , una  seria actualizar a la versión 2.16.0 y otra  seria cambiar una propiedad del sistema LOG4J_FORMAT_MSG_NO_LOOKUPS en true  .En mi caso ejecutare un parche de github :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.020.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nos ponemos en la ruta y lo compilamos con maven :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.021.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora nos ponemos en la ruta y especificada y lo ejecutamos :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.022.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora reiniciamos el servicio y pasare el escáner de nuevo  :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/log4j/Aspose.Words.4e0f0bbb-fd6c-4612-89b5-8d883b26fa27.023.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como vemos se ha solucionado la vulnerabilidad gracias al parche , pero hay métodos mas sencillos como declarar una variable de entorno , pero esto dependerá de la versión de la librería y java que tengamos instalada .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bibliografía&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;-&lt;a href=&quot;https://github.com/christophetd/log4shell-vulnerable-app&quot;&gt;Servidor vulnerable&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;-&lt;a href=&quot;https://blog.segu-info.com.ar/2021/12/log4shell-vulnerabilidad-critica-con.html&quot;&gt;Información sobre la vulnerabilidad&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;-&lt;a href=&quot;https://stackoverflow.com/questions/70360237/log4j-vulnerability-cve-2021-44228-in-spring-boot-fix-bugs-in-log4j-2-15-0&quot;&gt;Solución a la vulnerabilidad&lt;/a&gt; – &lt;a href=&quot;https://spring.io/blog/2021/12/10/log4j2-vulnerability-and-spring-boot&quot;&gt;Link2&lt;/a&gt; – &lt;a href=&quot;https://github.com/corretto/hotpatch-for-apache-log4j2&quot;&gt;Parche script &lt;/a&gt;-&lt;a href=&quot;https://www.youtube.com/watch?v=qMHeil1ekCk&amp;amp;list=LL&amp;amp;index=1&amp;amp;t=2s&amp;amp;ab_channel=CiberseguridadParaTodos-DavidPereira&quot;&gt;Video sobre el escecnario &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;-&lt;a href=&quot;https://www.youtube.com/watch?v=ppKI00xCZr8&amp;amp;ab_channel=IonutConstantin&quot;&gt;Fix en windows server&lt;/a&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Seguridad" /><category term="SMR" /><summary type="html">Practica de seguridad informatica del curso 2021/2022 , en esta se propone analizar , probar y parchear esta vulnerabilidad</summary></entry><entry><title type="html">Instalacion y configuracion Active Directory en Ubuntu Server 20.04 LTS</title><link href="http://localhost:4000/proyecto_activedirectory_ubuntu/" rel="alternate" type="text/html" title="Instalacion y configuracion Active Directory en Ubuntu Server 20.04 LTS" /><published>2022-06-01T00:00:00+02:00</published><updated>2022-06-01T00:00:00+02:00</updated><id>http://localhost:4000/proyecto_activedirectory_ubuntu</id><content type="html" xml:base="http://localhost:4000/proyecto_activedirectory_ubuntu/">&lt;!-- Google tag (gtag.js) --&gt;
 &lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
@@ -1814,7 +1883,352 @@
 
 &lt;p&gt;Ahora con un usuario del grupo , podremos copiar archivos  :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.175.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Servicios" /><category term="SMR" /><summary type="html">Practica de servicios en red curso 2021/2022 , en esta se desarolla un escenario con una red local en la que se implantan los servicios NAT ,DNS , DHCP , SSH, VNC , SMTP ,POP3 , IMAP ,FTP</summary></entry><entry><title type="html">¿Como hacer copias de seguridad en Windows Server 2019?</title><link href="http://localhost:4000/COPIAS-DE-SEGURIDAD-EN-WINDOWS/" rel="alternate" type="text/html" title="¿Como hacer copias de seguridad en Windows Server 2019?" /><published>2022-01-16T00:00:00+01:00</published><updated>2022-01-16T00:00:00+01:00</updated><id>http://localhost:4000/COPIAS%20DE%20SEGURIDAD%20EN%20WINDOWS</id><content type="html" xml:base="http://localhost:4000/COPIAS-DE-SEGURIDAD-EN-WINDOWS/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/serviciosdeb/Aspose.Words.5fca9cc1-3c81-4853-a5ed-a70b0122341b.175.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Servicios" /><category term="SMR" /><summary type="html">Practica de servicios en red curso 2021/2022 , en esta se desarolla un escenario con una red local en la que se implantan los servicios NAT ,DNS , DHCP , SSH, VNC , SMTP ,POP3 , IMAP ,FTP</summary></entry><entry><title type="html">¿Como hacer copias de seguridad en Linux?</title><link href="http://localhost:4000/copiasdeseguridadlinux/" rel="alternate" type="text/html" title="¿Como hacer copias de seguridad en Linux?" /><published>2022-02-02T00:00:00+01:00</published><updated>2022-02-02T00:00:00+01:00</updated><id>http://localhost:4000/copiasdeseguridadlinux</id><content type="html" xml:base="http://localhost:4000/copiasdeseguridadlinux/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GVDYVWJLRH');
+&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Copias incrementales&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Crea una carpeta llamada datos con tres ficheros con distintos contenidos:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.001.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dentro de cada fichero le he puesto el nombre del mismo .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Primer día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Realiza una copia completa de esa carpeta con el comando tar (los ficheros lo vamos a ir numerando como si las copias la hiciéramos en distintos días, es decir el fichero resultante se llamaría copiacompleta1ddmmyyyy.tgz, donde ddmmyyyy es la fecha de la copia).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.002.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Segundo día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Modifica el fichero1.txt, borra el fichero2.txt y crea un nuevo fichero fichero4.txt. Realiza una copia incremental del directorio&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.003.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora haré la copia de incremental del directorio :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.004.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tercer día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Modifica el fichero3.txt y crea un nuevo fichero fichero5.txt. realiza un copia incremental del directorio&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y la copia incremental quedaría así :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.006.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cuarto día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Crea un directorio carpeta1 y dentro crea un nuevo fichero fichero6.txt. Realiza una copia incremental del directorio&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.007.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quinto día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Borra el fichero1.txt y renombre la carpeta a carpeta2. Realiza una copia incremental del directorio&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.008.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.009.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.010.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sexto día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Realiza otra copia completa del directorio&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.011.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Séptimo día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Crea otro directorio carpeta3 y dentro el fichero fichero7.txt. Borra el fichero4.txt. Realiza una copia incremental del directorio&lt;/p&gt;
+
+&lt;p&gt;El fichero 6 ya esta en la  carpeta2 , así que en la carpeta3 he creado el fichero 7 .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.012.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Octavo día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Borra el fichero5.txt. Realiza una copia incremental del directorio&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.013.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Restauración&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Para ello deberemos de restaurar la completa y después la incremental . Yo lo haré sobre un directoria llamado datos .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Octavo día:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.014.png&quot; alt=&quot;&quot; /&gt;**&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quinto día:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.015.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tercer día:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.016.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copias diferencial&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Vamos a repetir el mismo ejercicio pero ahora las copias serán así :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Primer día: Copia completa&lt;/li&gt;
+  &lt;li&gt;Segundo día: Copia diferencial&lt;/li&gt;
+  &lt;li&gt;Tercer día: Copia diferencial&lt;/li&gt;
+  &lt;li&gt;Cuarto día: Copia diferencial&lt;/li&gt;
+  &lt;li&gt;Quinto día: Copia diferencial&lt;/li&gt;
+  &lt;li&gt;Sexto día: Copia completa&lt;/li&gt;
+  &lt;li&gt;Séptimo día:Copia diferencial&lt;/li&gt;
+  &lt;li&gt;Octavo día:Copia diferencial&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Repetimos la misma estructura que el ejercicio anterior :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.017.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Primer día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.018.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Segundo día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.019.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.020.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tercer día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.021.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.022.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cuarto día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.023.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.024.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quinto día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.025.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.026.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sexto día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.027.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Séptimo día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.028.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.029.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Octavo día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.030.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Restauración Octavo día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.031.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quinto día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.032.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tercer día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.033.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;¿Ocupan más las copias diferenciales o las copias incrementales?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ocupan mas las diferenciales que las incrementales ya que  copia todos los datos nuevos o modificados desde la última copia completa.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copias mixtas&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Vamos a repetir el ejercicio, realizando las mismas modificaciones a los ficheros, pero realizando las siguientes copias:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Primer día: Copia completa&lt;/li&gt;
+  &lt;li&gt;Segundo día: Copia incremental&lt;/li&gt;
+  &lt;li&gt;Tercer día: Copia incremental&lt;/li&gt;
+  &lt;li&gt;Cuarto día: Copia diferencial&lt;/li&gt;
+  &lt;li&gt;Quinto día: Copia incremental&lt;/li&gt;
+  &lt;li&gt;Sexto día: Copia incremental&lt;/li&gt;
+  &lt;li&gt;Séptimo día: Copia diferencial&lt;/li&gt;
+  &lt;li&gt;Octavo día: Copia incremental&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Primer día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.034.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Segundo día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.035.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.036.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tercer día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.037.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cuarto día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.038.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quinto día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.039.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sexto día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.040.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Séptimo día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.041.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Octavo día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.042.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Restauración Octavo día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.043.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quinto día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.044.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tercer día&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.045.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.046.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Automatización de copias de seguridad utilizando cron&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ejercicio 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Busca información para crear 3 scripts en bash para crear una copia completa, incremental y diferencial de la carpeta datos. Los nombres de los ficheros generados deben contener la fecha.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copia completa :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;#!/bin/bash&lt;/p&gt;
+
+&lt;p&gt;DATE=$(date +%Y-%m-%d-%H%M%S) BACKUP_DIR=”/home/javiercruces/copias/” SOURCE=”/home/javiercruces/datos/”&lt;/p&gt;
+
+&lt;p&gt;tar -cvzpf $BACKUP_DIR/backup-$DATE.tar.gz $SOURCE&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copia incremental :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;#!/bin/bash BACKUP_DIR=”/home/javiercruces/copias/” ROTATE_DIR=”/ carpetadestino /backup/rotate” TIMESTAMP=”timestamp.dat” SOURCE=”/home/javiercruces/datos/” DATE=$(date +%Y-%m-%d-%H%M%S)&lt;/p&gt;
+
+&lt;p&gt;EXCLUDE=”–exclude=/mnt/* –exclude=/proc/* –exclude=/sys/* –exclude=/tmp/*” cd /&lt;/p&gt;
+
+&lt;p&gt;mkdir -p ${BACKUP_DIR}&lt;/p&gt;
+
+&lt;p&gt;set – ${BACKUP_DIR}/backup-??.tar.gz lastname=${!#} backupnr=${lastname##*backup-} backupnr=${backupnr%%.*} backupnr=${backupnr//\?/0} backupnr=$[10#${backupnr}]&lt;/p&gt;
+
+&lt;p&gt;if [ “$[backupnr++]” -ge 30 ]; then&lt;/p&gt;
+
+&lt;p&gt;mkdir -p ${ROTATE_DIR}/${DATE}&lt;/p&gt;
+
+&lt;p&gt;mv ${BACKUP_DIR}/b* ${ROTATE_DIR}/${DATE} mv ${BACKUP_DIR}/t* ${ROTATE_DIR}/${DATE} backupnr=1&lt;/p&gt;
+
+&lt;p&gt;fi&lt;/p&gt;
+
+&lt;p&gt;backupnr=0${backupnr} backupnr=${backupnr: -2} filename=backup-${backupnr}.tar.gz&lt;/p&gt;
+
+&lt;p&gt;tar -cpzf ${BACKUP_DIR}/${filename} -g ${BACKUP_DIR}/${TIMESTAMP} -X $EXCLUDE ${SOURCE]&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copia diferencial :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;#!/bin/bash&lt;/p&gt;
+
+&lt;p&gt;echo introduce la fecha de la ultima copia&lt;/p&gt;
+
+&lt;p&gt;read fecha&lt;/p&gt;
+
+&lt;p&gt;tar -cpvzf “copiadiferencial_&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;date +%d%m%Y&lt;/code&gt;.tar” datos/ -N $fecha&lt;/p&gt;
+
+&lt;p&gt;Deberemos de darle permisos de ejecución a los scrpits con chmod +x nombredescript&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ejercicio 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Explica el funcionamiento de cron y documenta cómo lo utilizaríamos para automatizar el proceso de copia de seguridad según el siguiente esquema:&lt;/p&gt;
+
+&lt;p&gt;Cron es un administrador de tareas de Linux que permite ejecutar comandos en un momento determinado, por ejemplo, cada minuto, día, semana o mes. Si queremos trabajar con cron, podemos hacerlo a través del comando crontab.&lt;/p&gt;
+
+&lt;p&gt;Para configurar nuestras copias elegiremos la primera opción:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.047.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora ponemos las siguientes lineas , deberemos poner primero cuando queremos que se ejecute el scrpit y después la ruta de donde se encuentra .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.048.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.049.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copias de seguridad en Linux con programas de terceros&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Me descargare el programa Gadmin-Rsync desde el centro de software ya que he visto que me permite programar copias y ademas seleccionar el tipo de la misma cosa que otros programas no me permitían .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.050.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La primera vez que lo lancemos nos pedirá la contraseña de root:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.051.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora creamos una copia completa&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.052.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nos preguntara donde queremos guardarla , le daremos a copia local :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.053.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Seleccionamos el directorio que queremos hacerle las copias&lt;/p&gt;
+
+&lt;p&gt;Ahora seleccionamos donde se guardaran las mismas&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.054.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vamos a hacer una copia completa manualmente para eso pulsamos sobre nuestra configuración  y al botón de run selected backup&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.055.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tenemos un apartado para ver el progreso del mismo :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.056.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos a programar las horas y las copias para automatizarlas :&lt;/p&gt;
+
+&lt;p&gt;Antes de esto deberemos de crear la copia diferencial y incremental como hemos creado antes la completa  . Ahora seleccionamos arriba la copia nos desplazamos abajo y seleccionamos las horas y días que se realizaran&lt;/p&gt;
+
+&lt;p&gt;La programación de la diferencial :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.057.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.058.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y por ultimo la copia incremental :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/copiasseguridadlinux/Aspose.Words.a5ea697f-26fc-496e-b5ca-3341b4f207fa.059.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Este software da muchas ventajas a personas que no tienen conocimientos sobre el tema ya que el programa es muy intuitivo . Sin embargo la clara desventaja es que al ser dedicado al gran publico perdemos muchas opciones de personalización que nos permite un scrpit por ejemplo .&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Seguridad" /><category term="SMR" /><summary type="html">Practica de seguridad informática curso 2021/2022 , en esta se desarolla un entorno para comprobar la eficacia de los distintos sistemas de copias de seguridad</summary></entry><entry><title type="html">¿Como hacer copias de seguridad en Windows Server 2019?</title><link href="http://localhost:4000/COPIAS-DE-SEGURIDAD-EN-WINDOWS/" rel="alternate" type="text/html" title="¿Como hacer copias de seguridad en Windows Server 2019?" /><published>2022-01-16T00:00:00+01:00</published><updated>2022-01-16T00:00:00+01:00</updated><id>http://localhost:4000/COPIAS%20DE%20SEGURIDAD%20EN%20WINDOWS</id><content type="html" xml:base="http://localhost:4000/COPIAS-DE-SEGURIDAD-EN-WINDOWS/">&lt;!-- Google tag (gtag.js) --&gt;
 &lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
