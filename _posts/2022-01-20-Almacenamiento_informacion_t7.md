@@ -215,4 +215,3 @@ Creare un archivo de prueba y copiare a las particiones montadas .
 ![](/assets/images/seguridad/almacenamiento_informacion_t7/Aspose.Words.f91a77a0-a719-41c5-af36-35e0757f51ed.040.png)
 
 ![](/assets/images/seguridad/almacenamiento_informacion_t7/Aspose.Words.f91a77a0-a719-41c5-af36-35e0757f51ed.041.png)
-

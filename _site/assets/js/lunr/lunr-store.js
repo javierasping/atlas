@@ -34,6 +34,11 @@ var store = [{
         "tags": ["SMR"],
         "url": "http://localhost:4000/Servicios_debian/",
         "teaser":"http://localhost:4000/assets/images/prueba/logo.png"},{
+        "title": "¿Como montar un servidor https en Debian 11?",
+        "excerpt":"Un servidor web seguro requiere que una entidad de reconocido prestigio y seriedad llamada Autoridad Certificadora (CA) acredite la identidad digital del propietario de la web. Para ello, dicha identidad generará un certificado para la empresa propietaria de la web y se configurará el servidor con la información de ese...","categories": ["Servicios"],
+        "tags": ["SMR"],
+        "url": "http://localhost:4000/https/",
+        "teaser":"http://localhost:4000/assets/images/prueba/logo.png"},{
         "title": "Instalacion y configuracion Active Directory en Ubuntu Server 20.04 LTS",
         "excerpt":"Introducción Se quiere configurar un servidor Linux (Ubuntu Server 20.04 LTS) para dar servicio a un conjunto de equipos clientes (Windows y Linux). Aprovecharé que el escenario lo tenemos montado de las anteriores actividades de clase y restauraré las instantáneas para disponer de las máquinas limpias . Preparación entornó \\1....","categories": ["Sistemas"],
         "tags": ["SMR"],

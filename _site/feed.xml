@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-16T13:46:14+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Aprovechando la vunlerabilidad log4j</title><link href="http://localhost:4000/TE1-LOG4J/" rel="alternate" type="text/html" title="Aprovechando la vunlerabilidad log4j" /><published>2022-12-12T00:00:00+01:00</published><updated>2022-12-12T00:00:00+01:00</updated><id>http://localhost:4000/TE1%20LOG4J</id><content type="html" xml:base="http://localhost:4000/TE1-LOG4J/">&lt;!-- Google tag (gtag.js) --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-19T11:07:42+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Aprovechando la vunlerabilidad log4j</title><link href="http://localhost:4000/TE1-LOG4J/" rel="alternate" type="text/html" title="Aprovechando la vunlerabilidad log4j" /><published>2022-12-12T00:00:00+01:00</published><updated>2022-12-12T00:00:00+01:00</updated><id>http://localhost:4000/TE1%20LOG4J</id><content type="html" xml:base="http://localhost:4000/TE1-LOG4J/">&lt;!-- Google tag (gtag.js) --&gt;
 &lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
@@ -953,7 +953,309 @@
 
 &lt;p&gt;&lt;a href=&quot;http://somebooks.es/unir-un-cliente-ubuntu-20-04-a-un-dominio-de-active-directory-sobre-windows-server-2019-parte-1/&quot;&gt;Unir cliente linux a dominio parte 1 &lt;/a&gt;&lt;a href=&quot;http://somebooks.es/unir-un-cliente-ubuntu-20-04-a-un-dominio-de-active-directory-sobre-windows-server-2019-parte-2/&quot;&gt;Unir cliente linux a dominio parte 2 &lt;/a&gt;&lt;a href=&quot;http://somebooks.es/12-7-administrar-el-controlador-de-dominio-resara-con-rsat/&quot;&gt;Administrar dominio con RSAT &lt;/a&gt;&lt;a href=&quot;http://somebooks.es/nfs-parte-6-acceder-a-la-carpeta-compartida-desde-un-cliente-windows-10/&quot;&gt;Acceder carpetas compartidas w10 &lt;/a&gt;&lt;a href=&quot;https://www.linuxtotal.com.mx/index.php?cont=info_admon_018&quot;&gt;Cuotas&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-webmin-on-ubuntu-20-04-es&quot;&gt;Instalación y uso de webmin &lt;/a&gt;&lt;a href=&quot;https://docs.oracle.com/cd/E26921_01/html/E25809/gllgm.html&quot;&gt;Comandos CUPS&lt;/a&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Sistemas" /><category term="SMR" /><summary type="html">Proyecto final SOR , instalacion de active directory bajo Ubuntu y administracion remota del servidor</summary></entry><entry><title type="html">Servicios DHCP,DNS,APACHE,SHH,VNC,FTP bajo Debian 11</title><link href="http://localhost:4000/Servicios_debian/" rel="alternate" type="text/html" title="Servicios DHCP,DNS,APACHE,SHH,VNC,FTP bajo Debian 11" /><published>2022-03-01T00:00:00+01:00</published><updated>2022-03-01T00:00:00+01:00</updated><id>http://localhost:4000/Servicios_debian</id><content type="html" xml:base="http://localhost:4000/Servicios_debian/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-webmin-on-ubuntu-20-04-es&quot;&gt;Instalación y uso de webmin &lt;/a&gt;&lt;a href=&quot;https://docs.oracle.com/cd/E26921_01/html/E25809/gllgm.html&quot;&gt;Comandos CUPS&lt;/a&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Sistemas" /><category term="SMR" /><summary type="html">Proyecto final SOR , instalacion de active directory bajo Ubuntu y administracion remota del servidor</summary></entry><entry><title type="html">¿Como montar un servidor https en Debian 11?</title><link href="http://localhost:4000/https/" rel="alternate" type="text/html" title="¿Como montar un servidor https en Debian 11?" /><published>2022-03-13T00:00:00+01:00</published><updated>2022-03-13T00:00:00+01:00</updated><id>http://localhost:4000/https</id><content type="html" xml:base="http://localhost:4000/https/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GVDYVWJLRH');
+&lt;/script&gt;
+
+&lt;p&gt;Un servidor web seguro requiere que una entidad de reconocido prestigio y seriedad llamada Autoridad Certificadora (CA) acredite la identidad digital del propietario de la web.&lt;/p&gt;
+
+&lt;p&gt;Para ello, dicha identidad generará un certificado para la empresa propietaria de la web y se configurará el servidor con la información de ese certificado y del certificado de la propia Autoridad Certificadora.&lt;/p&gt;
+
+&lt;p&gt;Los navegadores tienen instalados los certificados de las Autoridades Certificadoras más importantes y comprueban que la página de los servidores HTTPS sean auténticas.&lt;/p&gt;
+
+&lt;p&gt;En esta práctica vamos a trabajar por parejas para simular el proceso de certificación de un servidor web.&lt;/p&gt;
+
+&lt;p&gt;Para ello, uno de los alumnos creará una entidad certificadora y el otro solicitará un certificado para su página web. Una vez terminado el proceso, los alumnos intercambian sus papeles.&lt;/p&gt;
+
+&lt;p&gt;Tarea 1: Crear la Autoridad Certificadora&lt;/p&gt;
+
+&lt;p&gt;En esta ocasión, el papel de autoridad certificadora lo vamos a desarrollar nosotros, de manera que podremos firmar el certificado para que un compañero pueda implementar HTTPS en su servidor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paso 1: Creación de directorios y archivos.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;El primer paso será generar un directorio en el que ubicarás tu entidad certificadora, con la finalidad de mantener en todo momento una organización. El nombre del directorio será &lt;strong&gt;CA/&lt;/strong&gt;. A su vez, hay que generar varios subdirectorios dentro del mismo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;certsdb&lt;/strong&gt;: En dicho directorio se almacenarán los certificados firmados.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;certreqs&lt;/strong&gt;: En dicho directorio se almacenarán los ficheros de solicitud de firma de certificados (&lt;em&gt;CSR&lt;/em&gt;).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;crl&lt;/strong&gt;: En dicho directorio se almacenará la lista de certificados que han sido revocados (&lt;em&gt;CRL&lt;/em&gt;).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;private&lt;/strong&gt;: En dicho directorio se almacenará la clave privada de la autoridad certificadora.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Una vez generados los directorios, muévete dentro del directorio padre &lt;strong&gt;CA/.&lt;/strong&gt; Cuando te encuentres dentro del mismo, lista el contenido de forma gráfica para así poder apreciar que todo se ha generado correctamente, haciendo para ello uso de tree.&lt;/p&gt;
+
+&lt;p&gt;Verás que los 4 directorios han sido correctamente generados. Antes de continuar es recomendable cambiar los permisos a &lt;strong&gt;700&lt;/strong&gt; al directorio &lt;strong&gt;private/&lt;/strong&gt;, ya que contendrá la clave privada de la CA y nos interesa que únicamente el propietario tenga acceso a la misma.&lt;/p&gt;
+
+&lt;p&gt;Además, necesitaremos en el directorio actual un fichero que actuará como base de datos para los certificados existentes de nombre &lt;strong&gt;index.txt&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.001.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paso 2: Fichero de configuración de openssl&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo más probable es que quieras usar un fichero de configuración de &lt;em&gt;openssl&lt;/em&gt; que no sea el de nuestra máquina, para así tratar de que la autoridad certificadora esté en todo momento lo más aislada posible de la misma, así que haz una copia de tu fichero de configuración nativo y adáptalo a tus necesidades.&lt;/p&gt;
+
+&lt;p&gt;Dicho fichero se encuentra normalmente en &lt;strong&gt;/usr/lib/ssl/openssl.cnf&lt;/strong&gt;, aunque también podría estar en &lt;strong&gt;/etc/openssl.cnf&lt;/strong&gt;  o en &lt;strong&gt;/usr/share/ssl/openssl.cnf&lt;/strong&gt;, tendrás que copiarlo al directorio actual y modificarlo con un editor de textos.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.002.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dentro del mismo, hay que realizar las oportunas adaptaciones para que haga uso de los directorios anteriormente generados, así como indicar determinada información básica sobre la autoridad certificadora, que vuestro compañero debe conocer, pues le será solicitada a la hora de la generación del fichero de solicitud de firma de certificado. Las modificaciones a realizar son las siguientes:&lt;/p&gt;
+
+&lt;p&gt;dir             = /root/CA&lt;/p&gt;
+
+&lt;p&gt;certs           = $dir/certsdb new_certs_dir   = $certs&lt;/p&gt;
+
+&lt;p&gt;countryName_default             = ES stateOrProvinceName_default     = Sevilla localityName_default            = Dos Hermanas 0.organizationName_default      = IES Gonzalo Nazareno organizationalUnitName_default  = Informatica&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.003.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.004.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;#challengePassword              = A challenge password #challengePassword_min          = 4&lt;/p&gt;
+
+&lt;p&gt;#challengePassword_max          = 20&lt;/p&gt;
+
+&lt;p&gt;#unstructuredName               = An optional company name&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paso 3: Creación y firmado de nuestra propio certificado.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tras ello, ya tendrás todo listo para generar tu par de claves y un fichero de solicitud de firma de certificado que posteriormente te autofirmarás, ejecutando para ello el comando:&lt;/p&gt;
+
+&lt;p&gt;root@https:~/CA# openssl req -new -newkey rsa:2048 -keyout private/cakey.pem - out careq.pem -config ./openssl.cnf&lt;/p&gt;
+
+&lt;p&gt;Donde:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;-new&lt;/strong&gt;: Indica que se genere un nuevo par de claves.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-newkey&lt;/strong&gt;: Especificamos el tamaño y tipo de nuestro par de claves. En este caso, &lt;strong&gt;RSA 2048- bit&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-keyout&lt;/strong&gt;: Especificamos dónde se va a almacenar la clave privada. En este caso, dentro del directorio &lt;strong&gt;private/&lt;/strong&gt;, con nombre &lt;strong&gt;cakey.pem&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-out&lt;/strong&gt;: Especificamos dónde se va a almacenar la solicitud de firma de certificado. En este caso, en el directorio actual, con nombre &lt;strong&gt;careq.pem&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-config&lt;/strong&gt;: Especificamos a &lt;em&gt;openssl&lt;/em&gt; que utilice el fichero de configuración modificado, no el&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;nativo, con nombre &lt;strong&gt;openssl.cnf&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.006.png&quot; alt=&quot;&quot; /&gt;Como puedes ver, se solicita una frase de paso para proteger la clave privada que vamos a generar, así como determinada información básica para el fichero de solicitud de firma de certificado, que debe coincidir con la que anteriormente hemos introducido en el fichero de configuración de &lt;em&gt;openssl&lt;/em&gt;. Los dos últimos campos no son genéricos, por lo que debemos rellenarlos según el caso.&lt;/p&gt;
+
+&lt;p&gt;Tras ello, ya podremos proceder a autofirmarnos el certificado, que es el que posteriormente tendremos que facilitar a los clientes para que incluyan en su lista de certificados de &lt;em&gt;CA&lt;/em&gt;, para que así no se les muestre la advertencia al utilizar HTTPS. Como he mencionado anteriormente, en una situación real, este proceso lo suelen llevar a cabo empresas con determinada reputación cuyo certificado se encuentra importado por defecto en los navegadores. Para ello, ejecuta el comando:&lt;/p&gt;
+
+&lt;p&gt;root@https:~/CA# openssl ca -create_serial -out cacert.pem -days 365 -keyfile private/cakey.pem -selfsign -extensions v3_ca -config ./openssl.cnf -infiles careq.pem&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.007.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Donde:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;-create_serial&lt;/strong&gt;: Indicamos que genere un serial de 128 bits para comenzar. Gracias a dicha aleatoriedad, si tuviésemos que volver a empezar, no sobreescribiríamos los ya existentes. Es muy importante.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-out&lt;/strong&gt;: Especificamos dónde se va a almacenar el certificado firmado. En este caso, en el directorio actual, con nombre &lt;strong&gt;cacert.pem&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-days&lt;/strong&gt;: Especificamos la validez en días del certificado firmado. En este caso, &lt;strong&gt;365&lt;/strong&gt; días.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-keyfile&lt;/strong&gt;: Indicamos la clave privada a usar para firmar dicho certificado. En este caso, la generada en el paso anterior, &lt;strong&gt;private/cakey.pem&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-selfsign&lt;/strong&gt;: Indicamos a &lt;em&gt;openssl&lt;/em&gt; que vamos a autofirmarnos el certificado.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-extensions&lt;/strong&gt;: Indicamos a &lt;em&gt;openssl&lt;/em&gt;  la sección del fichero de configuración en el que se encuentran las extensiones a usar. En este caso, &lt;strong&gt;v3_ca&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-config&lt;/strong&gt;: Especificamos a &lt;em&gt;openssl&lt;/em&gt; que utilice el fichero de configuración modificado, no el&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;nativo, con nombre &lt;strong&gt;openssl.cnf&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;-infiles&lt;/strong&gt;: Indicamos qué queremos firmar, en este caso, el &lt;em&gt;CSR&lt;/em&gt; para nuestra nueva autoridad certificadora creado en el paso anterior, con nombre &lt;strong&gt;careq.pem&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Como se puede apreciar en la salida del comando, se nos ha pedido la frase de paso previamente configurada, para así asegurarnos que aunque la clave privada llegase a malas manos, no puedan realizar firmas fraudulentas. Además, antes de firmar el certificado, se nos ha mostrado toda la información referente al mismo, y se nos ha pedido confirmación.&lt;/p&gt;
+
+&lt;p&gt;Para verificar que el certificado de la autoridad certificadora se encuentra contenido en el directorio actual, lista el contenido del mismo y comprueba que, efectivamente, existe un fichero &lt;strong&gt;cacert.pem&lt;/strong&gt; que es resultado de firmar el fichero de solicitud de firma de certificado &lt;strong&gt;careq.pem&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.008.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paso 4: Firma de solicitudes de certificado.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ya está todo listo para proceder a firmar el certificado para el servidor de tu compañero, así que debes situar su fichero de solicitud de firma de certificado dentro de &lt;strong&gt;certreqs/&lt;/strong&gt;, que es donde deben ubicarse.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.009.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Puedes proceder a firmarlo, haciendo uso del comando:&lt;/p&gt;
+
+&lt;p&gt;root@https:~/CA# openssl ca -config openssl.cnf -out certsdb/nombre.crt -infiles certreqs/nombre.csr&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.010.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Donde:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;-config&lt;/strong&gt;: Especificamos a &lt;em&gt;openssl&lt;/em&gt; que utilice el fichero de configuración modificado, no el nativo, con nombre &lt;strong&gt;openssl.cnf&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-out&lt;/strong&gt;: Especificamos dónde se va a almacenar el certificado firmado. En este caso, dentro del directorio &lt;strong&gt;certsdb/&lt;/strong&gt;, con nombre &lt;strong&gt;nombre.crt.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-infiles&lt;/strong&gt;: Indicamos qué queremos firmar, en este caso, el &lt;em&gt;CSR&lt;/em&gt; de nuestro compañero, situado en &lt;strong&gt;certreqs/&lt;/strong&gt; con nombre &lt;strong&gt;nombre.csr.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En un principio, el certificado ya se encuentra firmado dentro de &lt;strong&gt;certsdb/&lt;/strong&gt;, así que para verificarlo, vas a listar el contenido de dicho directorio.&lt;/p&gt;
+
+&lt;p&gt;Deben existir un total de 3 ficheros dentro del mismo: uno correspondiente al propio certificado de la autoridad certificadora, y dos correspondientes a tu compañero, que son exactamente lo mismo pero con diferentes nombres, uno de ellos con un identificador y el otro, con un nombre común que nosotros hemos establecido para así identificarlo con una mayor facilidad.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.011.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paso 5: Envío de certificados al servidor web.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hasta aquí ha llegado tu parte, ya que únicamente quedaría hacerle llegar a tu compañero el fichero &lt;strong&gt;certsdb/nombre.crt&lt;/strong&gt;, que es su certificado firmado, junto al propio certificado de la autoridad certificadora, el cuál contiene la clave pública, para así poder verificar dicha firma sobre su certificado, de nombre &lt;strong&gt;cacert.pem&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Por último, vas a mostrar el contenido del fichero &lt;strong&gt;index.txt&lt;/strong&gt;, que es una especie de base de datos en texto plano con información sobre los certificados firmados por la autoridad certificadora.&lt;/p&gt;
+
+&lt;p&gt;Dentro del mismo, encontramos información básica correspondiente a los dos certificados firmados: el de la propia autoridad certificadora y el de nuestro compañero, además de su estado de validez actual.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.012.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.013.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tarea 2: Configurar HTTPS&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paso 1: Creación de clave y solicitud de certificado.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo primero que tendrás que hacer es crear una solicitud de firma de certificado (CSR o &lt;em&gt;Certificate Signing Request&lt;/em&gt;) y hacérselo llegar a tu compañero. En este caso, vamos a hacerlo con &lt;strong&gt;openssl&lt;/strong&gt;, pero se podría hacer con otras múltiples opciones de software.&lt;/p&gt;
+
+&lt;p&gt;Para crear una solicitud de firma de certificado, primero debemos tener una clave privada que se asociará al mismo, así que generaremos una clave privada RSA de 4096 bits, que será almacenada en &lt;strong&gt;/etc/ssl/private/&lt;/strong&gt;, ejecutando para ello el comando:&lt;/p&gt;
+
+&lt;p&gt;root@https:~# openssl genrsa 4096 &amp;gt; /etc/ssl/private/tunombre.key Generating RSA private key, 4096 bit long modulus (2 primes) …………++++&lt;/p&gt;
+
+&lt;p&gt;……++++&lt;/p&gt;
+
+&lt;p&gt;e is 65537 (0x010001)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.014.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como no tengo permisos para guardarlo redereccionando en el directorio lo pasare con un mv&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.015.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez generada, cambiaremos los permisos de la misma a &lt;strong&gt;400&lt;/strong&gt;, de manera que únicamente el propietario pueda leer el contenido, pues se trata de una clave privada. Este paso no es obligatorio pero sí recomendable por seguridad. Escribe el comando necesario para ello.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.016.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tras ello, crearemos un fichero &lt;strong&gt;.csr&lt;/strong&gt; de solicitud de firma de certificado para que sea firmado por la autoridad certificadora (&lt;em&gt;CA&lt;/em&gt;) creada por nuestro compañero. Dicho fichero no contiene información confidencial, así que no importará la ruta donde lo almacenemos ni los permisos asignados. En mi caso, lo almacenaré en el directorio actual, ejecutando para ello el comando openssl req, con las opciones:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;-new&lt;/strong&gt;: Indicamos que la creación de la solicitud de firma de certificado sea interactiva, pues nos pedirá determinados parámetros.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-key&lt;/strong&gt;: Indicamos la clave privada a asociar a dicha solicitud de firma de certificado. En este caso, la generada en el paso anterior, &lt;strong&gt;/etc/ssl/private/tunombre.key&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;-out&lt;/strong&gt;: Especificamos dónde se va a almacenar la solicitud de firma de certificado. En este caso, en el directorio actual, con nombre &lt;strong&gt;tunombre.csr.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Durante la ejecución, nos pedirá una serie de valores para identificar al certificado, que tendremos que rellenar de la siguiente manera:&lt;/p&gt;
+
+&lt;p&gt;Country Name (2 letter code) [AU]:ES&lt;/p&gt;
+
+&lt;p&gt;State or Province Name (full name) [Some-State]:Sevilla&lt;/p&gt;
+
+&lt;p&gt;Locality Name (eg, city) []:Dos Hermanas&lt;/p&gt;
+
+&lt;p&gt;Organization Name (eg, company) [Internet Widgits Pty Ltd]:IES Gonzalo Nazareno Organizational Unit Name (eg, section) []:Informatica&lt;/p&gt;
+
+&lt;p&gt;Common Name (e.g. server FQDN or YOUR name) []:nombre de tu dominio&lt;/p&gt;
+
+&lt;p&gt;Email Address []: tucorreoelectronico&lt;/p&gt;
+
+&lt;p&gt;Dicha información nos la tendrá que dar la autoridad certificadora, excepto los dos últimos valores, que en el caso del &lt;strong&gt;Common Name&lt;/strong&gt;, pondrás el &lt;em&gt;FQDN&lt;/em&gt; de la web en la que queremos configurar HTTPS. Además, tendrás que introducir tu correo electrónico en el apartado &lt;strong&gt;Email Address&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.017.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para verificar que el fichero de solicitud de firma ha sido correctamente generado, lista el contenido del directorio actual.&lt;/p&gt;
+
+&lt;p&gt;Debe existir un fichero de nombre &lt;strong&gt;tunombre.csr&lt;/strong&gt; que debes enviar a tu compañero, para que así sea firmado por la correspondiente autoridad certificadora que ha creado.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.018.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.019.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.020.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paso 2: Almacenamiento de certificados en el servidor&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Además de dicho certificado firmado, nos debe enviar la clave pública de la entidad certificadora, es decir, el certificado de la misma, para así poder verificar su firma sobre nuestro certificado.&lt;/p&gt;
+
+&lt;p&gt;Almacena ambos ficheros en &lt;strong&gt;/etc/ssl/certs/&lt;/strong&gt; y lista el contenido de dicho directorio.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.021.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Debe existir un fichero de nombre &lt;strong&gt;tunombre.crt&lt;/strong&gt; que es el resultado de la firma de la solicitud de firma de certificado que previamente le hemos enviado, y otro de nombre &lt;strong&gt;cacert.pem&lt;/strong&gt;, que es el certificado de la entidad certificadora, con el que posteriormente se comprobará la firma de la autoridad certificadora sobre dicho certificado del servidor.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.022.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paso 3: Configuración de Apache&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Al igual que &lt;em&gt;apache2&lt;/em&gt; incluía un VirtualHost por defecto para las peticiones entrantes por el puerto 80 (&lt;strong&gt;HTTP&lt;/strong&gt;), contiene otro por defecto para las peticiones entrantes por el puerto 443 (&lt;strong&gt;HTTPS&lt;/strong&gt;), de nombre &lt;strong&gt;default-ssl&lt;/strong&gt;, que por defecto viene deshabilitado, así que procederemos a modificarlo teniendo en cuenta las siguientes directivas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ServerName&lt;/strong&gt;: Al igual que en el VirtualHost anterior, tendremos que indicar el nombre de dominio a través del cuál accederemos al servidor.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SSLEngine&lt;/strong&gt;: Activa el motor SSL, necesario para hacer uso de HTTPS, por lo que su valor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;debe ser &lt;strong&gt;on&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;SSLCertificateFile&lt;/strong&gt;: Indicamos la ruta del certificado del servidor firmado por la &lt;em&gt;CA&lt;/em&gt;. En este caso, &lt;strong&gt;/etc/ssl/certs/tunombre.crt&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SSLCertificateKeyFile&lt;/strong&gt;: Indicamos la ruta de la clave privada asociada al certificado del servidor. En este caso, &lt;strong&gt;/etc/ssl/private/tunombre.key&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SSLCACertificateFile&lt;/strong&gt;: Indicamos la ruta del certificado de la &lt;em&gt;CA&lt;/em&gt; con el que comprobaremos la firma de nuestro certificado. En este caso, &lt;strong&gt;/etc/ssl/certs/cacert.pem&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.023.png&quot; alt=&quot;&quot; /&gt;Dado que este VirtualHost no viene habilitado por defecto, tendrás que hacerlo manualmente, ejecutando para ello el comando a2ensite default-ssl.&lt;/p&gt;
+
+&lt;p&gt;El nuevo VirtualHost ya ha sido habilitado, pero además, si nos fijamos en el contenido del fichero de configuración del VirtualHost, podremos apreciar que se hace uso de la directiva &lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.024.png&quot; alt=&quot;&quot; /&gt;&lt;strong&gt;IfModule&lt;/strong&gt;, es decir, se requiere que el módulo &lt;strong&gt;ssl&lt;/strong&gt; se encuentre habilitado.&lt;/p&gt;
+
+&lt;p&gt;Para verificar si dicho módulo se encuentra ya cargado en memoria, listaremos el contenido del directorio &lt;strong&gt;/etc/apache2/mods-enabled/&lt;/strong&gt;, que contiene enlaces simbólicos para aquellos módulos habilitados, por lo que estableceremos el correspondiente filtro por nombre:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;root@https:~# ls /etc/apache2/mods-enabled/&lt;/td&gt;
+      &lt;td&gt;egrep ‘ssl’&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.025.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si el filtro no devuelve ningún resultado, el módulo no se encuentra habilitado. Para habilitarlo, haremos uso de a2enmod ssl.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.026.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Además,  lo  que  queremos  hacer  es  forzar  el  uso  de  HTTPS  (&lt;strong&gt;https://&lt;/strong&gt;),  de  manera  que estableceremos una redirección permanente en el VirtualHost accesible en el puerto 80 para que se así no se permita servir la página por HTTP (&lt;strong&gt;http://&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;La creación de una redirección es bastante sencilla. En caso de que no sepas hacerlo todavía, te recomiendo leer el artículo &lt;a href=&quot;http://www.alvarovf.com/servicios/2020/10/20/mapear-url-en-apache.html&quot;&gt;Mapear URL en Apache&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.027.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El nuevo VirtualHost y el nuevo el módulo ya han sido habilitados, además del VirtualHost por defecto configurado para forzar HTTPS, pero para que los cambios surtan efecto, tendremos que reiniciar el servicio, ejecutando para ello el comando correspondiente.&lt;/p&gt;
+
+&lt;p&gt;Tras ello, ya estará todo listo para acceder a tu servidor web desde el navegador.&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.028.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paso 4: Importación de la CA y Comprobación del Funcionamiento&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Verás que se muestra una advertencia de seguridad, por lo que podemos asegurar que la redirección de &lt;strong&gt;http://&lt;/strong&gt; a &lt;strong&gt;https://&lt;/strong&gt; ha funcionado correctamente.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.029.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Esta advertencia es debida a que el navegador no ha podido comprobar la firma por parte de la &lt;em&gt;CA&lt;/em&gt; en el certificado recibido por el servidor, básicamente porque no tiene la clave pública o certificado de la &lt;em&gt;CA&lt;/em&gt;, por lo que debemos importarlo manualmente en el navegador. En una situación cotidiana, esto no suele hacerse, ya que las claves públicas de las &lt;em&gt;CA&lt;/em&gt; más conocidas vienen importadas por defecto, pero al ser una entidad certificadora totalmente nueva y sin reputación alguna, los navegadores como es obvio, no la han importado. De igual manera, la conexión sigue estando cifrada ya que el certificado ha sido correctamente transferido por parte del servidor, lo único es que no se ha podido comprobar la firma de la &lt;em&gt;CA&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.030.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.031.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para importar el certificado de la &lt;em&gt;CA&lt;/em&gt; en un navegador &lt;em&gt;Firefox&lt;/em&gt;, tendremos que pulsar en el icono de las &lt;strong&gt;3 barras&lt;/strong&gt; en la barra superior, seguidamente en &lt;strong&gt;Preferencias&lt;/strong&gt; y una vez ahí, buscar el apartado &lt;strong&gt;Privacidad &amp;amp; Seguridad&lt;/strong&gt;. Si nos desplazamos hasta la parte inferior del mismo, encontraremos la sección &lt;strong&gt;Certificados&lt;/strong&gt;, en la que debemos pulsar en &lt;strong&gt;Ver certificados&lt;/strong&gt;. Acto seguido, nos moveremos al apartado &lt;strong&gt;Autoridades&lt;/strong&gt; para que así, pulsando en &lt;strong&gt;Importar&lt;/strong&gt;, nos permita importar el certificado de una autoridad certificadora.&lt;/p&gt;
+
+&lt;p&gt;Una vez seleccionado el certificado a importar debes especificar que confías en dicha CA para identificar sitios web. Comprueba que la importación es correcta listando las autoridades desde el administrador de certificados.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.032.png&quot; alt=&quot;&quot; /&gt;Posteriormente, recarga el navegador para así volver a mostrar la página de tu servidor accediendo desde HTTPS.&lt;/p&gt;
+
+&lt;p&gt;En esta ocasión, no se debería mostrar ninguna advertencia de seguridad, y como se puede apreciar al lado de la URL, se muestra un candado cerrado, indicando que la identidad del servidor ha podido ser correctamente validada. Pulsa en el mismo y captura la información ofrecida&lt;/p&gt;
+
+&lt;p&gt;En el mismo, se muestra mayor información técnica sobre el certificado, así como el nombre de la entidad certificadora, fecha de expiración, tipo de cifrado…&lt;/p&gt;
+
+&lt;p&gt;Si has llegado hasta aquí, enhorabuena, ya has comprobado que con &lt;em&gt;apache2&lt;/em&gt; HTTPS funciona.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicios/https/Aspose.Words.1d2743a5-9f35-477b-bfdc-5c62c0d1ba02.033.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Servicios" /><category term="SMR" /><summary type="html">Practica de servicios con seguridad informatica del curso 2021/2022 , en esta practica se monta un servidor https usando apache</summary></entry><entry><title type="html">Servicios DHCP,DNS,APACHE,SHH,VNC,FTP bajo Debian 11</title><link href="http://localhost:4000/Servicios_debian/" rel="alternate" type="text/html" title="Servicios DHCP,DNS,APACHE,SHH,VNC,FTP bajo Debian 11" /><published>2022-03-01T00:00:00+01:00</published><updated>2022-03-01T00:00:00+01:00</updated><id>http://localhost:4000/Servicios_debian</id><content type="html" xml:base="http://localhost:4000/Servicios_debian/">&lt;!-- Google tag (gtag.js) --&gt;
 &lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
