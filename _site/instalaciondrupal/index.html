@@ -1,0 +1,651 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>¿Como montar un drupal en debian 11? - javiercd.es</title>
+<meta name="description" content="Explicacion basica de como montar el CMS drupal en debian 11">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="javiercd.es">
+<meta property="og:title" content="¿Como montar un drupal en debian 11?">
+<meta property="og:url" content="http://localhost:4000/instalaciondrupal/">
+
+
+  <meta property="og:description" content="Explicacion basica de como montar el CMS drupal en debian 11">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/prueba/logo.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2022-03-14T00:00:00+01:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/instalaciondrupal/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "atlas",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="javiercd.es Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/masthead.png" alt=""></a>
+                
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+    
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">¿Como montar un drupal en debian 11?</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/avatar.png" alt="Francisco Javier Cruces Doval" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Francisco Javier Cruces Doval</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Administrador de sistemas
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">España</span>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:contacto@javiercd.es">
+            <meta itemprop="email" content="contacto@javiercd.es" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://twitter.com/javier_cd_" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/javiercd/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://instagram.com/javier_cd_" itemprop="sameAs" rel="nofollow noopener noreferrer">
+            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="¿Como montar un drupal en debian 11?">
+    <meta itemprop="description" content="Explicacion basica de como montar el CMS drupal en debian 11">
+    <meta itemprop="datePublished" content="March 14, 2022">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">¿Como montar un drupal en debian 11?
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p class="page__meta">
+          
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2022-03-14T00:00:00+01:00">March 14, 2022 </time>&emsp;
+          
+          
+        </p>
+        <!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GVDYVWJLRH');
+</script>
+<p>﻿</p>
+
+<p>INSTALACIÓN CMS DRUPAL APLICACIONES WEB</p>
+
+<p><strong>Requisitos previos</strong></p>
+
+<p>Para realizar la instalación de Drupal necesitaremos tener instalada una pila LAMP . Puedes seguir este <a href="https://franciscojaviercrucesdoval.wordpress.com/2022/01/17/instalacion-lamp-en-debian-11/?preview_id=481&amp;preview_nonce=1725acbc56&amp;preview=true">enlace</a> .</p>
+
+<p><strong>Instalación</strong></p>
+
+<p>Lo primero que haremos será descargarnos desde lo repositorios oficiales drupal :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.001.png" alt="" /></p>
+
+<p><strong>Creación de directorios</strong></p>
+
+<p>Ahora vamos a crear los siguientes directorios que utilizara nuestro sitio , podemos hacerlo descomprimiendo el archivo que acabamos de descargar :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.002.png" alt="" /></p>
+
+<p>Puede ser interesante crear un enlace simbólico sin números para facilitar la instalación y el mantenimiento:</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.003.png" alt="" /></p>
+
+<p>Como Drupal necesita escribir en su directorio de instalación, permisos al usuario con el que corre el servicio web:</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.004.png" alt="" /></p>
+
+<p><strong>Creación base de datos</strong></p>
+
+<p>Nos conectamos al servicio de base de datos :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.005.png" alt="" /></p>
+
+<p>Creamos la base de datos para Drupal:</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.006.png" alt="" /></p>
+
+<p>Creamos el usuario que trabajará con dicha base:</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.007.png" alt="" /></p>
+
+<p>Concedemos suficientes privilegios al usuario sobre la base:</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.008.png" alt="" /></p>
+
+<p>Refrescamos la tabla de permisos:</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.009.png" alt="" /></p>
+
+<p>Y ya podemos cerrar la sesión:</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.010.png" alt="" /></p>
+
+<p><strong>Servicio web</strong></p>
+
+<p>Vamos a crear un sitio virtual para nuestro wordpress podemos copiar el archivo por defecto y editarlo :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.011.png" alt="" /></p>
+
+<p>Dentro del fichero añadimos las siguientes líneas :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.012.png" alt="" /></p>
+
+<p>Ahora crearemos un enlace simbólico :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.013.png" alt="" /></p>
+
+<p>Y cargamos el módulo <em>Rewrite</em> de Apache:</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.014.png" alt="" /></p>
+
+<p>Ahora reiniciamos apache :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.015.png" alt="" /></p>
+
+<p><strong>PHP</strong></p>
+
+<p>Drupal requiere la presencia en Debian 11 de ciertas extensiones que instalaremos :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.016.png" alt="" /></p>
+
+<p>Una vez instaladas recargamos apache :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.017.png" alt="" /></p>
+
+<p><strong>Instalador web</strong></p>
+
+<p>Ahora accederemos al instalador web introduciendo la IP de nuestra máquina seguida de lo siguiente , una vez introducimos podemos seleccionar el idioma :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.018.png" alt="" /></p>
+
+<p>Seleccionaremos la versión que queramos en mi caso estándar :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.019.png" alt="" /></p>
+
+<p>Rellenamos los campos con los datos introducidos anteriormente en la instalación :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.020.jpeg" alt="" /></p>
+
+<p>Comenzará la instalación:</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.021.png" alt="" /></p>
+
+<p>Una vez finalice deberemos de configurar nuestro sitio :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.022.png" alt="" /></p>
+
+<p>Ahora esperamos a que se apliquen las configuraciones :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.023.png" alt="" /></p>
+
+<p>Cuando finalice así quedaría nuestro sitio :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.024.png" alt="" /></p>
+
+<p><strong>Añadir usuarios</strong></p>
+
+<p>Al igual que otros CMS ,este también cuanto con distintos roles para los usuarios así que vamos a crear un usuario para cada rol. Para esto accedemos a Inicio&gt;Administración &gt; Usuarios .</p>
+
+<p>A continuación rellenamos el siguiente formulario con los datos de nuestro usuario:</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.025.png" alt="" /></p>
+
+<p>Podemos ver que he creado 1 usuario con cada posibilidad :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.026.png" alt="" /></p>
+
+<p>Si no nos convence estos roles predefinidos podemos editarlos en la pestaña roles y personalizarlos o crear los nuestros propios :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.027.png" alt="" /></p>
+
+<p><strong>Cambiar tema</strong></p>
+
+<p>Para cambiar el tema por defecto tenemos que venir a Inicio &gt; Administración &gt;  apariencia . Una vez aquí podemos instalarlo buscando el tema que nos guste bajando y dándole a instalar :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.028.png" alt="" /></p>
+
+<p>O añadiéndolo desde una URL o el archivo descargado localmente :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.029.png" alt="" /></p>
+
+<p>Una vez lo hemos añadido debemos de buscarlo en la sección de instalados y darle a configurar como predeterminado :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.030.jpeg" alt="" /></p>
+
+<p>Si lo hemos hecho bien nos saldrá el siguiente mensaje :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.031.png" alt="" /></p>
+
+<p><strong>Instalar un módulo</strong></p>
+
+<p>Accedemos a Inicio&gt;Administración &gt; Entender y nos descargamos desde drupal.org el módulo que deseemos , lo seleccionamos y lo subimos :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.032.png" alt="" /></p>
+
+<p>Le damos a continuar y nos saldrá lo siguiente :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.033.png" alt="" /></p>
+
+<p>A continuación buscamos en la sección ampliar nuestro módulo y lo seleccionamos :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.034.png" alt="" /></p>
+
+<p>Bajamos y le damos a instalar :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.035.png" alt="" /></p>
+
+<p>Si todo ha ido bien nos saldrá el siguiente mensaje :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.036.png" alt="" /></p>
+
+<p><strong>Instalar un foro</strong></p>
+
+<p>Para esto viene un módulo por defecto llamado Fórum así que lo instalamos como en el apartado anterior :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.037.png" alt="" /></p>
+
+<p>Si accedemos a estructura nos saldrá el apartado foros :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.038.png" alt="" /></p>
+
+<p>Nos saldrán los distintos foros que tenemos , como está recién instalado solo viene el predeterminado :</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.039.png" alt="" /></p>
+
+<p>Para acceder a él podemos poner un enlace en los menús o escribir /forum:</p>
+
+<p><img src="/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.040.png" alt="" /></p>
+
+<p><strong>Seguridad de usuarios y backups</strong></p>
+
+<p>Para tener control de los usuarios podemos instalar módulos como Login Security que nos da la opción de modificar opciones a la hora de que un usuario se registre , el número máximo de intentos que un usuario puede realizar para registrarse en nuestro sitio, bloquear determinadas cuentas ya sea por usuario o por IP de manera temporal o definitiva.</p>
+
+<p>Otro módulo interesante es Password Policy la cual nos permite personalizar nuestra política de contraseña para que los usuarios estén obligados a tener contraseñas seguras .</p>
+
+<p>Además de estas dos hay una infinidad de módulos desarrollados para aumentar la seguridad de nuestro sitio , pero estos dos son los más sencillos que he encontrado .</p>
+
+<p>Para copias de seguridad , hay tenemos uno por defecto llamado Backup and migrate que nos permite crear copias de seguridad manualmente o programándolas que es muy útil para evitar la perdida de información .</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#smr" class="page__taxonomy-item" rel="tag">SMR</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#aplicaciones-web" class="page__taxonomy-item" rel="tag">Aplicaciones web</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-03-14T00:00:00+01:00">March 14, 2022</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/https/" class="pagination--pager" title="¿Como montar un servidor https en Debian 11?
+">Previous</a>
+    
+    
+      <a href="/proyecto_activedirectory_ubuntu/" class="pagination--pager" title="Instalacion y configuracion Active Directory en Ubuntu Server 20.04 LTS
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 atlas</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

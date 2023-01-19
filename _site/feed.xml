@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-19T11:07:42+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Aprovechando la vunlerabilidad log4j</title><link href="http://localhost:4000/TE1-LOG4J/" rel="alternate" type="text/html" title="Aprovechando la vunlerabilidad log4j" /><published>2022-12-12T00:00:00+01:00</published><updated>2022-12-12T00:00:00+01:00</updated><id>http://localhost:4000/TE1%20LOG4J</id><content type="html" xml:base="http://localhost:4000/TE1-LOG4J/">&lt;!-- Google tag (gtag.js) --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-19T11:16:00+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">javiercd.es</title><subtitle>Web personal</subtitle><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><entry><title type="html">Aprovechando la vunlerabilidad log4j</title><link href="http://localhost:4000/TE1-LOG4J/" rel="alternate" type="text/html" title="Aprovechando la vunlerabilidad log4j" /><published>2022-12-12T00:00:00+01:00</published><updated>2022-12-12T00:00:00+01:00</updated><id>http://localhost:4000/TE1%20LOG4J</id><content type="html" xml:base="http://localhost:4000/TE1-LOG4J/">&lt;!-- Google tag (gtag.js) --&gt;
 &lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
@@ -953,7 +953,215 @@
 
 &lt;p&gt;&lt;a href=&quot;http://somebooks.es/unir-un-cliente-ubuntu-20-04-a-un-dominio-de-active-directory-sobre-windows-server-2019-parte-1/&quot;&gt;Unir cliente linux a dominio parte 1 &lt;/a&gt;&lt;a href=&quot;http://somebooks.es/unir-un-cliente-ubuntu-20-04-a-un-dominio-de-active-directory-sobre-windows-server-2019-parte-2/&quot;&gt;Unir cliente linux a dominio parte 2 &lt;/a&gt;&lt;a href=&quot;http://somebooks.es/12-7-administrar-el-controlador-de-dominio-resara-con-rsat/&quot;&gt;Administrar dominio con RSAT &lt;/a&gt;&lt;a href=&quot;http://somebooks.es/nfs-parte-6-acceder-a-la-carpeta-compartida-desde-un-cliente-windows-10/&quot;&gt;Acceder carpetas compartidas w10 &lt;/a&gt;&lt;a href=&quot;https://www.linuxtotal.com.mx/index.php?cont=info_admon_018&quot;&gt;Cuotas&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-webmin-on-ubuntu-20-04-es&quot;&gt;Instalación y uso de webmin &lt;/a&gt;&lt;a href=&quot;https://docs.oracle.com/cd/E26921_01/html/E25809/gllgm.html&quot;&gt;Comandos CUPS&lt;/a&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Sistemas" /><category term="SMR" /><summary type="html">Proyecto final SOR , instalacion de active directory bajo Ubuntu y administracion remota del servidor</summary></entry><entry><title type="html">¿Como montar un servidor https en Debian 11?</title><link href="http://localhost:4000/https/" rel="alternate" type="text/html" title="¿Como montar un servidor https en Debian 11?" /><published>2022-03-13T00:00:00+01:00</published><updated>2022-03-13T00:00:00+01:00</updated><id>http://localhost:4000/https</id><content type="html" xml:base="http://localhost:4000/https/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-webmin-on-ubuntu-20-04-es&quot;&gt;Instalación y uso de webmin &lt;/a&gt;&lt;a href=&quot;https://docs.oracle.com/cd/E26921_01/html/E25809/gllgm.html&quot;&gt;Comandos CUPS&lt;/a&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Sistemas" /><category term="SMR" /><summary type="html">Proyecto final SOR , instalacion de active directory bajo Ubuntu y administracion remota del servidor</summary></entry><entry><title type="html">¿Como montar un drupal en debian 11?</title><link href="http://localhost:4000/instalaciondrupal/" rel="alternate" type="text/html" title="¿Como montar un drupal en debian 11?" /><published>2022-03-14T00:00:00+01:00</published><updated>2022-03-14T00:00:00+01:00</updated><id>http://localhost:4000/instalaciondrupal</id><content type="html" xml:base="http://localhost:4000/instalaciondrupal/">&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GVDYVWJLRH');
+&lt;/script&gt;
+&lt;p&gt;﻿&lt;/p&gt;
+
+&lt;p&gt;INSTALACIÓN CMS DRUPAL APLICACIONES WEB&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Requisitos previos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Para realizar la instalación de Drupal necesitaremos tener instalada una pila LAMP . Puedes seguir este &lt;a href=&quot;https://franciscojaviercrucesdoval.wordpress.com/2022/01/17/instalacion-lamp-en-debian-11/?preview_id=481&amp;amp;preview_nonce=1725acbc56&amp;amp;preview=true&quot;&gt;enlace&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Instalación&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo primero que haremos será descargarnos desde lo repositorios oficiales drupal :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.001.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Creación de directorios&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora vamos a crear los siguientes directorios que utilizara nuestro sitio , podemos hacerlo descomprimiendo el archivo que acabamos de descargar :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.002.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Puede ser interesante crear un enlace simbólico sin números para facilitar la instalación y el mantenimiento:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.003.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como Drupal necesita escribir en su directorio de instalación, permisos al usuario con el que corre el servicio web:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.004.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Creación base de datos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Nos conectamos al servicio de base de datos :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Creamos la base de datos para Drupal:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.006.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Creamos el usuario que trabajará con dicha base:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.007.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Concedemos suficientes privilegios al usuario sobre la base:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.008.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Refrescamos la tabla de permisos:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.009.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y ya podemos cerrar la sesión:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.010.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Servicio web&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Vamos a crear un sitio virtual para nuestro wordpress podemos copiar el archivo por defecto y editarlo :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.011.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dentro del fichero añadimos las siguientes líneas :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.012.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora crearemos un enlace simbólico :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.013.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y cargamos el módulo &lt;em&gt;Rewrite&lt;/em&gt; de Apache:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.014.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora reiniciamos apache :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.015.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PHP&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Drupal requiere la presencia en Debian 11 de ciertas extensiones que instalaremos :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.016.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez instaladas recargamos apache :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.017.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Instalador web&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora accederemos al instalador web introduciendo la IP de nuestra máquina seguida de lo siguiente , una vez introducimos podemos seleccionar el idioma :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.018.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Seleccionaremos la versión que queramos en mi caso estándar :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.019.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Rellenamos los campos con los datos introducidos anteriormente en la instalación :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.020.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Comenzará la instalación:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.021.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez finalice deberemos de configurar nuestro sitio :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.022.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora esperamos a que se apliquen las configuraciones :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.023.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cuando finalice así quedaría nuestro sitio :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.024.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Añadir usuarios&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Al igual que otros CMS ,este también cuanto con distintos roles para los usuarios así que vamos a crear un usuario para cada rol. Para esto accedemos a Inicio&amp;gt;Administración &amp;gt; Usuarios .&lt;/p&gt;
+
+&lt;p&gt;A continuación rellenamos el siguiente formulario con los datos de nuestro usuario:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.025.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Podemos ver que he creado 1 usuario con cada posibilidad :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.026.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si no nos convence estos roles predefinidos podemos editarlos en la pestaña roles y personalizarlos o crear los nuestros propios :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.027.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cambiar tema&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Para cambiar el tema por defecto tenemos que venir a Inicio &amp;gt; Administración &amp;gt;  apariencia . Una vez aquí podemos instalarlo buscando el tema que nos guste bajando y dándole a instalar :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.028.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O añadiéndolo desde una URL o el archivo descargado localmente :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.029.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez lo hemos añadido debemos de buscarlo en la sección de instalados y darle a configurar como predeterminado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.030.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si lo hemos hecho bien nos saldrá el siguiente mensaje :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.031.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Instalar un módulo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Accedemos a Inicio&amp;gt;Administración &amp;gt; Entender y nos descargamos desde drupal.org el módulo que deseemos , lo seleccionamos y lo subimos :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.032.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Le damos a continuar y nos saldrá lo siguiente :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.033.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A continuación buscamos en la sección ampliar nuestro módulo y lo seleccionamos :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.034.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bajamos y le damos a instalar :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.035.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si todo ha ido bien nos saldrá el siguiente mensaje :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.036.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Instalar un foro&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Para esto viene un módulo por defecto llamado Fórum así que lo instalamos como en el apartado anterior :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.037.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si accedemos a estructura nos saldrá el apartado foros :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.038.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nos saldrán los distintos foros que tenemos , como está recién instalado solo viene el predeterminado :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.039.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para acceder a él podemos poner un enlace en los menús o escribir /forum:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/aw/drupal/Aspose.Words.c0d04704-8ca1-45a6-90e8-8e84c8cfc05e.040.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Seguridad de usuarios y backups&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Para tener control de los usuarios podemos instalar módulos como Login Security que nos da la opción de modificar opciones a la hora de que un usuario se registre , el número máximo de intentos que un usuario puede realizar para registrarse en nuestro sitio, bloquear determinadas cuentas ya sea por usuario o por IP de manera temporal o definitiva.&lt;/p&gt;
+
+&lt;p&gt;Otro módulo interesante es Password Policy la cual nos permite personalizar nuestra política de contraseña para que los usuarios estén obligados a tener contraseñas seguras .&lt;/p&gt;
+
+&lt;p&gt;Además de estas dos hay una infinidad de módulos desarrollados para aumentar la seguridad de nuestro sitio , pero estos dos son los más sencillos que he encontrado .&lt;/p&gt;
+
+&lt;p&gt;Para copias de seguridad , hay tenemos uno por defecto llamado Backup and migrate que nos permite crear copias de seguridad manualmente o programándolas que es muy útil para evitar la perdida de información .&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Aplicaciones web" /><category term="SMR" /><summary type="html">Explicacion basica de como montar el CMS drupal en debian 11</summary></entry><entry><title type="html">¿Como montar un servidor https en Debian 11?</title><link href="http://localhost:4000/https/" rel="alternate" type="text/html" title="¿Como montar un servidor https en Debian 11?" /><published>2022-03-13T00:00:00+01:00</published><updated>2022-03-13T00:00:00+01:00</updated><id>http://localhost:4000/https</id><content type="html" xml:base="http://localhost:4000/https/">&lt;!-- Google tag (gtag.js) --&gt;
 &lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
@@ -4918,154 +5126,4 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.353.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.354.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Servicios" /><category term="SMR" /><summary type="html">Practica de servicios en red curso 2021/2022 , en esta se desarolla un escenario con una red local en la que se implantan los servicios NAT ,DNS , DHCP , RDP , SMTP ,POP3 , IMAP ,FTP</summary></entry><entry><title type="html">¿Como elegir un SAI?</title><link href="http://localhost:4000/seleccionsais/" rel="alternate" type="text/html" title="¿Como elegir un SAI?" /><published>2021-05-22T00:00:00+02:00</published><updated>2021-05-22T00:00:00+02:00</updated><id>http://localhost:4000/seleccionsais</id><content type="html" xml:base="http://localhost:4000/seleccionsais/">&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=G-GVDYVWJLRH&quot;&gt;&lt;/script&gt;
-
-&lt;script&gt;
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GVDYVWJLRH');
-&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;Selección SAIs Ejercicio 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Tenemos en nuestro CPD un conjunto de diez servidores con doble fuente redundante de 740W (carga promedio del 50 al 75% de una fuente) , dos routers cisco serie 4000 (cuyo consumo tendrás que hallar) y cuatro switches D-Link  DXS-3400 (cuyo consumo tampoco conocemos).&lt;/p&gt;
-
-&lt;p&gt;Deseamos garantizar la alimentación de dichos dispositivos durante un mínimo de 20 minutos mediante uno o varios SAIs enrackables (máximo 3). El tiempo máximo de recarga de los mismos será de cuatro horas. Busca tres presupuestos de SAIs de distintas marcas que cubran nuestras necesidades adecuadamente.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Fuentes de servidores&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;740w el 50 % → 370w   740w el 75 % → 555w&lt;/p&gt;
-
-&lt;p&gt;La carga  media de 1 fuente de alimentación es de entre 370w a 555w .Por lo que 10 fuentes tendrán una carga de  entre 3700w a 5550w .&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Routers&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Nuestros routers son 2 modelos 4461 que cada uno consume como máximo 1000w :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/seleccionsais/Aspose.Words.569e65b1-b172-4fc6-9936-ca98e6dcf09d.001.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;1000w el 50 % → 500w   1000w el 75 % → 750w&lt;/p&gt;
-
-&lt;p&gt;La carga de estos 2 routers oscilara entre 1000w a 1500w .&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Switches&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Nuestros Switches son  4 D-Link  DXS-3400 que consume cada uno  160W :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/seleccionsais/Aspose.Words.569e65b1-b172-4fc6-9936-ca98e6dcf09d.002.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;160w el 50 % → 80w   160w el 75 % → 120w&lt;/p&gt;
-
-&lt;p&gt;La carga promedio para estos 4 Switches sera de entre 320w a 480w .&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Consumo total&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Si sumamos las cantidades que acabamos de calcular obtendremos :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Carga total al 50% (3700 + 1000 + 320 ) = 5020w&lt;/li&gt;
-  &lt;li&gt;Carga total al 75% (5550 + 1500 + 480)  = 7530w&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Elección SAI&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Ahora buscare SAIS que para un consumo de entre 5020w a 7530w nos de mas de 20min de autonomía .&lt;/p&gt;
-
-&lt;p&gt;Para buscar uno necesitaremos saber cuantos VA necesitamos . Como ya conocemos el consumo de nuestros equipos haremos la conversión con la siguiente formula :&lt;/p&gt;
-
-&lt;p&gt;Formula : VA = W / FA&lt;/p&gt;
-
-&lt;p&gt;El único valor que desconocemos es el factor de potencia ,los SAI básicos tienen un Factor de potencia de 0,6 y los profesionales en torno al 0,8 – 0,9 . Así que para hacer un baremos de sais aplicaremos 0,6 y cuando tengamos seleccionados los equipos volveremos a ajustar la formula .&lt;/p&gt;
-
-&lt;p&gt;Tendremos que buscar sais entorno a los 8366,7 VA – 12550VA . Pero como vamos a comprar varias unidades podemos dividir los valores anteriores por la cantidad de sais que vayamos a comprar .&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Opción 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;3 x SAI Lampara 6000VA/6000W v1.0, on-line, doble conversión, Rack 2U+3U → &lt;a href=&quot;https://todosai.com/sai-ups/201-SAI-Lapara-6000VA-6000W-v1-0--on-line--doble-conversion--Rack-2U3U--LA-ON-6K-RACK-8437008183978.html&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/seleccionsais/Aspose.Words.569e65b1-b172-4fc6-9936-ca98e6dcf09d.003.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Como vamos a tener 3 SAIs voy a dividir la potencia total  (VA) entre 3 para calcular el tiempo de uso de las baterías.&lt;/p&gt;
-
-&lt;p&gt;Para ello utilizaremos esta formula ((N x V x AH x Eff ) / VA ) x 60 donde : -N = número de baterías en el SAI  ,&lt;/p&gt;
-
-&lt;p&gt;-V = voltaje de las baterías&lt;/p&gt;
-
-&lt;p&gt;-AH=Amperios-Hora de las baterías&lt;/p&gt;
-
-&lt;p&gt;-Eff = eficiencia del SAI&lt;/p&gt;
-
-&lt;p&gt;-VA = Volti-Amperios del SAI&lt;/p&gt;
-
-&lt;p&gt;Todos estos datos puedes sacarlo desde la ficha técnica del producto → &lt;a href=&quot;https://todosai.com/sai-ups/docs/Velorel/LA-ON-6-10K-RACK-V10%20-%20Hoja%20tecnica.pdf&quot;&gt;Link &lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Para la esta opción el tiempo de duración de las baterías  es :&lt;/p&gt;
-
-&lt;p&gt;Todos los equipos al 75% ((20 x 12 x 7 x 1 ) / 4125 ) x 60 = 24.4 minutos&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Opción 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;2 x SAI Phasak Rack 10000VA Online LCD → &lt;a href=&quot;https://www.phasak.com/es/producto/sai-phasak-rack-10000va-online-lcd&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/seleccionsais/Aspose.Words.569e65b1-b172-4fc6-9936-ca98e6dcf09d.004.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;El tiempo de las baterías para este sai es de : ((20 x 12 x 0 x 0.99 ) / 6125) x60 = 21 minutos&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Opción 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;3 x SAI en Rack de 10.000 VA → &lt;a href=&quot;https://www.apc.com/es/es/product/SRT10KRMXLI/smartups-srt-de-apc-10-000-va-rm-230-v/&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/seleccionsais/Aspose.Words.569e65b1-b172-4fc6-9936-ca98e6dcf09d.005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;El tiempo de las baterías para este sai es de : ((12 x 12 x 9 x 0.99 ) / 4183) x60 = 20,5 minutos&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Ejercicio 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Explica las diferencias entre los distintos tipos de SAIs existentes (stand by, online, etc…)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;SAI Off-line o Stand-By :&lt;/strong&gt; Proporciona una protección básica. Protege de anomalías conocidas en redes eléctricas: fallos, subidas y bajadas de tensión. Su uso más común es en la protección de dispositivos domésticos de poca potencia como routers, ordenadores, monitores, televisores, etc.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;SAI In-line :&lt;/strong&gt; Proporciona una protección intermedia solucionando  anomalías eléctricas conocidas. Respecto al SAI off-line, añade protección contra tensiones bajas o altas que se producen de forma continuada. Su uso más común es la protección de dispositivos en hogares con tensiones anómalas, pequeños comercios o empresas, ordenadores, monitores, dispositivos de red como routers y switches, cámaras de seguridad y videograbadores, etc. Dentro de los modelos interactivos existe una subgama avanzada; el SAI in-line sinusoidal. Este tipo de SAI añade una característica especialmente requerida para la protección de bombas, motores eléctricos y ordenadores con fuentes PFC activo: la alimentación de salida a través de forma de onda senoidal pura en modo batería. Los modelos que incluyen esta prestación mantendrán una alimentación a través de forma de onda senoidal pura a su salida cuando se produzca un corte de suministro y entreguen energía a través de sus baterías.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;SAI On-line:&lt;/strong&gt; el más sofisticado. Ofrece una protección completa contra las todas las anomalías eléctricas conocidas. Su tecnología de doble conversión garantiza el máximo nivel de protección eléctrica. Entrega una alimentación completamente ininterrumpida y a través de forma de onda senoidal pura en todo momento, lo que lo convierte en un equipo apto para trabajar, no solo conectado a una red eléctrica, sino también a generadores o grupos electrógenos. Un inconveniente es que las baterías deben sustituirse con más frecuencia, y que su coste es superior al resto de equipos de gamas más básicas. Su uso más común es en la protección de equipos de alto valor en empresas,  aplicaciones  de  tipo  industrial,  cargas  críticas,  equipos  de  uso  clínico  o  de electromedicina, etc.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Ejercicio 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Deseamos comprar un SAI para trabajar con él en clase. No nos importa la potencia soportada ni la autonomía, sino las posibilidades de monitorización y configuración que ofrezca. El presupuesto máximo es de 400 euros. Estudia al menos tres posibilidades explicando el software que podríamos usar para configurarlo y monitorizarlo, ya sea software propio del SAI o una herramienta como nut.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Opción 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Salicru SPS One 1100VA V2 SAI → &lt;a href=&quot;https://www.pccomponentes.com/salicru-sps-one-1100va-v2-sai&quot;&gt;Link &lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Este producto viene con un software gratuito de ges de gestión y monitorización del SAI para cierre de ficheros/aplicaciones para familia Windows, Linux y Mac; gratuito y descargable desde www.salicru.com.&lt;/p&gt;
-
-&lt;p&gt;Aunque también es compatible con distintos software como :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/seleccionsais/Aspose.Words.569e65b1-b172-4fc6-9936-ca98e6dcf09d.006.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Desde estos software podremos realizar distintas gestiones como configurar el apagado de los equipos frente a fallos en el suministro así como monitorizar  los distintos sais de nuestra red .&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/seleccionsais/Aspose.Words.569e65b1-b172-4fc6-9936-ca98e6dcf09d.007.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Opción 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Salicru SPS SOHO+ 1200VA SAI→ &lt;a href=&quot;https://www.pccomponentes.com/salicru-sps-soho-1200va-sai&quot;&gt;Link &lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Cuenta con interface USB con protocolo HID para el control, configuración de parámetros y cierre/hibernación del ordenador. También está disponible un paquete de softwares para la gestión y monitorización de los entornos asociados, incluso para sistemas virtualizados.&lt;/p&gt;
-
-&lt;p&gt;Este sai también es compatible con los programas de la primera opción .&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Opción 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Riello Sentinel Pro 700VA SAI→ &lt;a href=&quot;https://www.pccomponentes.com/riello-sentinel-pro-700va-sai&quot;&gt;Link &lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Este producto cuenta con su propia herramienta de monitorización que podemos descargar desde su &lt;a href=&quot;https://www.riello-ups.es/products/1-sai/44-sentinel-pro&quot;&gt;pagina web&lt;/a&gt; :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/seleccionsais/Aspose.Words.569e65b1-b172-4fc6-9936-ca98e6dcf09d.008.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Al igual que los otros software este nos permite ver el estado de nuestros sais así como configurar y parametrizar a los mismos  :&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/seguridad/seleccionsais/Aspose.Words.569e65b1-b172-4fc6-9936-ca98e6dcf09d.009.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Seguridad" /><category term="SMR" /><summary type="html">Practica de seguridad informática curso 2021/2022 , en esta se desarolla un conjunto de problemas para encontrar soluciones a la hora de elegir un SAI</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/images/servicioswinserver/Aspose.Words.a00cdc9b-6cbd-4eb4-8a5a-1066339caa45.354.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Francisco Javier Cruces Doval</name><email>contacto@javiercd.es</email></author><category term="Servicios" /><category term="SMR" /><summary type="html">Practica de servicios en red curso 2021/2022 , en esta se desarolla un escenario con una red local en la que se implantan los servicios NAT ,DNS , DHCP , RDP , SMTP ,POP3 , IMAP ,FTP</summary></entry></feed>

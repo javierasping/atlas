@@ -33,6 +33,10 @@
 <lastmod>2022-03-13T00:00:00+01:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/instalaciondrupal/</loc>
+<lastmod>2022-03-14T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/proyecto_activedirectory_ubuntu/</loc>
 <lastmod>2022-06-01T00:00:00+02:00</lastmod>
 </url>
@@ -57,5 +61,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/year-archive/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page2/</loc>
 </url>
 </urlset>

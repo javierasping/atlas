@@ -39,6 +39,11 @@ var store = [{
         "tags": ["SMR"],
         "url": "http://localhost:4000/https/",
         "teaser":"http://localhost:4000/assets/images/prueba/logo.png"},{
+        "title": "¿Como montar un drupal en debian 11?",
+        "excerpt":"﻿ INSTALACIÓN CMS DRUPAL APLICACIONES WEB Requisitos previos Para realizar la instalación de Drupal necesitaremos tener instalada una pila LAMP . Puedes seguir este enlace . Instalación Lo primero que haremos será descargarnos desde lo repositorios oficiales drupal : Creación de directorios Ahora vamos a crear los siguientes directorios que...","categories": ["Aplicaciones web"],
+        "tags": ["SMR"],
+        "url": "http://localhost:4000/instalaciondrupal/",
+        "teaser":"http://localhost:4000/assets/images/prueba/logo.png"},{
         "title": "Instalacion y configuracion Active Directory en Ubuntu Server 20.04 LTS",
         "excerpt":"Introducción Se quiere configurar un servidor Linux (Ubuntu Server 20.04 LTS) para dar servicio a un conjunto de equipos clientes (Windows y Linux). Aprovecharé que el escenario lo tenemos montado de las anteriores actividades de clase y restauraré las instantáneas para disponer de las máquinas limpias . Preparación entornó \\1....","categories": ["Sistemas"],
         "tags": ["SMR"],
